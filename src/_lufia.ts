@@ -13,7 +13,7 @@ export const lufiaConfig: Config = {
   charLimit: 240,
   lineLimit: 4,
   boxClasses: ["snes-256x224", "lufia-box"],
-  fontClass: "lufia-font1",
+  fontClass: "lufia-main-font",
   charWidthPairs: LUFIA_CHAR_PAIRS,
   autoParagraphBreak: false,
 };

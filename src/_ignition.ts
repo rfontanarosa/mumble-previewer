@@ -38,7 +38,7 @@ export const ignitionConfig: Config = {
   charLimit: 176,
   lineLimit: 3,
   boxClasses: ["snes-256x224", "ignition-box"],
-  fontClass: "ignition-font1",
+  fontClass: "ignition-main-font",
   charWidthPairs: IGNITION_CHAR_PAIRS_ITA,
   replacer: IGNITION_TEXT_REPLACER,
   autoParagraphBreak: false,

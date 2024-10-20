@@ -27,7 +27,7 @@ export const ffmqConfig: Config = {
   charLimit: 208,
   lineLimit: 3,
   boxClasses: ["snes-256x224", "ffmq-box"],
-  fontClass: "ffmq-font1",
+  fontClass: "ffmq-main-font",
   charWidthPairs: FFMQ_CHAR_PAIRS,
   replacer: FFMQ_TEXT_REPLACER,
   autoParagraphBreak: true,
