@@ -1,17 +1,39 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
+    <title>MUMBLE-PREVIEWER</title>
+    <meta charset="UTF-8" />
     <link rel="stylesheet" href="dist/css/styles.css">
     <script src="dist/bundle.js"></script>
   </head>
   <body>
+    <h1>MUMBLE-PREVIEWER</h1>
+    <div style="margin-bottom: 1rem;">Source: <a href="https://github.com/rfontanarosa/mumble-previewer" target="_blank">https://github.com/rfontanarosa/mumble-previewer/</a></div>
     <script>
-      const containerId = "preview-container";
-      const text = "<AUTO><WIN PX=004C PY=0028 SX=0F SY=06>\n<DECOR WT=00 PAD=08>\n<AUDIO 00000000>\nRoberto puppa!\nAndrea pure!\rOmbra puppa alla grande!<WAIT 001E>\n<NEXT>";
-      const config = "mmlegends";
+      var containerId = "preview-container";
+      var text = "This is a test!";
+      var config = "";
     </script>
+    <div style="margin-bottom: 1rem;">
+      <select onchange="config = this.value; MumblePreviewer.renderPreview(containerId, text, config);">
+        <option value="">-- Select a game --</option>
+        <option value="7thsaga">7th Saga, The (SNES)</option>
+        <option value="brainlord">Brain Lord (SNES)</option>
+        <option value="bof">Breath of Fire (SNES)</option>
+        <option value="ffmq">Final Fantasy: Mystic Quest (SNES)</option>
+        <option value="ignition">Ignition Factor, The (SNES)</option>
+        <option value="lufia">Lufia &amp; the Fortress of Doom (SNES)</option>
+        <option value="mmlegends">Mega Man Legends (PSX)</option>
+        <option value="neugier">Neugier: Umi to Kaze no Koudou (SNES)</option>
+        <option value="soe">Secret of Evermore (SNES)</option>
+        <option value="smrpg">Super Mario RPG: Legend of the Seven Stars (SNES)</option>
+        <option value="starocean">Star Ocean (SNES)</option>
+        <option value="spike">Twisted Tales of Spike McFang, The (SNES)</option>
+      </select>
+    </div>
+    <div style="margin-bottom: 1rem;">
+      <textarea onkeyup="text = this.value; MumblePreviewer.renderPreview(containerId, text, config);">This is a test!</textarea>
+    </div>
     <div id="preview-container"></div>
-    <script>
-      MumblePreviewer.renderPreview(containerId, text, config);
-    </script>
   </body>
 </html>
