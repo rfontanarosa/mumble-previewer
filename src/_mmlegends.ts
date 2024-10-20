@@ -35,6 +35,7 @@ const MMLEGENDS_TEXT_REPLACER = (text: string): string => {
 export const MMLEGENDS = {
   getConfigByText: (text: string): Partial<Config> => {
     const config = { relativePositionWindow: {} } as Partial<Config>;
+
     text.match(/<DECOR WT=.. PAD=..>/g)?.forEach((matchResult) => {
       console.log(matchResult.slice(10, 12), matchResult.slice(17, 19));
       const padding = parseInt(matchResult.slice(17, 19), 16);
@@ -42,14 +43,6 @@ export const MMLEGENDS = {
     });
 
     text.match(/<WIN PX=.... PY=.... SX=.. SY=..>/g)?.forEach((matchResult) => {
-      console.log(
-        matchResult.slice(8, 10),
-        matchResult.slice(10, 12),
-        matchResult.slice(16, 18),
-        matchResult.slice(18, 20),
-        matchResult.slice(24, 26),
-        matchResult.slice(30, 32)
-      );
       const px = parseInt(matchResult.slice(8, 12), 16);
       const py = parseInt(matchResult.slice(16, 20), 16); //
       const sx = parseInt(matchResult.slice(24, 26), 16); // size colonne da 12 px
@@ -70,8 +63,8 @@ export const MMLEGENDS = {
     return config;
   },
   config: {
-    charLimit: 0,
-    lineLimit: 0,
+    charLimit: 12 * 5,
+    lineLimit: 4,
     boxClasses: ["psx-ntsc-320x240", "mmlegends-box"],
     fontClass: "mmlegends-main-font",
     charWidthPairs: MMLEGENDS_CHAR_PAIRS,
