@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="dist/css/styles.css">
+    <script src="dist/bundle.js"></script>
+  </head>
+  <body>
+    <script>
+      const containerId = "preview-container";
+      const text = "<AUTO><WIN PX=004C PY=0028 SX=0F SY=06>\n<DECOR WT=00 PAD=08>\n<AUDIO 00000000>\nRoberto puppa!\nAndrea pure!\rOmbra puppa alla grande!<WAIT 001E>\n<NEXT>";
+      const config = "mmlegends";
+    </script>
+    <div id="preview-container"></div>
+    <script>
+      MumblePreviewer.renderPreview(containerId, text, config);
+    </script>
+  </body>
+</html>

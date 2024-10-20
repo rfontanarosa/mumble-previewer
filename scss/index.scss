@@ -1,0 +1,65 @@
+@import '_7thsaga';
+@import '_bof';
+@import '_brainlord';
+@import '_ffmq';
+@import '_ignition';
+@import '_lufia';
+@import '_mmlegends';
+@import '_neugier';
+@import '_smrpg';
+@import '_soe';
+@import '_spike';
+@import '_starocean';
+
+.preview-box {
+  &.snes-256x224 {
+    .screen {
+      width: 256px;
+      height: 224px;
+    }
+  }
+
+  &.psx-ntsc-320x240 {
+    .screen {
+      width: 320px;
+      height: 240px;
+    }
+  }
+
+  .screen {
+    position: relative;
+    image-rendering: pixelated;
+
+    .text-box {
+      .text-line {
+        .pad {
+          display: inline-block;
+          width: 1px;
+        }
+      }
+    }
+  }
+
+  .info-box {
+    border: 1px solid white;
+    background-color: white;
+    color: black;
+    font-size: 10px;
+    margin: 10px 0;
+    min-height: 5px;
+    text-align: left;
+
+    div {
+      margin: 5px;
+    }
+
+    .alert {
+      padding: 0px;
+      border: none;
+    }
+
+    .redtext {
+      color: #fa4444;
+    }
+  }
+}
