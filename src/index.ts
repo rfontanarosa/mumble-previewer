@@ -77,37 +77,38 @@ function renderHtml(
     relativePositionWindow,
   } = options;
   const previewContainer = document.getElementById(containerSelector);
+
+  if (!previewContainer) return;
+
   const dialogs = text.split("\r").filter((element) => element !== "");
 
-  let ppp = "";
-  if (relativePositionWindow) {
-    const { left, top, width, height, padding } = relativePositionWindow;
-    ppp = `margin-left: ${left}px; margin-top: ${top}px; width: ${width}px; height: ${height}px; padding: ${padding || 0}px`;
-  }
-
   dialogs.forEach((dialog, index) => {
-    const boxId = `box-${index}`;
-    const boxTemplate = `
-      <div class="preview-box ${boxClasses.join(" ")}" id="${boxId}">\
-        <div class="screen">\
-          <div class="text-box" style="background-color: #007; outline: 1px solid white; position: absolute; ${ppp}"></div>\
-        </div>\
-        <div class="info-box">\
-          <div class="counter1"></div>\
-          <div class="counter2"></div>\
-          <div class="counter3"></div>\
-          <div class="counter4"></div>\
-          <div class="alert"></div>\
-        </div>\
-      </div>
-    `;
-    previewContainer!.innerHTML += boxTemplate;
+    const boxElementId = `box-${index}`;
+
+    const boxElement = document.createElement("div");
+    boxElement.id = boxElementId;
+    boxElement.classList.add("preview-box", ...boxClasses);
+    const screenElement = document.createElement("div");
+    screenElement.className = "screen";
+    const textBoxElement = document.createElement("div");
+    textBoxElement.className = "text-box";
+    if (relativePositionWindow) {
+      const { left, top, width, height, padding } = relativePositionWindow;
+      textBoxElement.style.cssText = `margin-left: ${left}px; margin-top: ${top}px; width: ${width}px; height: ${height}px; padding: ${padding || 0}px`;
+    }
+    const infoBoxElement = document.createElement("div");
+    infoBoxElement.className = "info-box";
+
+    previewContainer.appendChild(boxElement);
+    boxElement.appendChild(screenElement);
+    screenElement.appendChild(textBoxElement);
+    boxElement.appendChild(infoBoxElement);
 
     let lineIndex = 0;
-    const lineBuffers = new Array(lineLimit).fill("");
-    const charCounters = new Array(lineLimit).fill(0);
-    const padCounters = new Array(lineLimit).fill(0);
-    const unsupportedChars = [];
+    const lineBuffers: string[] = new Array(lineLimit).fill("");
+    const charCounters: number[] = new Array(lineLimit).fill(0);
+    const padCounters: number[] = new Array(lineLimit).fill(0);
+    const unsupportedChars: string[] = [];
 
     for (let i = 0; i < dialog.length; i++) {
       const utf16char = dialog.charAt(i);
@@ -127,32 +128,27 @@ function renderHtml(
       }
     }
 
-    const lineCounters = charCounters.map(
-      (count, i) => `
-      <div class="${count > charLimit ? "redtext" : ""}">
-        Line ${i + 1}: ${count} pixel --- ${padCounters[i]} pixel --- ${charLimit - count} pixel --- ${[0, 1].includes(padCounters[i] - (charLimit - count)) ? "Y" : "N"}
-      </div>
-    `
-    );
+    lineBuffers.forEach((lineBuffer) => {
+      const lineElement = document.createElement("div");
+      lineElement.innerHTML = lineBuffer;
+      lineElement.className = "text-line";
+      textBoxElement.appendChild(lineElement);
+    });
 
-    const boxElement = previewContainer?.querySelector(
-      `#${containerSelector} #${boxId}`
-    );
-    if (boxElement) {
-      lineBuffers.forEach((lineBuffer) => {
-        const lineElement = document.createElement("div");
-        lineElement.innerHTML = lineBuffer;
-        lineElement.className = "text-line";
-        boxElement.querySelector(".text-box")?.appendChild(lineElement);
-      });
-      boxElement.querySelector(".counter1")!.innerHTML = lineCounters[0];
-      boxElement.querySelector(".counter2")!.innerHTML = lineCounters[1];
-      boxElement.querySelector(".counter3")!.innerHTML = lineCounters[2];
-      boxElement.querySelector(".counter4")!.innerHTML = lineCounters[3];
-      boxElement.querySelector(".alert")!.innerHTML =
-        unsupportedChars.length > 0
-          ? `<span class"redtext">Unsupported character(s): ${unsupportedChars.join()}</span>`
-          : "";
+    charCounters.forEach((count, i) => {
+      const counterElement = document.createElement("div");
+      counterElement.innerHTML = `
+        <div class="${count > charLimit ? "redtext" : ""}">\
+          Line ${i + 1}: ${count} pixel --- ${padCounters[i]} pixel --- ${charLimit - count} pixel --- ${[0, 1].includes(padCounters[i] - (charLimit - count)) ? "Y" : "N"}\
+        </div>
+      `;
+      infoBoxElement.appendChild(counterElement);
+    });
+
+    if (unsupportedChars.length > 0) {
+      const unsupportedCharsElement = document.createElement("div");
+      unsupportedCharsElement.innerHTML = `<span class"redtext">Unsupported character(s): ${unsupportedChars.join()}</span>`;
+      infoBoxElement.appendChild(unsupportedCharsElement);
     }
   });
 }
