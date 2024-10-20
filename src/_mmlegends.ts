@@ -14,7 +14,7 @@ const MMLEGENDS_CHAR_PAIRS: [string, number][] = [
   ["il", 3],
 ];
 
-export const MMLEGENDS_REGEXES: [string | RegExp, string][] = [
+const MMLEGENDS_REGEXES: [string | RegExp, string][] = [
   [/<AUTO>/g, ""],
   [/<AUDIO ........>\n/g, ""],
   [/<WIN PX=.... PY=.... SX=.. SY=..>\n/g, ""],

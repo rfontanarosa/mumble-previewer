@@ -11,7 +11,7 @@ const SD3_CHAR_PAIRS: [string, number][] = [
   ["*MOQTWXYZmwx0", 9],
 ];
 
-export const SD3_REGEXES: [string | RegExp, string][] = [
+const SD3_REGEXES: [string | RegExp, string][] = [
   [/<CHAR 0>/g, "CHAR00"],
   [/<CHAR 1>/g, "CHAR01"],
   [/<CHAR 2>/g, "CHAR02"],
