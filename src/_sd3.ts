@@ -56,8 +56,8 @@ const SD3_REGEXES: [string | RegExp, string][] = [
 export const sd3ConfigAlt: Config = {
   charLimit: 239,
   lineLimit: 3,
-  boxClasses: ["sd3dialogbox", "window"],
-  fontClass: "sd3-font1",
+  boxClasses: ["sd3-bo", "window"],
+  fontClass: "sd3-main-font",
   charWidthPairs: SD3_CHAR_PAIRS,
   replacer: (text: string) => {
     text = text.replace(/<ALT><..>/g, "");
@@ -72,8 +72,8 @@ export const sd3ConfigAlt: Config = {
 export const sd3ConfigLine: Config = {
   charLimit: 239,
   lineLimit: 1,
-  boxClasses: ["sd3dialogbox", "line"],
-  fontClass: "sd3-font1",
+  boxClasses: ["sd3-box", "line"],
+  fontClass: "sd3-main-font",
   charWidthPairs: SD3_CHAR_PAIRS,
   replacer: (text: string) => {
     text = text.replace(/<END>\n/g, "<END>");
@@ -86,8 +86,8 @@ export const sd3ConfigLine: Config = {
 export const sd3Config: Config = {
   charLimit: 239,
   lineLimit: 3,
-  boxClasses: ["sd3dialogbox", "window"],
-  fontClass: "sd3-font1",
+  boxClasses: ["sd3-box", "window"],
+  fontClass: "sd3-main-font",
   charWidthPairs: SD3_CHAR_PAIRS,
   replacer: (text: string) => {
     text = text.replace(/<PAGE>\n/g, "<PAGE>");

@@ -1,0 +1,180 @@
+.sd3-box {
+  &.line {
+    height: 54px !important;
+
+    .screen {
+      background: url(../images/_sd3/line.png) no-repeat;
+      height: 54px;
+      margin-top: 15px;
+      width: 254px;
+    }
+  }
+
+  &.window {
+    height: 54px !important;
+
+    .screen {
+      background: url(../images/_sd3/window.png) no-repeat;
+    }
+  }
+
+  .screen {
+    .text-box {
+      padding-left: 9px;
+      padding-top: 4px;
+    }
+  }
+}
+
+.sd3-main-font {
+  min-height: 16px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  width: 16px;
+  background-image: url(../images/_sd3/SD3_Font_8x16_FIXED_White.png);
+
+  &.char-32   { width: 6px;  background-position:   -0px  -0px;  } /*   */
+  &.char-33   { width: 5px;  background-position:  -16px  -0px;  } /* ! */
+  &.char-34   { width: 4px;  background-position:  -32px  -0px;  } /* " */
+  &.char-35   { width: 8px;  background-position:  -48px  -0px;  } /* # */
+  &.char-36   { width: 8px;  background-position:  -64px  -0px;  } /* $ */
+  &.char-37   { width: 8px;  background-position:  -80px  -0px;  } /* % */
+  &.char-38   { width: 8px;  background-position:  -96px  -0px;  } /* & */
+  &.char-39   { width: 4px;  background-position: -112px  -0px;  } /* ' */
+
+  &.char-40   { width: 5px;  background-position:   -0px -16px;  } /* ( */
+  &.char-41   { width: 5px;  background-position:  -16px -16px;  } /* ) */
+  &.char-42   { width: 9px;  background-position:  -32px -16px;  } /* * */
+  &.char-43   { width: 7px;  background-position:  -48px -16px;  } /* + */
+  &.char-44   { width: 4px;  background-position:  -64px -16px;  } /* , */
+  &.char-45   { width: 8px;  background-position:  -80px -16px;  } /* - */
+  &.char-46   { width: 3px;  background-position:  -96px -16px;  } /* . */
+  &.char-47   { width: 8px;  background-position: -112px -16px;  } /* / */
+
+  &.char-48   { width: 9px;  background-position:   -0px -32px;  } /* 0 */
+  &.char-49   { width: 7px;  background-position:  -16px -32px;  } /* 1 */
+  &.char-50   { width: 8px;  background-position:  -32px -32px;  } /* 2 */
+  &.char-51   { width: 8px;  background-position:  -48px -32px;  } /* 3 */
+  &.char-52   { width: 8px;  background-position:  -64px -32px;  } /* 4 */
+  &.char-53   { width: 8px;  background-position:  -80px -32px;  } /* 5 */
+  &.char-54   { width: 8px;  background-position:  -96px -32px;  } /* 6 */
+  &.char-55   { width: 8px;  background-position: -112px -32px;  } /* 7 */
+
+  &.char-56   { width: 8px;  background-position:   -0px -48px;  } /* 8 */
+  &.char-57   { width: 8px;  background-position:  -16px -48px;  } /* 9 */
+  &.char-58   { width: 3px;  background-position:  -32px -48px;  } /* : */
+  /* fatto fin qui*/
+  &.char-59   { width: 3px;  background-position:  -48px -48px;  } /* ; */
+  &.char-60   { width: 5px;  background-position:  -64px -48px;  } /* < */
+  &.char-61   { width: 7px;  background-position:  -80px -48px;  } /* = */
+  &.char-62   { width: 5px;  background-position:  -96px -48px;  } /* > */
+  &.char-63   { width: 7px;  background-position: -112px -48px;  } /* ? */
+
+  &.char-64   { width: 9px;  background-position:   -0px -64px;  } /* @ */
+  &.char-65   { width: 7px;  background-position:  -16px -64px;  } /* A */
+  &.char-66   { width: 7px;  background-position:  -32px -64px;  } /* B */
+  &.char-67   { width: 7px;  background-position:  -48px -64px;  } /* C */
+  &.char-68   { width: 7px;  background-position:  -64px -64px;  } /* D */
+  &.char-69   { width: 6px;  background-position:  -80px -64px;  } /* E */
+  &.char-70   { width: 6px;  background-position:  -96px -64px;  } /* F */
+  &.char-71   { width: 7px;  background-position: -112px -64px;  } /* G */
+
+  &.char-72   { width: 7px;  background-position:   -0px -80px;  } /* H */
+  &.char-73   { width: 5px;  background-position:  -16px -80px;  } /* I */
+  &.char-74   { width: 7px;  background-position:  -32px -80px;  } /* J */
+  &.char-75   { width: 8px;  background-position:  -48px -80px;  } /* K */
+  &.char-76   { width: 6px;  background-position:  -64px -80px;  } /* L */
+  &.char-77   { width: 9px;  background-position:  -80px -80px;  } /* M */
+  &.char-78   { width: 8px;  background-position:  -96px -80px;  } /* N */
+  &.char-79   { width: 7px;  background-position: -112px -80px;  } /* O */
+
+  &.char-80   { width: 7px;  background-position:   -0px -96px;  } /* P */
+  &.char-81   { width: 7px;  background-position:  -16px -96px;  } /* Q */
+  &.char-82   { width: 7px;  background-position:  -32px -96px;  } /* R */
+  &.char-83   { width: 6px;  background-position:  -48px -96px;  } /* S */
+  &.char-84   { width: 7px;  background-position:  -64px -96px;  } /* T */
+  &.char-85   { width: 7px;  background-position:  -80px -96px;  } /* U */
+  &.char-86   { width: 7px;  background-position:  -96px -96px;  } /* V */
+  &.char-87   { width: 11px; background-position: -112px -96px;  } /* W */
+
+  &.char-88   { width: 7px;  background-position:   -0px -112px; } /* X */
+  &.char-89   { width: 7px;  background-position:  -16px -112px; } /* Y */
+  &.char-90   { width: 7px;  background-position:  -32px -112px; } /* Z */
+  &.char-91   { width: 4px;  background-position:  -48px -112px; } /* [ */
+  &.char-92   { width: 6px;  background-position:  -64px -112px; } /* \ */
+  &.char-93   { width: 4px;  background-position:  -80px -112px; } /* ] */
+  /* */
+  &.char-8230 { width: 9px;  background-position: -112px -112px; } /* … */
+
+  /* */
+  &.char-97   { width: 7px;  background-position:  -16px -128px; } /* a */
+  &.char-98   { width: 7px;  background-position:  -32px -128px; } /* b */
+  &.char-99   { width: 6px;  background-position:  -48px -128px; } /* c */
+  &.char-100  { width: 7px;  background-position:  -64px -128px; } /* d */
+  &.char-101  { width: 7px;  background-position:  -80px -128px; } /* e */
+  &.char-102  { width: 6px;  background-position:  -96px -128px; } /* f */
+  &.char-103  { width: 7px;  background-position: -112px -128px; } /* g */
+
+  &.char-104  { width: 7px;  background-position:   -0px -144px; } /* h */
+  &.char-105  { width: 3px;  background-position:  -16px -144px; } /* i */
+  &.char-106  { width: 6px;  background-position:  -32px -144px; } /* j */
+  &.char-107  { width: 7px;  background-position:  -48px -144px; } /* k */
+  &.char-108  { width: 3px;  background-position:  -64px -144px; } /* l */
+  &.char-109  { width: 11px; background-position:  -80px -144px; } /* m */
+  &.char-110  { width: 7px;  background-position:  -96px -144px; } /* n */
+  &.char-111  { width: 7px;  background-position: -112px -144px; } /* o */
+
+  &.char-112  { width: 7px;  background-position:   -0px -160px; } /* p */
+  &.char-113  { width: 7px;  background-position:  -16px -160px; } /* q */
+  &.char-114  { width: 6px;  background-position:  -32px -160px; } /* r */
+  &.char-115  { width: 6px;  background-position:  -48px -160px; } /* s */
+  &.char-116  { width: 5px;  background-position:  -64px -160px; } /* t */
+  &.char-117  { width: 7px;  background-position:  -80px -160px; } /* u */
+  &.char-118  { width: 7px;  background-position:  -96px -160px; } /* v */
+  &.char-119  { width: 11px; background-position: -112px -160px; } /* w */
+
+  &.char-120  { width: 7px;  background-position:   -0px -176px; } /* x */
+  &.char-121  { width: 7px;  background-position:  -16px -176px; } /* y */
+  &.char-122  { width: 7px;  background-position:  -32px -176px; } /* z */
+  &.char-123  { width: 7px;  background-position:  -48px -176px; } /* { */
+  &.char-124  { width: 2px;  background-position:  -64px -176px; } /* | */
+  &.char-125  { width: 2px;  background-position:  -80px -176px; } /* } */
+  &.char-126  { width: 2px;  background-position:  -96px -176px; } /* ~ */
+  /* */
+
+  &.char-224  { width: 7px;  background-position:   -0px -192px; } /* à */
+  &.char-232  { width: 7px;  background-position:  -16px -192px; } /* è */
+  &.char-233  { width: 7px;  background-position:  -32px -192px; } /* é */
+  &.char-236  { width: 4px;  background-position:  -48px -192px; } /* ì */
+  &.char-242  { width: 7px;  background-position:  -64px -192px; } /* ò */
+  &.char-249  { width: 7px;  background-position:  -80px -192px; } /* ù */
+  /* */
+  /* */
+
+  &.char-192  { width: 7px;  background-position:   -0px -208px; } /* À */
+  &.char-200  { width: 6px;  background-position:  -16px -208px; } /* È */
+  &.char-201  { width: 6px;  background-position:  -32px -208px; } /* É */
+  &.char-204  { width: 5px;  background-position:  -48px -208px; } /* Ì */
+  &.char-210  { width: 7px;  background-position:  -64px -208px; } /* Ò */
+  &.char-217  { width: 7px;  background-position:  -80px -208px; } /* Ù */
+  /* */
+  /* */
+
+  /* */
+  /* */
+  /* */
+  /* */
+  /* */
+  /* */
+  /* */
+  /* */
+
+  /* */
+  /* */
+  /* */
+  /* */
+  /* */
+  /* */
+  /* */
+  /* */
+}
