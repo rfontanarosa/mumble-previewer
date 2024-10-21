@@ -48,7 +48,7 @@ export const staroceanConfig: Config = {
   charLimit: 208,
   lineLimit: 4,
   boxClasses: ["snes-256x224", "starocean-box"],
-  fontClass: "starocean-font1",
+  fontClass: "starocean-main-font",
   charWidthPairs: STAROCEAN_CHAR_PAIRS,
   replacer: STAROCEAN_TEXT_REPLACER,
   autoParagraphBreak: true,

@@ -82,7 +82,7 @@ export const bofConfig: Config = {
   charLimit: 222,
   lineLimit: 4,
   boxClasses: ["snes-256x224", "bof-box"],
-  fontClass: "bof-font",
+  fontClass: "bof-main-font",
   charWidthPairs: BOF_CHAR_PAIRS,
   replacer: BOF_TEXT_REPLACER,
   autoParagraphBreak: false,

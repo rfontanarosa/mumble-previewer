@@ -29,7 +29,7 @@ export const neugierConfig: Config = {
   charLimit: 240,
   lineLimit: 4,
   boxClasses: ["snes-256x224", "neugier-box"],
-  fontClass: "neugier-font1",
+  fontClass: "neugier-main-font",
   charWidthPairs: NEUGIER_CHAR_PAIRS,
   replacer: NEUGIER_TEXT_REPLACER,
   autoParagraphBreak: false,

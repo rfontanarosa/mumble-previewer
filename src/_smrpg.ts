@@ -39,7 +39,7 @@ export const smrpgConfig: Config = {
   charLimit: 222,
   lineLimit: 3,
   boxClasses: ["snes-256x224", "smrpg-box"],
-  fontClass: "smrpg-font1",
+  fontClass: "smrpg-main-font",
   charWidthPairs: SMRPG_CHAR_PAIRS,
   replacer: SMRPG_TEXT_REPLACER,
   autoParagraphBreak: false,

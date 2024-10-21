@@ -35,7 +35,7 @@ export const spikeConfig: Config = {
   charLimit: 128,
   lineLimit: 2,
   boxClasses: ["snes-256x224", "spike-box"],
-  fontClass: "spike-font1",
+  fontClass: "spike-main-font",
   charWidthPairs: SPIKE_CHAR_PAIRS,
   replacer: SPIKE_TEXT_REPLACER,
   autoParagraphBreak: false,
