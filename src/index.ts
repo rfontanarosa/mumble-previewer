@@ -116,7 +116,7 @@ function renderHtml(
       if (charWidthMap[utf16char] > 0) {
         charCounters[lineIndex] += charWidthMap[utf16char];
         lineBuffers[lineIndex] +=
-          `<div class="${fontClass} ${fontClass}-${utf16int} char-${utf16int}"></div>`;
+          `<div class="${fontClass} char char-${utf16int}"></div>`;
       } else if (utf16char === "\t") {
         charCounters[lineIndex] += 1;
         padCounters[lineIndex] += 1;

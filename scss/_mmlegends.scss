@@ -13,12 +13,10 @@
 
 .mmlegends-main-font {
   min-height: 12px;
-  display: inline-block;
   margin-right: 0px;
   margin-bottom: 0px;
   width: 12px;
   background-image: url(../images/_mmlegends/mml_kaifont.png);
-  image-rendering: pixelated;
 
   &.char-48   { width: 12px; background-position:    -0px -0px; } /* 0 */
   &.char-49   { width: 12px; background-position:   -12px -0px; } /* 1 */

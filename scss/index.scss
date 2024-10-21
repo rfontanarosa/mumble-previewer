@@ -34,6 +34,11 @@
       .text-line {
         line-height: 0px;
 
+        .char {
+          display: inline-block;
+          image-rendering: pixelated;
+        }
+
         .pad {
           display: inline-block;
           width: 1px;
