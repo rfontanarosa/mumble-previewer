@@ -52,4 +52,5 @@ export const staroceanConfig: Config = {
   charWidthPairs: STAROCEAN_CHAR_PAIRS,
   replacer: STAROCEAN_TEXT_REPLACER,
   autoLineBreak: true,
+  autoBoxOverflow: true,
 };

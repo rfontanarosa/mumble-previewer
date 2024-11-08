@@ -6,7 +6,8 @@ function processText(
   charWidthMap: { [key: string]: number },
   options: Config
 ): string {
-  const { charLimit, lineLimit, replacer, autoParagraphBreak } = options;
+  const { charLimit, lineLimit, replacer, autoLineBreak, autoBoxOverflow } =
+    options;
 
   if (replacer) text = replacer(text);
 
@@ -45,14 +46,22 @@ function processText(
         const charWidth = charWidthMap[utf16char] || 0;
         charCounter += charWidth;
         wordCounter += charWidth;
-        if (autoParagraphBreak && charCounter > charLimit) {
+        if (autoLineBreak && charCounter > charLimit) {
           if (spaceIndex !== -1) {
             if (lineCounter >= lineLimit) {
               processedText = replaceAt(processedText, spaceIndex, "\r");
               lineCounter = 1;
             } else {
-              processedText = replaceAt(processedText, spaceIndex, "\n");
-              lineCounter += 1;
+              if (autoBoxOverflow && lineCounter > lineLimit) {
+                processedText = replaceAt(processedText, spaceIndex, "\r");
+                spaceIndex = -1;
+                charCounter = 0;
+                wordCounter = 0;
+                lineCounter = 1;
+              } else {
+                processedText = replaceAt(processedText, spaceIndex, "\n");
+                lineCounter += 1;
+              }
             }
           }
           spaceIndex = -1;
