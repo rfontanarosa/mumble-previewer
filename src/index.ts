@@ -30,7 +30,7 @@ function processText(
         spaceIndex = -1;
         charCounter = 0;
         wordCounter = 0;
-        if (lineCounter > lineLimit) {
+        if (lineCounter >= lineLimit) {
           processedText = processedText.slice(0, -1) + "\r";
           lineCounter = 1;
         } else {
