@@ -26,7 +26,7 @@ export interface Config {
     height: number;
     padding?: number;
   };
-  autoParagraphBreak: boolean;
+  autoLineBreak?: boolean;
 }
 
 export function getConfig(id: string, text: string): Config {
