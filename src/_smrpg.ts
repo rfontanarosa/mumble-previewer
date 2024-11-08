@@ -42,5 +42,4 @@ export const smrpgConfig: Config = {
   fontClass: "smrpg-main-font",
   charWidthPairs: SMRPG_CHAR_PAIRS,
   replacer: SMRPG_TEXT_REPLACER,
-  autoParagraphBreak: false,
 };

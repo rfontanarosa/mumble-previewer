@@ -41,5 +41,4 @@ export const ignitionConfig: Config = {
   fontClass: "ignition-main-font",
   charWidthPairs: IGNITION_CHAR_PAIRS_ITA,
   replacer: IGNITION_TEXT_REPLACER,
-  autoParagraphBreak: false,
 };

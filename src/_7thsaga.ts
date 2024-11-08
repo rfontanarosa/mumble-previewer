@@ -55,5 +55,4 @@ export const seventhsagaConfig: Config = {
   fontClass: "seventhsaga-font1",
   charWidthPairs: SEVENTHSAGA_CHAR_PAIRS,
   replacer: SEVENTHSAGA_TEXT_REPLACER,
-  autoParagraphBreak: false,
 };

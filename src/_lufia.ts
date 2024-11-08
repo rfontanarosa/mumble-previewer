@@ -15,5 +15,4 @@ export const lufiaConfig: Config = {
   boxClasses: ["snes-256x224", "lufia-box"],
   fontClass: "lufia-main-font",
   charWidthPairs: LUFIA_CHAR_PAIRS,
-  autoParagraphBreak: false,
 };

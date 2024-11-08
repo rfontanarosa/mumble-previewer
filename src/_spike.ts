@@ -38,5 +38,4 @@ export const spikeConfig: Config = {
   fontClass: "spike-main-font",
   charWidthPairs: SPIKE_CHAR_PAIRS,
   replacer: SPIKE_TEXT_REPLACER,
-  autoParagraphBreak: false,
 };

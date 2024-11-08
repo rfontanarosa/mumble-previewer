@@ -32,5 +32,4 @@ export const neugierConfig: Config = {
   fontClass: "neugier-main-font",
   charWidthPairs: NEUGIER_CHAR_PAIRS,
   replacer: NEUGIER_TEXT_REPLACER,
-  autoParagraphBreak: false,
 };

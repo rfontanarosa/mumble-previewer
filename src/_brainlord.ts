@@ -49,8 +49,7 @@ export const brainlordConfig: Config = {
   charLimit: 222,
   lineLimit: 4,
   boxClasses: ["snes-256x224", "brainlord-box"],
-  fontClass: "brainlord-font1",
+  fontClass: "brainlord-main-font",
   charWidthPairs: BRAINLORD_CHAR_PAIRS,
   replacer: BRAINLORD_TEXT_REPLACER,
-  autoParagraphBreak: false,
 };

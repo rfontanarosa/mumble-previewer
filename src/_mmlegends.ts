@@ -69,6 +69,5 @@ export const MMLEGENDS = {
     fontClass: "mmlegends-main-font",
     charWidthPairs: MMLEGENDS_CHAR_PAIRS,
     replacer: MMLEGENDS_TEXT_REPLACER,
-    autoParagraphBreak: false,
   } as Config,
 };

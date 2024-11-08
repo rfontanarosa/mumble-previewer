@@ -66,7 +66,6 @@ export const sd3ConfigAlt: Config = {
     text = replaceAll(text, SD3_REGEXES);
     return text;
   },
-  autoParagraphBreak: false,
 };
 
 export const sd3ConfigLine: Config = {
@@ -80,7 +79,6 @@ export const sd3ConfigLine: Config = {
     text = replaceAll(text, SD3_REGEXES);
     return text;
   },
-  autoParagraphBreak: false,
 };
 
 export const sd3Config: Config = {
@@ -96,5 +94,4 @@ export const sd3Config: Config = {
     text = replaceAll(text, SD3_REGEXES);
     return text;
   },
-  autoParagraphBreak: false,
 };

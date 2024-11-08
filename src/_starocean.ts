@@ -51,5 +51,5 @@ export const staroceanConfig: Config = {
   fontClass: "starocean-main-font",
   charWidthPairs: STAROCEAN_CHAR_PAIRS,
   replacer: STAROCEAN_TEXT_REPLACER,
-  autoParagraphBreak: true,
+  autoLineBreak: true,
 };

@@ -46,5 +46,5 @@ export const soeConfig: Config = {
   fontClass: "soe-main-font",
   charWidthPairs: SOE_CHAR_PAIRS,
   replacer: SOE_TEXT_REPLACER,
-  autoParagraphBreak: true,
+  autoLineBreak: true,
 };

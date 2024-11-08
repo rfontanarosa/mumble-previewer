@@ -85,5 +85,4 @@ export const bofConfig: Config = {
   fontClass: "bof-main-font",
   charWidthPairs: BOF_CHAR_PAIRS,
   replacer: BOF_TEXT_REPLACER,
-  autoParagraphBreak: false,
 };
