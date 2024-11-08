@@ -1,16 +1,16 @@
-@import '_7thsaga';
-@import '_bof';
-@import '_brainlord';
-@import '_ffmq';
-@import '_ignition';
-@import '_lufia';
-@import '_mmlegends';
-@import '_neugier';
-@import '_sd3';
-@import '_smrpg';
-@import '_soe';
-@import '_spike';
-@import '_starocean';
+@use '_7thsaga' as *;
+@use '_bof' as *;
+@use '_brainlord' as *;
+@use '_ffmq' as *;
+@use '_ignition' as *;
+@use '_lufia' as *;
+@use '_mmlegends' as *;
+@use '_neugier' as *;
+@use '_sd3' as *;
+@use '_smrpg' as *;
+@use '_soe' as *;
+@use '_spike' as *;
+@use '_starocean' as *;
 
 .preview-box {
   &.snes-256x224 {
