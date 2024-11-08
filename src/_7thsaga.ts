@@ -52,7 +52,7 @@ export const seventhsagaConfig: Config = {
   charLimit: 222,
   lineLimit: 4,
   boxClasses: ["snes-256x224", "seventhsaga-box"],
-  fontClass: "seventhsaga-font1",
+  fontClass: "seventhsaga-main-font",
   charWidthPairs: SEVENTHSAGA_CHAR_PAIRS,
   replacer: SEVENTHSAGA_TEXT_REPLACER,
 };
