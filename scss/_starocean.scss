@@ -102,12 +102,12 @@
   &.char-236  { width: 4px; background-position:  -16px -144px; } /* ì */
   &.char-242  { width: 7px; background-position:  -32px -144px; } /* ò */
   &.char-249  { width: 7px; background-position:  -48px -144px; } /* ù */
-  /*  */
-  &.char-32   { width: calc(4px + 1px); background-position:  -80px -144px; } /*   */
+  &.char-32   { width: calc(4px + 1px); background-position:  -64px -144px; } /*   */
+  &.char-10799{ width: 0px; background-position:  -80px -144px; } /* ⨯ */
   &.char-39   { width: 4px; background-position:  -96px -144px; } /* ' */
   &.char-33   { width: 4px; background-position: -112px -144px; } /* ! */
 
-  &.char-191  { width: 7px; background-position:   -0px -160px; } /* ¿ */
+  &.char-176  { width: 7px; background-position:   -0px -160px; } /* ° */
   &.char-63   { width: 7px; background-position:  -16px -160px; } /* ? */
   &.char-44   { width: 3px; background-position:  -32px -160px; } /* , */
   &.char-46   { width: 3px; background-position:  -48px -160px; } /* . */
@@ -135,5 +135,10 @@
   &.char-9734 { width:11px; background-position: -112px -192px; } /* ☆ */
 
   &.char-178  { width: 5px; background-position:   -0px -208px; } /* ² */
-  &.char-9765 { width: 0px; background-position:  -16px -208px; } /* ☥ */
+  &.char-2640 { width: 0px; background-position:  -16px -208px; } /* ♀ */
+  &.char-2642 { width: 0px; background-position:  -32px -208px; } /* ♂ */
+
+  &.spanish {
+    &.char-191  { width: 7px; background-position:   -0px -160px; } /* ¿ */
+  }
 }
