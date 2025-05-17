@@ -1,7 +1,7 @@
 import { seventhsagaConfig } from "./_7thsaga";
 import { brainlordConfig } from "./_brainlord";
 import { ffmqConfig } from "./_ffmq";
-import { gaiaConfig } from "./_gaia";
+import { gaiaItConfig } from "./_gaia";
 import { ignitionConfig } from "./_ignition";
 import { lufiaConfig } from "./_lufia";
 import { MMLEGENDS } from "./_mmlegends";
@@ -42,7 +42,7 @@ export function getConfig(id: string, text: string): Config {
     case "ffmq":
       return ffmqConfig;
     case "gaia":
-      return gaiaConfig;
+      return gaiaItConfig;
     case "ignition":
       return ignitionConfig;
     case "lufia":

@@ -10,6 +10,11 @@ const GAIA_CHAR_PAIRS: [string, number][] = [
   ["pqrstuvwxyz ", 8],
 ];
 
+const GAIA_CHAR_PAIRS_IT: [string, number][] = [
+  ["ÀÈÉÌÒÙàèéìòù", 8],
+  ...GAIA_CHAR_PAIRS
+];
+
 const GAIA_REGEXES: [string | RegExp, string][] = [
   [/\[END.]/g, ""],
   [/\[CLEAR]/g, ""],
@@ -45,4 +50,10 @@ export const gaiaConfig: Config = {
   fontClass: "gaia-main-font",
   charWidthPairs: GAIA_CHAR_PAIRS,
   replacer: GAIA_TEXT_REPLACER,
+};
+
+export const gaiaItConfig: Config = {
+  ...gaiaConfig,
+  fontClass: "gaia-main-font italian",
+  charWidthPairs: GAIA_CHAR_PAIRS_IT,
 };
