@@ -100,4 +100,21 @@
   &.char-122  { background-position: -80px  -80px;  } /* z */
   /**/
   &.char-32   { background-position: -96px  -80px;  } /*   */
+
+  &.italian {
+    background-image: url(../images/_gaia/1146A8_font_ita.png);
+
+    &.char-192  { background-position:  -0px   -0px;  } /* À */
+    &.char-200  { background-position:  -8px   -0px;  } /* È */
+    &.char-201  { background-position: -16px   -0px;  } /* É */
+    &.char-204  { background-position: -24px   -0px;  } /* Ì */
+    &.char-210  { background-position: -32px   -0px;  } /* Ò */
+    &.char-217  { background-position: -40px   -0px;  } /* Ù */
+    &.char-224  { background-position: -48px   -0px;  } /* à */
+    &.char-232  { background-position: -56px   -0px;  } /* è */
+    &.char-233  { background-position: -64px   -0px;  } /* é */
+    &.char-236  { background-position: -72px   -0px;  } /* ì */
+    &.char-242  { background-position: -80px   -0px;  } /* ò */
+    &.char-249  { background-position: -88px   -0px;  } /* ù */
+  }
 }

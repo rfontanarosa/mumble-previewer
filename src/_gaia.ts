@@ -44,7 +44,7 @@ const GAIA_TEXT_REPLACER = (text: string): string => {
 };
 
 export const gaiaConfig: Config = {
-  charLimit: 240,
+  charLimit: 208,
   lineLimit: 4,
   boxClasses: ["snes-256x224", "gaia-box"],
   fontClass: "gaia-main-font",
