@@ -18,7 +18,6 @@ const GAIA_CHAR_PAIRS_IT: [string, number][] = [
 const GAIA_REGEXES: [string | RegExp, string][] = [
   [/\[END.]/g, ""],
   [/\[CLEAR]/g, ""],
-  [/\[NEXT]\n/g, ""],
   [/\[INPUT]/g, ""],
   [/\[WIN]\n/g, ""],
   [/\[ESCAPE]/g, ""],
@@ -40,6 +39,7 @@ const GAIA_REGEXES: [string | RegExp, string][] = [
 const GAIA_TEXT_REPLACER = (text: string): string => {
   text = replaceAll(text, GAIA_REGEXES);
   text = text.replaceAll(/\[WAIT]\n/g, "\r");
+  text = text.replaceAll(/\[NEXT]\n/g, "\r");
   return text;
 };
 
