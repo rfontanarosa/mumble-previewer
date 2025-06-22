@@ -99,6 +99,9 @@ function renderHtml(
     boxElement.classList.add("preview-box", ...boxClasses);
     const screenElement = document.createElement("div");
     screenElement.className = "screen";
+    screenElement.addEventListener("click", () => {
+      infoBoxElement.style.display = infoBoxElement.style.display === 'none' ? '' : 'none';
+    });
     const textBoxElement = document.createElement("div");
     textBoxElement.className = "text-box";
     if (relativePositionWindow) {
@@ -107,11 +110,16 @@ function renderHtml(
     }
     const infoBoxElement = document.createElement("div");
     infoBoxElement.className = "info-box";
+    infoBoxElement.style.display = "none";
+    const warningBoxElement = document.createElement("div");
+    warningBoxElement.className = "warning-box";
+    warningBoxElement.style.display = "none";
 
+    screenElement.appendChild(textBoxElement);
     previewContainer.appendChild(boxElement);
     boxElement.appendChild(screenElement);
-    screenElement.appendChild(textBoxElement);
     boxElement.appendChild(infoBoxElement);
+    boxElement.appendChild(warningBoxElement);
 
     let lineIndex = 0;
     const lineBuffers: string[] = new Array(lineLimit).fill("");
@@ -144,21 +152,43 @@ function renderHtml(
       textBoxElement.appendChild(lineElement);
     });
 
+    const table = document.createElement("table");
+    table.innerHTML = `
+      <thead>\
+        <th style="width: 12%;">#</th>\
+        <th style="width: 22%;">Used</th>\
+        <th style="width: 22%;">Available</th>\
+        <th style="width: 22%;">Padding</th>\
+        <th style="width: 22%;">Centered</th>\
+      </thead>
+    `;
+
+    const tableBody = document.createElement("tbody");
+
     charCounters.forEach((count, i) => {
-      const counterElement = document.createElement("div");
-      counterElement.innerHTML = `
-        <div class="${count > charLimit ? "redtext" : ""}">\
-          Line ${i + 1}: ${count} pixel --- ${padCounters[i]} pixel --- ${charLimit - count} pixel --- ${[0, 1].includes(padCounters[i] - (charLimit - count)) ? "Y" : "N"}\
-        </div>
+      const textExceedsCharacterLimit = count > charLimit;
+      tableBody.innerHTML += `
+        <tr>\
+          <td>${i + 1}</td>\
+          <td>${count}px</td>\
+          <td class="${textExceedsCharacterLimit ? "text-danger" : ""}">${charLimit - count}px</td>\
+          <td>${padCounters[i]}px</td>\
+          <td>${[0, 1].includes(padCounters[i] - (charLimit - count)) ? "Y" : "N"}</td>\
+        </tr>
       `;
-      infoBoxElement.appendChild(counterElement);
+
+      if (textExceedsCharacterLimit) {
+        warningBoxElement.innerHTML += `<div class="text-danger">Line ${i + 1} exceeds character limit</div>`;
+      }
     });
+    table.appendChild(tableBody);
+    infoBoxElement.appendChild(table);
 
     if (unsupportedChars.length > 0) {
-      const unsupportedCharsElement = document.createElement("div");
-      unsupportedCharsElement.innerHTML = `<span class"redtext">Unsupported character(s): ${unsupportedChars.join()}</span>`;
-      infoBoxElement.appendChild(unsupportedCharsElement);
+      warningBoxElement.innerHTML += `<div class="text-danger">Unsupported character(s): ${unsupportedChars.join()}</div>`;
     }
+
+    warningBoxElement.style.display = warningBoxElement.hasChildNodes() ? '' : 'none';
   });
 }
 
