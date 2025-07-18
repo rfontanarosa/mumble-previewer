@@ -12,6 +12,7 @@
 @use '_soe' as *;
 @use '_spike' as *;
 @use '_starocean' as *;
+@use '_valkyrie' as *;
 
 .preview-box {
   &.snes-256x224 {
@@ -28,6 +29,16 @@
     .screen {
       width: 320px;
       height: 240px;
+    }
+    .info-box, .warning-box {
+      width: 320px;
+    }
+  }
+
+  &.psx-ntsc-320x224 {
+    .screen {
+      width: 320px;
+      height: 224px;
     }
     .info-box, .warning-box {
       width: 320px;

@@ -12,6 +12,7 @@ import { staroceanConfig } from "./_starocean";
 import { sd3Config, sd3ConfigAlt, sd3ConfigLine } from "./_sd3";
 import { bofConfig } from "./_bof";
 import { smrpgConfig } from "./_smrpg";
+import { valkyrieItConfig } from "./_valkyrie";
 
 export interface Config {
   charLimit: number;
@@ -65,6 +66,9 @@ export function getConfig(id: string, text: string): Config {
     case "soe":
       return soeConfig;
     case "starocean":
+      return staroceanConfig;
+    case "valkyrie":
+      return valkyrieItConfig;
     default:
       return staroceanConfig;
   }
