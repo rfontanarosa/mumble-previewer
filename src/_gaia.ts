@@ -33,7 +33,7 @@ const GAIA_REGEXES: [string | RegExp, string][] = [
   [/\[COLOR_RED]\n/g, ""],
   [/\[WIN_..]\n/g, ""],
   [/\[WIN_WHERE_DO_YOU_GO]\n/g, ""],
-  [/\[COLOR_(WILL|KARA|LILLY|LANCE])/g, ""],
+  [/\[COLOR_(WILL|KARA|LILLY|LANCE)]/g, ""],
 ];
 
 const GAIA_TEXT_REPLACER = (text: string): string => {
