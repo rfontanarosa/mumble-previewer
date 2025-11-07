@@ -8,6 +8,7 @@ import { MMLEGENDS } from "./_mmlegends";
 import { neugierConfig } from "./_neugier";
 import { spikeConfig } from "./_spike";
 import { soeConfig } from "./_soe";
+import { somConfig, somItConfig } from "./_som";
 import { staroceanConfig } from "./_starocean";
 import { sd3Config, sd3ConfigAlt, sd3ConfigLine } from "./_sd3";
 import { bofConfig } from "./_bof";
@@ -65,6 +66,10 @@ export function getConfig(id: string, text: string): Config {
       return smrpgConfig;
     case "soe":
       return soeConfig;
+    case "som":
+      return somConfig;
+    case "som_it":
+      return somItConfig;
     case "starocean":
       return staroceanConfig;
     case "valkyrie":
