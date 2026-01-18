@@ -16,16 +16,16 @@ const SOM_CHAR_PAIRS_IT: [string, number][] = [
 ];
 
 const SOM_REGEXES: [string | RegExp, string][] = [
-  [/\[BOY\]/g, "BOY"],
-  [/\[GIRL\]/g, "GIRL"],
+  [/\[BOY\]/g, "BOY456"],
+  [/\[GIRL\]/g, "GIRL56"],
   [/\[SPRITE\]/g, "SPRITE"],
-  [/\[.*?\]\n?/g, ''],
+  [/\[.*?\]/g, ''],
 ];
 
 const SOE_TEXT_REPLACER = (text: string): string => {
-  text = text.replaceAll(/\[CLEAR\]\n/g, "\r");
   text = text.replaceAll(/\[OPEN\]\n/g, "\r");
-  text = text.replaceAll(/\[SLEEP 00\]\n/g, "\r");
+  text = text.replaceAll(/\[CLEAR\]\n/g, "\r");
+  text = text.replaceAll(/\[MOVE .. ..\]\n/g, "\r");
   text.match(/\[SHIFT ..\]/g)?.forEach((matchResult) => {
     const width = parseInt(matchResult.slice(7, 9), 16);
     text = text.replaceAll(matchResult, "\t".repeat(width * 8));
