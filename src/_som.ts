@@ -22,7 +22,7 @@ const SOM_REGEXES: [string | RegExp, string][] = [
   [/\[.*?\]/g, ''],
 ];
 
-const SOE_TEXT_REPLACER = (text: string): string => {
+const SOM_TEXT_REPLACER = (text: string): string => {
   text = text.replaceAll(/\[OPEN\]\n/g, "\r");
   text = text.replaceAll(/\[CLEAR\]\n/g, "\r");
   text = text.replaceAll(/\[MOVE .. ..\]\n/g, "\r");
@@ -40,7 +40,7 @@ export const somConfig: Config = {
   boxClasses: ["snes-256x224", "som-box"],
   fontClass: "som-main-font",
   charWidthPairs: SOM_CHAR_PAIRS,
-  replacer: SOE_TEXT_REPLACER,
+  replacer: SOM_TEXT_REPLACER,
   autoLineBreak: true,
 };
 
