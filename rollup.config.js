@@ -1,11 +1,11 @@
 import copy from 'rollup-plugin-copy';
-import typescript from 'rollup-plugin-typescript2';
+import typescript from '@rollup/plugin-typescript';
 
 export default {
-  input: 'src/index.ts', // Your entry point TypeScript file
+  input: 'src/index.ts',
   output: {
-    file: 'dist/bundle.js',
-    format: 'umd', // Choose the format (iife, amd, cjs, es) based on your needs
+    dir: 'dist',
+    format: 'umd',
     name: 'MumblePreviewer'
   },
   plugins: [
