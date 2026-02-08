@@ -16,24 +16,6 @@
   width: 16px;
   background-image: url(../images/_soe/soe_gfx_font1_it.png);
 
-  &.char-224  { width: 7px;  background-position:   -0px  -0px;  } /* à */
-  &.char-232  { width: 7px;  background-position:  -16px  -0px;  } /* è */
-  &.char-233  { width: 7px;  background-position:  -32px  -0px;  } /* é */
-  &.char-236  { width: 4px;  background-position:  -48px  -0px;  } /* ì */
-  &.char-242  { width: 7px;  background-position:  -64px  -0px;  } /* ò */
-  &.char-249  { width: 7px;  background-position:  -80px  -0px;  } /* ù */
-  /* */
-  /* */
-
-  &.char-192  { width: 7px;  background-position:   -0px -12px;  } /* À */
-  &.char-200  { width: 6px;  background-position:  -16px -12px;  } /* È */
-  &.char-201  { width: 6px;  background-position:  -32px -12px;  } /* É */
-  &.char-204  { width: 5px;  background-position:  -48px -12px;  } /* Ì */
-  &.char-210  { width: 7px;  background-position:  -64px -12px;  } /* Ò */
-  &.char-217  { width: 7px;  background-position:  -80px -12px;  } /* Ù */
-  /* */
-  &.char-32   { width: 4px;  background-position: -112px -12px;  } /*   */
-
   /* */
   &.char-33   { width: 4px;  background-position:  -16px -24px;  } /* ! */
   &.char-34   { width: 6px;  background-position:  -32px -24px;  } /* " */
@@ -146,8 +128,52 @@
   /* */
   /* */
   /* */
+  &.char-32   { width: 4px;  background-position:  -64px -168px; } /*   */
   /* */
   /* */
   /* */
-  /* */
+
+  &.italian {
+    background-image: url(../images/_soe/soe_gfx_font1_it.png);
+
+    &.char-224  { width: 7px;  background-position:   -0px  -0px;  } /* à */
+    &.char-232  { width: 7px;  background-position:  -16px  -0px;  } /* è */
+    &.char-233  { width: 7px;  background-position:  -32px  -0px;  } /* é */
+    &.char-236  { width: 4px;  background-position:  -48px  -0px;  } /* ì */
+    &.char-242  { width: 7px;  background-position:  -64px  -0px;  } /* ò */
+    &.char-249  { width: 7px;  background-position:  -80px  -0px;  } /* ù */
+    /* */
+    /* */
+
+    &.char-192  { width: 7px;  background-position:   -0px -12px;  } /* À */
+    &.char-200  { width: 6px;  background-position:  -16px -12px;  } /* È */
+    &.char-201  { width: 6px;  background-position:  -32px -12px;  } /* É */
+    &.char-204  { width: 5px;  background-position:  -48px -12px;  } /* Ì */
+    &.char-210  { width: 7px;  background-position:  -64px -12px;  } /* Ò */
+    &.char-217  { width: 7px;  background-position:  -80px -12px;  } /* Ù */
+    /* */
+    /* */
+  }
+
+  &.portuguese {
+    background-image: url(../images/_soe/soe_gfx_font1_pt.png);
+
+    &.char-224  { width: 7px;  background-position:   -0px  -0px;  } /* à */
+    &.char-234  { width: 7px;  background-position:  -16px  -0px;  } /* ê */
+    &.char-233  { width: 7px;  background-position:  -32px  -0px;  } /* é */
+    &.char-237  { width: 3px;  background-position:  -48px  -0px;  } /* í */
+    &.char-243  { width: 7px;  background-position:  -64px  -0px;  } /* ó */
+    &.char-250  { width: 7px;  background-position:  -80px  -0px;  } /* ú */
+    &.char-193  { width: 7px;  background-position:  -96px  -0px;  } /* Á */
+    /* */
+
+    &.char-225  { width: 7px;  background-position:   -0px -12px;  } /* á */
+    &.char-226  { width: 7px;  background-position:  -16px -12px;  } /* â */
+    &.char-201  { width: 6px;  background-position:  -32px -12px;  } /* É */
+    &.char-231  { width: 7px;  background-position:  -48px -12px;  } /* ç */
+    &.char-244  { width: 7px;  background-position:  -64px -12px;  } /* ô */
+    &.char-227  { width: 7px;  background-position:  -80px -12px;  } /* ã */
+    &.char-211  { width: 7px;  background-position:  -96px -12px;  } /* Ó */
+    &.char-245  { width: 7px;  background-position: -112px -12px;  } /* õ */
+  }
 }

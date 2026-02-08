@@ -7,7 +7,7 @@ import { lufiaConfig } from "./_lufia";
 import { MMLEGENDS } from "./_mmlegends";
 import { neugierConfig } from "./_neugier";
 import { spikeConfig } from "./_spike";
-import { soeConfig } from "./_soe";
+import { soeConfig, soeItConfig, soePtConfig } from "./_soe";
 import { somConfig, somItConfig } from "./_som";
 import { staroceanConfig } from "./_starocean";
 import { sd3Config, sd3ConfigAlt, sd3ConfigLine } from "./_sd3";
@@ -68,6 +68,10 @@ export function getConfig(id: string, text: string): Config {
       return smrpgConfig;
     case "soe":
       return soeConfig;
+    case "soe_it":
+      return soeItConfig;
+    case "soe_pt":
+      return soePtConfig;
     case "som":
       return somConfig;
     case "som_it":

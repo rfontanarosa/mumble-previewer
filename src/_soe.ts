@@ -4,13 +4,28 @@ import { replaceAll } from "./utils";
 const SOE_CHAR_PAIRS: [string, number][] = [
   ["|", 2],
   ["',.:;`il", 3],
-  ["ì !()1[]", 4],
-  ["Ì<>It", 5],
-  ['ÈÉ"*+/EFLS\\cfjrs', 6],
-  ["àèéòùÀÒÙ$-02356789=?ABCDGOJHPQRTUVXYZabdeghknopquvxyz", 7],
+  [" !()1[]", 4],
+  ["<>It", 5],
+  ['"*+/EFLS\\cfjrs', 6],
+  ["$-02356789=?ABCDGOJHPQRTUVXYZabdeghknopquvxyz", 7],
   ["&4NK", 8],
   ["#%@M…", 9],
   ["Wmw", 11],
+];
+
+const SOE_CHAR_PAIRS_IT: [string, number][] = [
+  ...SOE_CHAR_PAIRS,
+  ["ì", 4],
+  ["Ì", 5],
+  ["ÈÉ", 6],
+  ["àèéòùÀÒÙ", 7]
+];
+
+const SOE_CHAR_PAIRS_PT: [string, number][] = [
+  ...SOE_CHAR_PAIRS,
+  ["í", 3],
+  ["É", 6],
+  ["àêéóúÁáâçôãÓõ", 7]
 ];
 
 const SOE_REGEXES: [string | RegExp, string][] = [
@@ -47,4 +62,16 @@ export const soeConfig: Config = {
   charWidthPairs: SOE_CHAR_PAIRS,
   replacer: SOE_TEXT_REPLACER,
   autoLineBreak: true,
+};
+
+export const soeItConfig: Config = {
+  ...soeConfig,
+  fontClass: "soe-main-font italian",
+  charWidthPairs: SOE_CHAR_PAIRS_IT,
+};
+
+export const soePtConfig: Config = {
+  ...soeConfig,
+  fontClass: "soe-main-font portuguese",
+  charWidthPairs: SOE_CHAR_PAIRS_PT,
 };
