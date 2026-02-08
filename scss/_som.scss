@@ -2,7 +2,6 @@
   .screen {
     height: 80px !important;
     background: url(../images/_som/som_dialog_box.png) no-repeat;
-    // background: url(../images/_som/som_dialog_with_text.png) no-repeat;
     background-color: black;
 
     .text-box {
@@ -21,7 +20,7 @@
   margin-right: 0px;
   margin-bottom: 0px;
   width: 8px;
-  background-image: url(../images/_som/som_font_ita.png);
+  background-image: url(../images/_som/som_ntsc_font.png);
 
   &.char-32   { background-position:   -0px  -0px; } /*   */
   &.char-97   { background-position:   -8px  -0px; } /* a */
@@ -113,7 +112,7 @@
   &.char-8595 { background-position:  -16px -60px; } /* ↓ */
 
   &.italian {
-    background-image: url(../images/_som/som_font_ita.png);
+    background-image: url(../images/_som/som_ntsc_font_ita.png);
 
     &.char-224  { background-position:  -24px -60px; } /* à */
     &.char-232  { background-position:  -32px -60px; } /* è */
