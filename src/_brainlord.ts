@@ -5,7 +5,7 @@ const BRAINLORD_CHAR_PAIRS: [string, number][] = [
   ["01234567", 8],
   ["89 ", 8],
   [").", 8],
-  ["/", 8],
+  ["▷/▲", 8],
   ["ABCDEFGH", 8],
   ["IJKLMNOP", 8],
   ["QRSTUVWX", 8],
@@ -13,35 +13,28 @@ const BRAINLORD_CHAR_PAIRS: [string, number][] = [
   ["ghijklmn", 8],
   ["opqrstuv", 8],
   ["wxyz?", 8],
-  [":;àèé", 8],
-  ["ìòùÈ°'\"", 8],
+  [":;", 8],
+  ["'\"", 8],
   ["-,·", 8],
   ["!", 8],
   ["♪", 8],
 ];
 
+const BRAINLORD_CHAR_PAIRS_IT: [string, number][] = [
+  ...BRAINLORD_CHAR_PAIRS,
+  ["àèé", 8],
+  ["ìòùÈ°", 8],
+];
+
 const BRAINLORD_REGEXES: [string | RegExp, string][] = [
-  [/\{f6}{..\}/g, ""],
-  [/\{fb}{..\}{..\}{..\}{..\}{..\}/g, ""],
-  [/\{fc}{..\}{..\}{..\}{..\}{..\}/g, ""],
-  [/\{fd}{..\}{..\}/g, ""],
-  [/\{fe}{..\}{..\}/g, ""],
-  [/\{ff}{..\}{..\}{..\}/g, ""],
-  ["{f3}", ""],
-  ["{82}", ""],
-  ["{89}", "X"],
-  ["{8c}", "X"],
-  ["{8d}", "X"],
-  ["{ee}", " "],
-  ["{ef}", " "],
-  ["<name>", "PLAYER"],
-  ["<ram>", "RAM"],
-  ["<white>", ""],
+  [/\[F[2356BCDEF][^\]]*\]/g, ""],
+  [/\[RAM.*?\]/g, "XXX"],
+  [/\[WHITE\]/g, ""],
 ];
 
 const BRAINLORD_TEXT_REPLACER = (text: string): string => {
   text = replaceAll(text, BRAINLORD_REGEXES);
-  text = text.replaceAll(/<input>/g, "\r");
+  text = text.replaceAll(/\[INPUT\]/g, "\r");
   return text;
 };
 
@@ -52,4 +45,10 @@ export const brainlordConfig: Config = {
   fontClass: "brainlord-main-font",
   charWidthPairs: BRAINLORD_CHAR_PAIRS,
   replacer: BRAINLORD_TEXT_REPLACER,
+};
+
+export const brainlordItConfig: Config = {
+  ...brainlordConfig,
+  fontClass: "brainlord-main-font italian",
+  charWidthPairs: BRAINLORD_CHAR_PAIRS_IT,
 };

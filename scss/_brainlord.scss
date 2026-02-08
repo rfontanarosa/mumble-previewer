@@ -1,10 +1,11 @@
 .brainlord-box {
   .screen {
-    background: url(../images/_brainlord/bl-preview.png) no-repeat;
+    height: 96px !important;
+    background: url(../images/_brainlord/bl-background-dialog-box.png) no-repeat;
 
     .text-box {
       padding-left: 24px;
-      padding-top: 144px;
+      padding-top: 16px;
     }
   }
 }
@@ -15,8 +16,7 @@
   margin-bottom: 0px;
   width: 8px;
   background-image: url(../images/_brainlord/bl-font-text.png);
-  background-image: url(../images/_brainlord/bl-font-text-mog.png);
-  background-image: url(../images/_brainlord/bl-font-text-ita.png);
+  // background-image: url(../images/_brainlord/bl-font-text-mog.png);
 
   &.char-48   { background-position: -0px   -0px;  } /* 0 */
   &.char-49   { background-position: -16px  -0px;  } /* 1 */
@@ -34,7 +34,11 @@
   &.char-41   { background-position: -0px   -32px; } /* ) */
   &.char-46   { background-position: -112px -32px; } /* . */
 
+  &.char-9655 { background-position: -0px   -48px; } /* ▷ */
   &.char-47   { background-position: -16px  -48px; } /* / */
+  /**/
+  /**/
+  &.char-9650 { background-position: -64px  -48px; } /* ▲ */
 
   &.char-65   { background-position: -0px   -64px; } /* A */
   &.char-66   { background-position: -16px  -64px; } /* B */
@@ -103,15 +107,15 @@
   &.char-58   { background-position: -32px  -176px; } /* : */
   &.char-59   { background-position: -48px  -176px; } /* ; */
   /**/
-  &.char-224  { background-position: -80px  -176px; } /* à */
-  &.char-232  { background-position: -96px  -176px; } /* è */
-  &.char-233  { background-position: -112px -176px; } /* é */
+  /**/
+  /**/
+  /**/
 
-  &.char-236  { background-position: -0px   -192px; } /* ì */
-  &.char-242  { background-position: -16px  -192px; } /* ò */
-  &.char-249  { background-position: -32px  -192px; } /* ù */
-  &.char-200  { background-position: -48px  -192px; } /* È */
-  &.char-176  { background-position: -64px  -192px; } /* ° */
+  /**/
+  /**/
+  /**/
+  /**/
+  /**/
   /**/
   &.char-39   { background-position: -96px  -192px; } /* ' */
   &.char-34   { background-position: -112px -192px; } /* " */
@@ -123,4 +127,17 @@
   &.char-33   { background-position: -80px  -256px; } /* ! */
 
   &.char-9834 { background-position: -80px  -400px; } /* ♪ */
+
+  &.italian {
+    background-image: url(../images/_brainlord/bl-font-text-ita.png);
+
+    &.char-224  { background-position: -80px  -176px; } /* à */
+    &.char-232  { background-position: -96px  -176px; } /* è */
+    &.char-233  { background-position: -112px -176px; } /* é */
+    &.char-236  { background-position: -0px   -192px; } /* ì */
+    &.char-242  { background-position: -16px  -192px; } /* ò */
+    &.char-249  { background-position: -32px  -192px; } /* ù */
+    &.char-200  { background-position: -48px  -192px; } /* È */
+    &.char-176  { background-position: -64px  -192px; } /* ° */
+  }
 }
