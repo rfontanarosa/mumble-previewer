@@ -1,5 +1,5 @@
 import { seventhsagaConfig } from "./_7thsaga";
-import { brainlordConfig, brainlordItConfig } from "./_brainlord";
+import { brainlordConfig, brainlordItConfig, brainlordPtConfig } from "./_brainlord";
 import { ffmqConfig } from "./_ffmq";
 import { gaiaItConfig } from "./_gaia";
 import { ignitionConfig } from "./_ignition";
@@ -43,6 +43,8 @@ export function getConfig(id: string, text: string): Config {
       return brainlordConfig;
     case "brainlord_it":
       return brainlordItConfig;
+    case "brainlord_pt":
+      return brainlordPtConfig;
     case "ffmq":
       return ffmqConfig;
     case "gaia":

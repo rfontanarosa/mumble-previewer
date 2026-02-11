@@ -101,6 +101,7 @@
   /**/
   /**/
   &.char-63   { background-position: -96px  -160px; } /* ? */
+  /**/
 
   /**/
   /**/
@@ -129,15 +130,51 @@
   &.char-9834 { background-position: -80px  -400px; } /* ♪ */
 
   &.italian {
-    background-image: url(../images/_brainlord/bl-font-text-ita.png);
+    background-image: url(../images/_brainlord/bl-font-text-it.png);
 
     &.char-224  { background-position: -80px  -176px; } /* à */
     &.char-232  { background-position: -96px  -176px; } /* è */
     &.char-233  { background-position: -112px -176px; } /* é */
+
     &.char-236  { background-position: -0px   -192px; } /* ì */
     &.char-242  { background-position: -16px  -192px; } /* ò */
     &.char-249  { background-position: -32px  -192px; } /* ù */
     &.char-200  { background-position: -48px  -192px; } /* È */
     &.char-176  { background-position: -64px  -192px; } /* ° */
+  }
+
+  &.portuguese {
+    background-image: url(../images/_brainlord/bl-font-text-pt.png);
+
+    &.char-250  { background-position:  -64px  -160px; } /* ú */
+    &.char-231  { background-position:  -80px  -160px; } /* ç */
+
+    &.char-224  { background-position:  -64px  -176px; } /* à */
+    &.char-225  { background-position:  -80px  -176px; } /* á */
+    &.char-227  { background-position:  -96px  -176px; } /* ã */
+    &.char-226  { background-position:  -112px -176px; } /* â */
+
+    &.char-233  { background-position:  -0px   -192px; } /* é */
+    &.char-234  { background-position:  -16px  -192px; } /* ê */
+    &.char-237  { background-position:  -32px  -192px; } /* í */
+    &.char-243  { background-position:  -48px  -192px; } /* ó */
+    &.char-245  { background-position:  -64px  -192px; } /* õ */
+    &.char-244  { background-position:  -80px  -192px; } /* ô */
+ 
+    &.char-192  { background-position:  -48px  -208px; } /* À */
+    &.char-193  { background-position:  -64px  -208px; } /* Á */
+    &.char-195  { background-position:  -80px  -208px; } /* Ã */
+    &.char-194  { background-position:  -96px  -208px; } /* Â */
+    &.char-201  { background-position:  -112px -208px; } /* É */
+
+    &.char-202  { background-position:  -16px  -224px; } /* Ê */
+    &.char-205  { background-position:  -32px  -224px; } /* Í */
+    &.char-211  { background-position:  -48px  -224px; } /* Ó */
+    &.char-213  { background-position:  -64px  -224px; } /* Õ */
+    &.char-33   { background-position:  -80px  -224px; } /* ! */
+    &.char-212  { background-position:  -96px  -224px; } /* Ô */
+    &.char-218  { background-position:  -112px -224px; } /* Ú */
+
+    &.char-199  { background-position:  -0px   -240px; } /* Ç */
   }
 }
