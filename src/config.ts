@@ -5,6 +5,7 @@ import { gaiaItConfig } from "./_gaia";
 import { ignitionConfig } from "./_ignition";
 import { lufiaConfig } from "./_lufia";
 import { MMLEGENDS } from "./_mmlegends";
+import { lomConfig } from "./_lom";
 import { neugierConfig } from "./_neugier";
 import { spikeConfig } from "./_spike";
 import { soeConfig, soeItConfig, soePtConfig } from "./_soe";
@@ -51,6 +52,8 @@ export function getConfig(id: string, text: string): Config {
       return gaiaItConfig;
     case "ignition":
       return ignitionConfig;
+    case "lom":
+      return lomConfig;
     case "lufia":
       return lufiaConfig;
     case "mmlegends":
