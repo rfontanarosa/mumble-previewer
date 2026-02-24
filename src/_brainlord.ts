@@ -20,22 +20,6 @@ const BRAINLORD_CHAR_PAIRS: [string, number][] = [
   ["♪", 8],
 ];
 
-const BRAINLORD_CHAR_PAIRS_IT: [string, number][] = [
-  ...BRAINLORD_CHAR_PAIRS,
-  ["àèé", 8],
-  ["ìòùÈ°", 8],
-];
-
-const BRAINLORD_CHAR_PAIRS_PT: [string, number][] = [
-  ...BRAINLORD_CHAR_PAIRS,
-  ["úç", 8],
-  ["àáãâ", 8],
-  ["éêíóõô", 8],
-  ["ÀÁÃÂÉ", 8],
-  ["ÊÍÓÕÔÚ", 8],
-  ["Ç", 8],
-];
-
 const BRAINLORD_REGEXES: [string | RegExp, string][] = [
   [/\[F[2356BCDEF][^\]]*\]/g, ""],
   [/\[RAM.*?\]/g, "XXX"],
@@ -55,16 +39,8 @@ export const brainlordConfig: Config = {
   fontClass: "brainlord-main-font",
   charWidthPairs: BRAINLORD_CHAR_PAIRS,
   replacer: BRAINLORD_TEXT_REPLACER,
-};
-
-export const brainlordItConfig: Config = {
-  ...brainlordConfig,
-  fontClass: "brainlord-main-font italian",
-  charWidthPairs: BRAINLORD_CHAR_PAIRS_IT,
-};
-
-export const brainlordPtConfig: Config = {
-  ...brainlordConfig,
-  fontClass: "brainlord-main-font portuguese",
-  charWidthPairs: BRAINLORD_CHAR_PAIRS_PT,
+  languages: {
+    it: { charWidthPairs: [["àèé", 8], ["ìòùÈ°", 8]] },
+    pt: { charWidthPairs: [["úç", 8], ["àáãâ", 8], ["éêíóõô", 8], ["ÀÁÃÂÉ", 8], ["ÊÍÓÕÔÚ", 8], ["Ç", 8]] }
+  }
 };

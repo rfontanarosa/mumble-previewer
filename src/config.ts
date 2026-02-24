@@ -1,20 +1,26 @@
 import { seventhsagaConfig } from "./_7thsaga";
-import { brainlordConfig, brainlordItConfig, brainlordPtConfig } from "./_brainlord";
+import { brainlordConfig } from "./_brainlord";
 import { ffmqConfig } from "./_ffmq";
-import { gaiaItConfig } from "./_gaia";
+import { gaiaConfig } from "./_gaia";
 import { ignitionConfig } from "./_ignition";
 import { lufiaConfig } from "./_lufia";
 import { MMLEGENDS } from "./_mmlegends";
 import { lomConfig } from "./_lom";
 import { neugierConfig } from "./_neugier";
 import { spikeConfig } from "./_spike";
-import { soeConfig, soeItConfig, soePtConfig } from "./_soe";
-import { somConfig, somItConfig } from "./_som";
+import { soeConfig } from "./_soe";
+import { somConfig } from "./_som";
 import { staroceanConfig } from "./_starocean";
 import { sd3Config, sd3ConfigAlt, sd3ConfigLine } from "./_sd3";
 import { bofConfig } from "./_bof";
 import { smrpgConfig } from "./_smrpg";
-import { valkyrieItConfig } from "./_valkyrie";
+import { valkyrieConfig } from "./_valkyrie";
+
+export interface LanguageExtension {
+  charWidthPairs: [string, number][];
+  charLimit?: number;
+  lineLimit?: number;
+}
 
 export interface Config {
   charLimit: number;
@@ -32,60 +38,63 @@ export interface Config {
   };
   autoLineBreak?: boolean;
   autoBoxOverflow?: boolean;
+  languages?: Record<string, LanguageExtension>;
 }
 
+function applyLanguage(base: Config, langCode: string, lang: LanguageExtension): Config {
+  return {
+    ...base,
+    fontClass: `${base.fontClass} ${langCode}`,
+    charWidthPairs: [...base.charWidthPairs, ...lang.charWidthPairs],
+    ...(lang.charLimit !== undefined && { charLimit: lang.charLimit }),
+    ...(lang.lineLimit !== undefined && { lineLimit: lang.lineLimit }),
+  };
+}
+
+const BASE_CONFIGS: Record<string, (text: string) => Config> = {
+  "7thsaga":   ()     => seventhsagaConfig,
+  "bof":       ()     => bofConfig,
+  "brainlord": ()     => brainlordConfig,
+  "ffmq":      ()     => ffmqConfig,
+  "gaia":      ()     => gaiaConfig,
+  "ignition":  ()     => ignitionConfig,
+  "lom":       ()     => lomConfig,
+  "lufia":     ()     => lufiaConfig,
+  "mmlegends": (text) => ({ ...MMLEGENDS.config, ...MMLEGENDS.getConfigByText(text) }),
+  "neugier":   ()     => neugierConfig,
+  "sd3":       (text) => {
+    if (text.startsWith("<ALT>"))  return sd3ConfigAlt;
+    if (text.startsWith("<LINE>")) return sd3ConfigLine;
+    // <BOX>, <CHOICE>, <MULTI> all use the standard box config
+    return sd3Config;
+  },
+  "smrpg":     ()     => smrpgConfig,
+  "soe":       ()     => soeConfig,
+  "som":       ()     => somConfig,
+  "spike":     ()     => spikeConfig,
+  "starocean": ()     => staroceanConfig,
+  "valkyrie":  ()     => valkyrieConfig,
+  "ys3":       (text) => ({ ...YS3.config, ...YS3.getConfigByText(text) }),
+};
+
+export const CONFIG_IDS: string[] = Object.keys(BASE_CONFIGS);
+
 export function getConfig(id: string, text: string): Config {
-  switch (id) {
-    case "7thsaga":
-      return seventhsagaConfig;
-    case "bof":
-      return bofConfig;
-    case "brainlord":
-      return brainlordConfig;
-    case "brainlord_it":
-      return brainlordItConfig;
-    case "brainlord_pt":
-      return brainlordPtConfig;
-    case "ffmq":
-      return ffmqConfig;
-    case "gaia":
-      return gaiaItConfig;
-    case "ignition":
-      return ignitionConfig;
-    case "lom":
-      return lomConfig;
-    case "lufia":
-      return lufiaConfig;
-    case "mmlegends":
-      return { ...MMLEGENDS.config, ...MMLEGENDS.getConfigByText(text) };
-    case "neugier":
-      return neugierConfig;
-    case "spike":
-      return spikeConfig;
-    case "sd3":
-      if (text.startsWith("<ALT>")) return sd3ConfigAlt;
-      else if (text.startsWith("<BOX>")) return sd3Config;
-      else if (text.startsWith("<LINE>")) return sd3ConfigLine;
-      // else if (text.startsWith("<CHOICE>"))
-      // else if (text.startsWith("<MULTI>"))
-      else return sd3Config;
-    case "smrpg":
-      return smrpgConfig;
-    case "soe":
-      return soeConfig;
-    case "soe_it":
-      return soeItConfig;
-    case "soe_pt":
-      return soePtConfig;
-    case "som":
-      return somConfig;
-    case "som_it":
-      return somItConfig;
-    case "starocean":
-      return staroceanConfig;
-    case "valkyrie":
-      return valkyrieItConfig;
-    default:
-      return staroceanConfig;
+  const exact = BASE_CONFIGS[id];
+  if (exact) return exact(text);
+
+  const sep = id.lastIndexOf("_");
+  if (sep > 0) {
+    const gameId   = id.slice(0, sep);
+    const langCode = id.slice(sep + 1);
+    const baseFactory = BASE_CONFIGS[gameId];
+    if (baseFactory) {
+      const base = baseFactory(text);
+      const langExt = base.languages?.[langCode];
+      if (langExt) return applyLanguage(base, langCode, langExt);
+    }
   }
+
+  console.warn(`mumble-previewer: unknown config id "${id}", falling back to starocean`);
+  return staroceanConfig;
 }

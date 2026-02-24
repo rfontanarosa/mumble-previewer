@@ -10,11 +10,6 @@ const SOM_CHAR_PAIRS: [string, number][] = [
   ["→↑↓", 8]
 ];
 
-const SOM_CHAR_PAIRS_IT: [string, number][] = [
-  ...SOM_CHAR_PAIRS,
-  ["àèéìòùÈ", 8]
-];
-
 const SOM_REGEXES: [string | RegExp, string][] = [
   [/\[BOY\]/g, "BOY456"],
   [/\[GIRL\]/g, "GIRL56"],
@@ -42,10 +37,7 @@ export const somConfig: Config = {
   charWidthPairs: SOM_CHAR_PAIRS,
   replacer: SOM_TEXT_REPLACER,
   autoLineBreak: true,
-};
-
-export const somItConfig: Config = {
-  ...somConfig,
-  fontClass: "som-main-font italian",
-  charWidthPairs: SOM_CHAR_PAIRS_IT,
+  languages: {
+    it: { charWidthPairs: [["àèéìòùÈ", 8]] }
+  }
 };

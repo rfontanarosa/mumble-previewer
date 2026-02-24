@@ -13,21 +13,6 @@ const SOE_CHAR_PAIRS: [string, number][] = [
   ["Wmw", 11],
 ];
 
-const SOE_CHAR_PAIRS_IT: [string, number][] = [
-  ...SOE_CHAR_PAIRS,
-  ["ì", 4],
-  ["Ì", 5],
-  ["ÈÉ", 6],
-  ["àèéòùÀÒÙ", 7]
-];
-
-const SOE_CHAR_PAIRS_PT: [string, number][] = [
-  ...SOE_CHAR_PAIRS,
-  ["í", 3],
-  ["É", 6],
-  ["àêéóúÁáâçôãÓõ", 7]
-];
-
 const SOE_REGEXES: [string | RegExp, string][] = [
   [/{/g, '"'],
   [/}/g, '"'],
@@ -62,16 +47,8 @@ export const soeConfig: Config = {
   charWidthPairs: SOE_CHAR_PAIRS,
   replacer: SOE_TEXT_REPLACER,
   autoLineBreak: true,
-};
-
-export const soeItConfig: Config = {
-  ...soeConfig,
-  fontClass: "soe-main-font italian",
-  charWidthPairs: SOE_CHAR_PAIRS_IT,
-};
-
-export const soePtConfig: Config = {
-  ...soeConfig,
-  fontClass: "soe-main-font portuguese",
-  charWidthPairs: SOE_CHAR_PAIRS_PT,
+  languages: {
+    it: { charWidthPairs: [["ì", 4], ["Ì", 5], ["ÈÉ", 6], ["àèéòùÀÒÙ", 7]] },
+    pt: { charWidthPairs: [["í", 3], ["É", 6], ["àêéóúÁáâçôãÓõ", 7]] }
+  }
 };
