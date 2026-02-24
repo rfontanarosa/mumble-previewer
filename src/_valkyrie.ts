@@ -13,8 +13,6 @@ const VALKYRIE_CHAR_PAIRS: [string, number][] = [
   ["',.:;", 2],
 ];
 
-const VALKYRIE_CHAR_PAIRS_IT: [string, number][] = [...VALKYRIE_CHAR_PAIRS];
-
 const VALKYRIE_REGEXES: [string | RegExp, string][] = [
   [/<DPORT>/g, ""],
   [/<PORT .,.>/g, ""],
@@ -45,10 +43,4 @@ export const valkyrieConfig: Config = {
   replacer: VALKYRIE_TEXT_REPLACER,
   autoLineBreak: true,
   autoBoxOverflow: true,
-};
-
-export const valkyrieItConfig: Config = {
-  ...valkyrieConfig,
-  fontClass: "valkyrie-main-font italian",
-  charWidthPairs: VALKYRIE_CHAR_PAIRS_IT,
 };
