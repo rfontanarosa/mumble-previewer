@@ -85,8 +85,9 @@ function renderHtml(
     relativePositionWindow,
   } = options;
   const previewContainer = document.getElementById(containerSelector);
-
   if (!previewContainer) return;
+
+  const fragment = document.createDocumentFragment();
 
   const dialogs = text.split("\r").filter((element) => element !== "");
 
@@ -115,10 +116,10 @@ function renderHtml(
     warningBoxElement.style.display = "none";
 
     screenElement.appendChild(textBoxElement);
-    previewContainer.appendChild(boxElement);
     boxElement.appendChild(screenElement);
     boxElement.appendChild(infoBoxElement);
     boxElement.appendChild(warningBoxElement);
+    fragment.appendChild(boxElement);
 
     let lineIndex = 0;
     const lineBuffers: string[] = new Array(lineLimit).fill("");
@@ -189,6 +190,9 @@ function renderHtml(
 
     warningBoxElement.style.display = warningBoxElement.hasChildNodes() ? '' : 'none';
   });
+
+  previewContainer.innerHTML = "";
+  previewContainer.appendChild(fragment);
 }
 
 export function renderPreview(
