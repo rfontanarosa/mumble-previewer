@@ -1,4 +1,4 @@
-import { Config } from "./config";
+import { Config, makeConfig } from "./types";
 import { replaceAll } from "./utils";
 
 const BRAINLORD_CHAR_PAIRS: [string, number][] = [
@@ -32,7 +32,7 @@ const BRAINLORD_TEXT_REPLACER = (text: string): string => {
   return text;
 };
 
-export const brainlordConfig: Config = {
+export const brainlordConfig: Config = makeConfig({
   charLimit: 222,
   lineLimit: 4,
   boxClasses: ["snes-256x224", "brainlord-box"],
@@ -43,4 +43,4 @@ export const brainlordConfig: Config = {
     it: { charWidthPairs: [["àèé", 8], ["ìòùÈ°", 8]] },
     pt: { charWidthPairs: [["úç", 8], ["àáãâ", 8], ["éêíóõô", 8], ["ÀÁÃÂÉ", 8], ["ÊÍÓÕÔÚ", 8], ["Ç", 8]] }
   }
-};
+});

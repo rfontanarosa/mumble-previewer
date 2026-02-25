@@ -1,4 +1,4 @@
-import { Config } from "./config";
+import { Config, makeConfig } from "./types";
 import { replaceAll } from "./utils";
 
 const GAIA_CHAR_PAIRS: [string, number][] = [
@@ -38,7 +38,7 @@ const GAIA_TEXT_REPLACER = (text: string): string => {
   return text;
 };
 
-export const gaiaConfig: Config = {
+export const gaiaConfig: Config = makeConfig({
   charLimit: 208,
   lineLimit: 4,
   boxClasses: ["snes-256x224", "gaia-box"],
@@ -48,4 +48,4 @@ export const gaiaConfig: Config = {
   languages: {
     it: { charWidthPairs: [["ÀÈÉÌÒÙàèéìòù", 8]] }
   }
-};
+});

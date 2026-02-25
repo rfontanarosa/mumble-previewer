@@ -1,4 +1,4 @@
-import { Config } from "./config";
+import { Config, makeConfig } from "./types";
 import { replaceAll } from "./utils";
 
 const MMLEGENDS_CHAR_PAIRS: [string, number][] = [
@@ -62,12 +62,12 @@ export const MMLEGENDS = {
 
     return config;
   },
-  config: {
+  config: makeConfig({
     charLimit: 12 * 5,
     lineLimit: 4,
     boxClasses: ["psx-ntsc-320x240", "mmlegends-box"],
     fontClass: "mmlegends-main-font",
     charWidthPairs: MMLEGENDS_CHAR_PAIRS,
     replacer: MMLEGENDS_TEXT_REPLACER,
-  } as Config,
+  }),
 };

@@ -1,4 +1,4 @@
-import { Config } from "./config";
+import { Config, makeConfig } from "./types";
 
 const LOM_CHAR_PAIRS: [string, number][] = [
   ["Ii", 3],
@@ -10,10 +10,10 @@ const LOM_CHAR_PAIRS: [string, number][] = [
   ["MW", 9],
 ];
 
-export const lomConfig: Config = {
+export const lomConfig: Config = makeConfig({
   charLimit: 174,
   lineLimit: 3,
   boxClasses: ["psx-ntsc-320x240", "lom-box"],
   fontClass: "lom-main-font",
   charWidthPairs: LOM_CHAR_PAIRS,
-};
+});

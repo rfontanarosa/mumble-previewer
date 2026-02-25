@@ -1,4 +1,4 @@
-import { Config } from "./config";
+import { Config, makeConfig } from "./types";
 import { replaceAll } from "./utils";
 
 const FFMQ_CHAR_PAIRS: [string, number][] = [
@@ -23,7 +23,7 @@ const FFMQ_TEXT_REPLACER = (text: string): string => {
   return text;
 };
 
-export const ffmqConfig: Config = {
+export const ffmqConfig: Config = makeConfig({
   charLimit: 208,
   lineLimit: 3,
   boxClasses: ["snes-256x224", "ffmq-box"],
@@ -31,4 +31,4 @@ export const ffmqConfig: Config = {
   charWidthPairs: FFMQ_CHAR_PAIRS,
   replacer: FFMQ_TEXT_REPLACER,
   autoLineBreak: true,
-};
+});

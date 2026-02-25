@@ -1,4 +1,4 @@
-import { Config } from "./config";
+import { Config, makeConfig } from "./types";
 import { replaceAll } from "./utils";
 
 const SD3_CHAR_PAIRS: [string, number][] = [
@@ -53,7 +53,7 @@ const SD3_REGEXES: [string | RegExp, string][] = [
   [/<LINE>/g, ""],
 ];
 
-export const sd3ConfigAlt: Config = {
+export const sd3ConfigAlt: Config = makeConfig({
   charLimit: 239,
   lineLimit: 3,
   boxClasses: ["sd3-bo", "window"],
@@ -66,9 +66,9 @@ export const sd3ConfigAlt: Config = {
     text = replaceAll(text, SD3_REGEXES);
     return text;
   },
-};
+});
 
-export const sd3ConfigLine: Config = {
+export const sd3ConfigLine: Config = makeConfig({
   charLimit: 239,
   lineLimit: 1,
   boxClasses: ["sd3-box", "line"],
@@ -79,9 +79,9 @@ export const sd3ConfigLine: Config = {
     text = replaceAll(text, SD3_REGEXES);
     return text;
   },
-};
+});
 
-export const sd3Config: Config = {
+export const sd3Config: Config = makeConfig({
   charLimit: 239,
   lineLimit: 3,
   boxClasses: ["sd3-box", "window"],
@@ -94,4 +94,4 @@ export const sd3Config: Config = {
     text = replaceAll(text, SD3_REGEXES);
     return text;
   },
-};
+});

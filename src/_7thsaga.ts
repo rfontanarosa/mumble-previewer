@@ -1,4 +1,4 @@
-import { Config } from "./config";
+import { Config, makeConfig } from "./types";
 import { replaceAll } from "./utils";
 
 const SEVENTHSAGA_CHAR_PAIRS: [string, number][] = [
@@ -48,11 +48,11 @@ const SEVENTHSAGA_TEXT_REPLACER = (text: string): string => {
   return text;
 };
 
-export const seventhsagaConfig: Config = {
+export const seventhsagaConfig: Config = makeConfig({
   charLimit: 222,
   lineLimit: 4,
   boxClasses: ["snes-256x224", "seventhsaga-box"],
   fontClass: "seventhsaga-main-font",
   charWidthPairs: SEVENTHSAGA_CHAR_PAIRS,
   replacer: SEVENTHSAGA_TEXT_REPLACER,
-};
+});

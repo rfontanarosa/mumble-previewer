@@ -1,4 +1,4 @@
-import { Config } from "./config";
+import { Config, makeConfig } from "./types";
 import { replaceAll } from "./utils";
 
 const SPIKE_CHAR_PAIRS: [string, number][] = [
@@ -31,11 +31,11 @@ const SPIKE_TEXT_REPLACER = (text: string): string => {
   return text;
 };
 
-export const spikeConfig: Config = {
+export const spikeConfig: Config = makeConfig({
   charLimit: 128,
   lineLimit: 2,
   boxClasses: ["snes-256x224", "spike-box"],
   fontClass: "spike-main-font",
   charWidthPairs: SPIKE_CHAR_PAIRS,
   replacer: SPIKE_TEXT_REPLACER,
-};
+});

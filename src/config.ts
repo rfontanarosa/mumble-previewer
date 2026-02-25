@@ -1,3 +1,4 @@
+import { Config, LanguageExtension, makeConfig } from "./types";
 import { seventhsagaConfig } from "./_7thsaga";
 import { brainlordConfig } from "./_brainlord";
 import { ffmqConfig } from "./_ffmq";
@@ -15,37 +16,18 @@ import { sd3Config, sd3ConfigAlt, sd3ConfigLine } from "./_sd3";
 import { bofConfig } from "./_bof";
 import { smrpgConfig } from "./_smrpg";
 import { valkyrieConfig } from "./_valkyrie";
+import { generateCharWidthMap } from "./utils";
 
-export interface LanguageExtension {
-  charWidthPairs: [string, number][];
-  charLimit?: number;
-  lineLimit?: number;
-}
-
-export interface Config {
-  charLimit: number;
-  lineLimit: number;
-  boxClasses: string[];
-  fontClass: string;
-  charWidthPairs: [string, number][];
-  replacer?: (input: string) => string;
-  relativePositionWindow?: {
-    left: number;
-    top: number;
-    width: number;
-    height: number;
-    padding?: number;
-  };
-  autoLineBreak?: boolean;
-  autoBoxOverflow?: boolean;
-  languages?: Record<string, LanguageExtension>;
-}
+export type { Config, LanguageExtension };
+export { makeConfig };
 
 function applyLanguage(base: Config, langCode: string, lang: LanguageExtension): Config {
+  const mergedPairs = [...base.charWidthPairs, ...lang.charWidthPairs];
   return {
     ...base,
     fontClass: `${base.fontClass} ${langCode}`,
-    charWidthPairs: [...base.charWidthPairs, ...lang.charWidthPairs],
+    charWidthPairs: mergedPairs,
+    charWidthMap: generateCharWidthMap(mergedPairs),
     ...(lang.charLimit !== undefined && { charLimit: lang.charLimit }),
     ...(lang.lineLimit !== undefined && { lineLimit: lang.lineLimit }),
   };

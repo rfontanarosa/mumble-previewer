@@ -1,4 +1,4 @@
-import { Config } from "./config";
+import { Config, makeConfig } from "./types";
 import { replaceAll } from "./utils";
 
 const NEUGIER_CHAR_PAIRS: [string, number][] = [
@@ -25,11 +25,11 @@ const NEUGIER_TEXT_REPLACER = (text: string): string => {
   return text;
 };
 
-export const neugierConfig: Config = {
+export const neugierConfig: Config = makeConfig({
   charLimit: 240,
   lineLimit: 4,
   boxClasses: ["snes-256x224", "neugier-box"],
   fontClass: "neugier-main-font",
   charWidthPairs: NEUGIER_CHAR_PAIRS,
   replacer: NEUGIER_TEXT_REPLACER,
-};
+});

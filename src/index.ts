@@ -1,13 +1,12 @@
 import { Config, getConfig } from "./config";
-import { generateCharWidthMap, replaceAt } from "./utils";
+import { replaceAt } from "./utils";
 
 function processText(
   text: string,
   charWidthMap: { [key: string]: number },
   options: Config
 ): string {
-  const { charLimit, lineLimit, replacer, autoLineBreak, autoBoxOverflow } =
-    options;
+  const { charLimit, lineLimit, replacer, autoLineBreak, autoBoxOverflow } = options;
 
   if (replacer) text = replacer(text);
 
@@ -202,7 +201,7 @@ export function renderPreview(
     container.innerHTML = "";
     const options =
       typeof config === "string" ? getConfig(config, text) : config;
-    const charWidthMap = generateCharWidthMap(options.charWidthPairs);
+    const charWidthMap = options.charWidthMap;
     const processedText = processText(text, charWidthMap, options);
     renderHtml(containerId, processedText, charWidthMap, options);
   } else {

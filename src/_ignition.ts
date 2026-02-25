@@ -1,4 +1,4 @@
-import { Config } from "./config";
+import { Config, makeConfig } from "./types";
 import { replaceAll } from "./utils";
 
 const IGNITION_CHAR_PAIRS: [string, number][] = [
@@ -34,11 +34,11 @@ const IGNITION_TEXT_REPLACER = (text: string): string => {
   return text;
 };
 
-export const ignitionConfig: Config = {
+export const ignitionConfig: Config = makeConfig({
   charLimit: 176,
   lineLimit: 3,
   boxClasses: ["snes-256x224", "ignition-box"],
   fontClass: "ignition-main-font",
   charWidthPairs: IGNITION_CHAR_PAIRS_ITA,
   replacer: IGNITION_TEXT_REPLACER,
-};
+});

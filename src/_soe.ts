@@ -1,4 +1,4 @@
-import { Config } from "./config";
+import { Config, makeConfig } from "./types";
 import { replaceAll } from "./utils";
 
 const SOE_CHAR_PAIRS: [string, number][] = [
@@ -39,7 +39,7 @@ const SOE_TEXT_REPLACER = (text: string): string => {
   return text;
 };
 
-export const soeConfig: Config = {
+export const soeConfig: Config = makeConfig({
   charLimit: 152,
   lineLimit: 4,
   boxClasses: ["snes-256x224", "soe-box"],
@@ -51,4 +51,4 @@ export const soeConfig: Config = {
     it: { charWidthPairs: [["ì", 4], ["Ì", 5], ["ÈÉ", 6], ["àèéòùÀÒÙ", 7]] },
     pt: { charWidthPairs: [["í", 3], ["É", 6], ["àêéóúÁáâçôãÓõ", 7]] }
   }
-};
+});

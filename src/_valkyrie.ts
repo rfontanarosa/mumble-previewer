@@ -1,4 +1,4 @@
-import { Config } from "./config";
+import { Config, makeConfig } from "./types";
 import { replaceAll } from "./utils";
 
 const VALKYRIE_CHAR_PAIRS: [string, number][] = [
@@ -34,7 +34,7 @@ const VALKYRIE_TEXT_REPLACER = (text: string): string => {
   return text;
 };
 
-export const valkyrieConfig: Config = {
+export const valkyrieConfig: Config = makeConfig({
   charLimit: 208,
   lineLimit: 4,
   boxClasses: ["psx-ntsc-320x224", "valkyrie-box"],
@@ -43,4 +43,4 @@ export const valkyrieConfig: Config = {
   replacer: VALKYRIE_TEXT_REPLACER,
   autoLineBreak: true,
   autoBoxOverflow: true,
-};
+});

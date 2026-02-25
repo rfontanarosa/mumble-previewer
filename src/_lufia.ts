@@ -1,4 +1,4 @@
-import { Config } from "./config";
+import { Config, makeConfig } from "./types";
 
 const LUFIA_CHAR_PAIRS: [string, number][] = [
   [" !\"àèéì'()*‥,-./", 8],
@@ -9,10 +9,10 @@ const LUFIA_CHAR_PAIRS: [string, number][] = [
   ["pqrstuvwxyz{È}~", 8],
 ];
 
-export const lufiaConfig: Config = {
+export const lufiaConfig: Config = makeConfig({
   charLimit: 240,
   lineLimit: 4,
   boxClasses: ["snes-256x224", "lufia-box"],
   fontClass: "lufia-main-font",
   charWidthPairs: LUFIA_CHAR_PAIRS,
-};
+});

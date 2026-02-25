@@ -1,4 +1,4 @@
-import { Config } from "./config";
+import { Config, makeConfig } from "./types";
 import { replaceAll } from "./utils";
 
 const STAROCEAN_CHAR_PAIRS: [string, number][] = [
@@ -46,7 +46,7 @@ const STAROCEAN_TEXT_REPLACER = (text: string): string => {
   return text;
 };
 
-export const staroceanConfig: Config = {
+export const staroceanConfig: Config = makeConfig({
   charLimit: 208,
   lineLimit: 4,
   boxClasses: ["snes-256x224", "starocean-box"],
@@ -55,4 +55,4 @@ export const staroceanConfig: Config = {
   replacer: STAROCEAN_TEXT_REPLACER,
   autoLineBreak: true,
   autoBoxOverflow: true,
-};
+});

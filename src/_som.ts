@@ -1,4 +1,4 @@
-import { Config } from "./config";
+import { Config, makeConfig } from "./types";
 import { replaceAll } from "./utils";
 
 const SOM_CHAR_PAIRS: [string, number][] = [
@@ -40,4 +40,4 @@ export const somConfig: Config = {
   languages: {
     it: { charWidthPairs: [["àèéìòùÈ", 8]] }
   }
-};
+});

@@ -1,4 +1,4 @@
-import { Config } from "./config";
+import { Config, makeConfig } from "./types";
 import { replaceAll } from "./utils";
 
 const SMRPG_CHAR_PAIRS: [string, number][] = [
@@ -35,11 +35,11 @@ const SMRPG_TEXT_REPLACER = (text: string): string => {
   return text;
 };
 
-export const smrpgConfig: Config = {
+export const smrpgConfig: Config = makeConfig({
   charLimit: 222,
   lineLimit: 3,
   boxClasses: ["snes-256x224", "smrpg-box"],
   fontClass: "smrpg-main-font",
   charWidthPairs: SMRPG_CHAR_PAIRS,
   replacer: SMRPG_TEXT_REPLACER,
-};
+});

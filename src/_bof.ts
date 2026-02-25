@@ -1,4 +1,4 @@
-import { Config } from "./config";
+import { Config, makeConfig } from "./types";
 import { replaceAll } from "./utils";
 
 const BOF_CHAR_PAIRS: [string, number][] = [
@@ -78,11 +78,11 @@ const BOF_TEXT_REPLACER = (text: string): string => {
   return text;
 };
 
-export const bofConfig: Config = {
+export const bofConfig: Config = makeConfig({
   charLimit: 222,
   lineLimit: 4,
   boxClasses: ["snes-256x224", "bof-box"],
   fontClass: "bof-main-font",
   charWidthPairs: BOF_CHAR_PAIRS,
   replacer: BOF_TEXT_REPLACER,
-};
+});
