@@ -29,7 +29,7 @@ const SOM_TEXT_REPLACER = (text: string): string => {
   return text;
 };
 
-export const somConfig: Config = {
+export const somConfig: Config = makeConfig({
   charLimit: 28 * 8,
   lineLimit: 3,
   boxClasses: ["snes-256x224", "som-box"],
