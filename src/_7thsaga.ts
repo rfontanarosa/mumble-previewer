@@ -5,7 +5,7 @@ const SEVENTHSAGA_CHAR_PAIRS: [string, number][] = [
   ["01234567", 8],
   ["89 ", 8],
   [")·", 8],
-  ["/", 8],
+  ["▷/▲", 8],
   ["ABCDEFGH", 8],
   ["IJKLMNOP", 8],
   ["QRSTUVWX", 8],
@@ -13,33 +13,22 @@ const SEVENTHSAGA_CHAR_PAIRS: [string, number][] = [
   ["ghijklmn", 8],
   ["opqrstuv", 8],
   ["wxyz?", 8],
-  [":;àèé", 8],
-  ["ìòùÈ°'\"", 8],
+  [":;", 8],
+  ["'\"", 8],
   ["-,.", 8],
   ["!", 8],
   ["♪", 8],
 ];
 
 const SEVENTHSAGA_REGEXES: [string | RegExp, string][] = [
-  [/\{f6}{..\}/g, ""],
-  [/\{fb}{..\}{..\}{..\}{..\}{..\}/g, ""],
-  [/\{fc}{..\}{..\}{..\}{..\}{..\}/g, ""],
-  [/\{fd}{..\}{..\}/g, ""],
-  [/\{fe}{..\}{..\}/g, ""],
-  [/\{ff}{..\}{..\}{..\}/g, ""],
-  ["{f3}", ""],
-  ["{82}", ""],
-  ["{89}", "X"],
-  ["{8c}", "X"],
-  ["{8d}", "X"],
-  ["{ee}", " "],
-  ["{ef}", " "],
-  ["[YOURNAME]", "YOURNAME"],
-  ["[PARTNERNAME]", "PARTNERNAME"],
-  ["[ITEM]", "ITEM"],
-  ["[PRICE]", "PRICE"],
-  ["[BOLD]", ""],
-  ["[END]", ""],
+  [/\[F[56BCDEF][^\]]*\]\r?\n?/g, ""],
+  [/\[YOURNAME\]/g, ""],
+  [/\[PARTNERNAME\]/g, ""],
+  [/\[ITEM\]/g, ""],
+  [/\[PRICE\]/g, ""],
+  [/\[\?\?\?\]/g, "???"],
+  [/\[BOLD\]/g, ""],
+  [/\[END\]/g, ""],
 ];
 
 const SEVENTHSAGA_TEXT_REPLACER = (text: string): string => {
@@ -55,4 +44,7 @@ export const seventhsagaConfig: Config = makeConfig({
   fontClass: "seventhsaga-main-font",
   charWidthPairs: SEVENTHSAGA_CHAR_PAIRS,
   replacer: SEVENTHSAGA_TEXT_REPLACER,
+  languages: {
+    it: { charWidthPairs: [["àèé", 8], ["ìòùÈ°", 8]] }
+  }
 });

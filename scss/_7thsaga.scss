@@ -32,7 +32,11 @@
   &.char-41   { background-position: -0px    -32px; } /* ) */
   &.char-183  { background-position: -112px  -32px; } /* · */
 
-  &.char-47   { background-position: -16px   -48px; } /* / */
+  &.char-9655 { background-position: -0px   -48px; } /* ▷ */
+  &.char-47   { background-position: -16px  -48px; } /* / */
+  /**/
+  /**/
+  &.char-9650 { background-position: -64px  -48px; } /* ▲ */
 
   &.char-65   { background-position: -0px    -64px; } /* A */
   &.char-66   { background-position: -16px   -64px; } /* B */
@@ -101,15 +105,15 @@
   &.char-58   { background-position: -32px  -176px; } /* : */
   &.char-59   { background-position: -48px  -176px; } /* ; */
   /**/
-  &.char-224  { background-position: -80px  -176px; } /* à */
-  &.char-232  { background-position: -96px  -176px; } /* è */
-  &.char-233  { background-position: -112px -176px; } /* é */
+  /**/
+  /**/
+  /**/
 
-  &.char-236  { background-position: -0px   -192px; } /* ì */
-  &.char-242  { background-position: -16px  -192px; } /* ò */
-  &.char-249  { background-position: -32px  -192px; } /* ù */
-  &.char-200  { background-position: -48px  -192px; } /* È */
-  &.char-176  { background-position: -64px  -192px; } /* ° */
+  /**/
+  /**/
+  /**/
+  /**/
+  /**/
   /**/
   &.char-39   { background-position: -96px  -192px; } /* ' */
   &.char-34   { background-position: -112px -192px; } /* " */
@@ -121,4 +125,18 @@
   &.char-33   { background-position: -80px  -256px; } /* ! */
 
   &.char-9834 { background-position: -80px  -400px; } /* ♪ */
+
+  &.it {
+    background-image: url(../images/_7thsaga/7thsaga_font_ita.png);
+
+    &.char-224  { background-position: -80px  -176px; } /* à */
+    &.char-232  { background-position: -96px  -176px; } /* è */
+    &.char-233  { background-position: -112px -176px; } /* é */
+
+    &.char-236  { background-position: -0px   -192px; } /* ì */
+    &.char-242  { background-position: -16px  -192px; } /* ò */
+    &.char-249  { background-position: -32px  -192px; } /* ù */
+    &.char-200  { background-position: -48px  -192px; } /* È */
+    &.char-176  { background-position: -64px  -192px; } /* ° */
+  }
 }
