@@ -18,29 +18,33 @@ const ALCAHEST_CHAR_PAIRS_ITA: [string, number][] = [
 ];
 
 const ALCAHEST_REGEXES: [string | RegExp, string][] = [
-  [/<RATIX>/g, "WWWWWWWW"],
-  [/<MILLY>/g, "Milly"],
-  [/<DORN>/g, "Dorn"],
-  [/<RONIXIS>/g, "Ronixis"],
-  [/<IRIA>/g, "Iria"],
-  [/<CIUS>/g, "Cius"],
-  [/<JOSHUA>/g, "Joshua"],
-  [/<TINEK>/g, "Tinek"],
-  [/<MARVEL>/g, "Marvel"],
-  [/<PERISIE>/g, "Perisie"],
-  [/<FEAR>/g, "Fear"],
-  [/<ASHLAY>/g, "Ashlay"],
-  [/<PAUSE><..>/g, ""],
-  [/<COLOR><..>/g, ""],
-  [/<WAIT><CLOSE>/g, ""],
-  [/<CLOSE>/g, ""],
-  [/<CODE 88><..>/g, ""],
-  [/<CODE 81><..><..>/g, ""],
+  [/\[SPEED .. ..\]/g, ""],
+  [/\[DEFSPEED ..\]/g, ""],
+  [/\[VAR ..\]/g, ""],
+  [/\[TIMING .. ..\]/g, ""],
+  [/\[CHARW ..\]/g, ""],
+  [/\[SHIFT ..\]/g, ""],
+  [/\[RATE ..\]/g, ""],
+  [/\[CLEAR\]/g, ""],
+  [/\[NL\]\n/g, "\n"],
+  [/\[FLAG ..\]/g, ""],
+  [/\[PTR .. ..\]/g, ""],
+  [/\[COLOR .. .. .. ..\]/g, ""],
+  [/\[GOTO .. ..\]/g, ""],
+  [/\[CALL .. .. ..\]/g, "XXXXXX"],
+  [/\[PAIR .. ..\]/g, ""],
+  [/\[FLAG1\]/g, ""],
+  [/\[FLAG2\]/g, ""],
+  [/\[CALL .. .. .. .. .. .. .. .. ..\]/g, ""],
+  [/\[DELAY ..\]/g, ""],
+  [/\[EVENT ..\]/g, ""],
+  [/\[SPEAKER ..\]/g, ""],
+  [/\[TRIGGER\]/g, ""],
 ];
 
 const ALCAHEST_TEXT_REPLACER = (text: string): string => {
   text = replaceAll(text, ALCAHEST_REGEXES);
-  text = text.replaceAll("<WAIT>\n", "\r");
+  text = text.replaceAll("[CLOSE]\n", "\r");
   text.match(/<PAD><..><..>/g)?.forEach((matchResult) => {
     const width = parseInt(matchResult.slice(6, 8), 16);
     // const height = parseInt(matchResult.slice(10, 12), 16);
@@ -51,7 +55,7 @@ const ALCAHEST_TEXT_REPLACER = (text: string): string => {
 
 export const alcahestConfig: Config = makeConfig({
   charLimit: 208,
-  lineLimit: 4,
+  lineLimit: 3,
   boxClasses: ["snes-256x224", "alcahest-box"],
   fontClass: "alcahest-main-font",
   charWidthPairs: ALCAHEST_CHAR_PAIRS,
