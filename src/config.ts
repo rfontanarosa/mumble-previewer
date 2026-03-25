@@ -1,4 +1,5 @@
 import { Config, LanguageExtension, makeConfig } from "./types";
+import { alcahestConfig } from "./_alcahest";
 import { seventhsagaConfig } from "./_7thsaga";
 import { brainlordConfig } from "./_brainlord";
 import { ffmqConfig } from "./_ffmq";
@@ -35,6 +36,7 @@ function applyLanguage(base: Config, langCode: string, lang: LanguageExtension):
 
 const BASE_CONFIGS: Record<string, (text: string) => Config> = {
   "7thsaga":   ()     => seventhsagaConfig,
+  "alcahest":  ()     => alcahestConfig,
   "bof":       ()     => bofConfig,
   "brainlord": ()     => brainlordConfig,
   "ffmq":      ()     => ffmqConfig,
