@@ -185,14 +185,27 @@ function renderHtml(
     infoBoxElement.appendChild(table);
 
     if (unsupportedChars.length > 0) {
-      warningBoxElement.innerHTML += `<div class="text-danger">Unsupported character(s): ${unsupportedChars.join()}</div>`;
+      const escaped = unsupportedChars.map(c => `&#${c.charCodeAt(0)};`).join(", ");
+      warningBoxElement.innerHTML += `<div class="text-danger">Unsupported character(s): ${escaped}</div>`;
     }
 
     warningBoxElement.style.display = warningBoxElement.hasChildNodes() ? '' : 'none';
   });
 
+  // Preserve which info boxes were open before re-render
+  const openInfoBoxes = new Set<number>();
+  previewContainer.querySelectorAll<HTMLElement>(".info-box").forEach((el, i) => {
+    if (el.style.display !== "none") openInfoBoxes.add(i);
+  });
+
   previewContainer.innerHTML = "";
   previewContainer.appendChild(fragment);
+
+  if (openInfoBoxes.size > 0) {
+    previewContainer.querySelectorAll<HTMLElement>(".info-box").forEach((el, i) => {
+      if (openInfoBoxes.has(i)) el.style.display = "";
+    });
+  }
 }
 
 export function renderPreview(
@@ -202,7 +215,6 @@ export function renderPreview(
 ): void {
   const container = document.getElementById(containerId);
   if (container) {
-    container.innerHTML = "";
     const options =
       typeof config === "string" ? getConfig(config, text) : config;
     const charWidthMap = options.charWidthMap;
