@@ -1,10 +1,11 @@
 .seventhsaga-box {
   .screen {
-    background: url(../images/_7thsaga/7thsaga-preview.png) no-repeat;
+    height: 78px !important;
+    background: url(../images/_7thsaga/7thsaga-dialog-empty.png) no-repeat;
 
     .text-box {
-      padding-left: 24px;
-      padding-top: 144px;
+      padding-left: 6px;
+      padding-top: 7px;
     }
   }
 }
