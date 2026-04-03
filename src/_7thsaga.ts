@@ -25,7 +25,7 @@ const SEVENTHSAGA_REGEXES: [string | RegExp, string][] = [
   [/\[YOURNAME\]/g, ""],
   [/\[PARTNERNAME\]/g, ""],
   [/\[ITEM\]/g, ""],
-  [/\[PRICE\]/g, ""],
+  [/\[PRICE\]/g, "9999"],
   [/\[\?\?\?\]/g, "???"],
   [/\[BOLD\]/g, ""],
   [/\[END\]/g, ""],
@@ -45,6 +45,6 @@ export const seventhsagaConfig: Config = makeConfig({
   charWidthPairs: SEVENTHSAGA_CHAR_PAIRS,
   replacer: SEVENTHSAGA_TEXT_REPLACER,
   languages: {
-    it: { charWidthPairs: [["àèé", 8], ["ìòùÈ°", 8]] }
+    it: { charWidthPairs: [["àèé", 8], ["ìòùÈ+°", 8]] }
   }
 });
