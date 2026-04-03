@@ -29,6 +29,7 @@ const SEVENTHSAGA_REGEXES: [string | RegExp, string][] = [
   [/\[\?\?\?\]/g, "???"],
   [/\[BOLD\]/g, ""],
   [/\[END\]/g, ""],
+  [/\[NEW\]/g, ""],
 ];
 
 const SEVENTHSAGA_TEXT_REPLACER = (text: string): string => {
