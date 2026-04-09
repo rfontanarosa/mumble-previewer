@@ -120,11 +120,11 @@ function renderHtml(
     const lineBuffers: string[] = new Array(lineLimit).fill("");
     const charCounters: number[] = new Array(lineLimit).fill(0);
     const padCounters: number[] = new Array(lineLimit).fill(0);
-    const unsupportedChars: string[] = [];
+    const unsupportedChars = new Set<string>();
 
     for (const utf16char of dialog) {
       const utf16int = utf16char.codePointAt(0)!;
-      if (charWidthMap[utf16char] > 0) {
+      if (utf16char in charWidthMap) {
         charCounters[lineIndex] += charWidthMap[utf16char];
         lineBuffers[lineIndex] +=
           `<div class="${fontClass} char char-${utf16int}"></div>`;
@@ -135,7 +135,7 @@ function renderHtml(
       } else if (utf16char === "\n") {
         lineIndex++;
       } else {
-        unsupportedChars.push(utf16char);
+        unsupportedChars.add(utf16char);
       }
     }
 
@@ -178,7 +178,7 @@ function renderHtml(
     table.appendChild(tableBody);
     infoBoxElement.appendChild(table);
 
-    if (unsupportedChars.length > 0) {
+    if (unsupportedChars.size > 0) {
       const escaped = unsupportedChars.map(c => `&#${c.codePointAt(0)};`).join(", ");
       warningBoxElement.innerHTML += `<div class="text-danger">Unsupported character(s): ${escaped}</div>`;
     }
