@@ -15,8 +15,8 @@ function processText(
   let wordCounter = 0;
   let lineCounter = 1;
   let processedText = "";
-  for (let i = 0; i < text.length; i++) {
-    const utf16char = text.charAt(i);
+  let utf16Index = 0;
+  for (const utf16char of text) {
     processedText += utf16char;
     switch (utf16char) {
       case "\r":
@@ -37,7 +37,7 @@ function processText(
         }
         break;
       case " ":
-        spaceIndex = i;
+        spaceIndex = utf16Index;
         charCounter += charWidthMap[utf16char] || 0;
         wordCounter = 0;
         break;
@@ -48,25 +48,20 @@ function processText(
         if (autoLineBreak && charCounter > charLimit) {
           if (spaceIndex !== -1) {
             if (lineCounter >= lineLimit) {
-              processedText = replaceAt(processedText, spaceIndex, "\r");
-              lineCounter = 1;
-            } else {
-              if (autoBoxOverflow && lineCounter > lineLimit) {
+              if (autoBoxOverflow) {
                 processedText = replaceAt(processedText, spaceIndex, "\r");
-                spaceIndex = -1;
-                charCounter = 0;
-                wordCounter = 0;
                 lineCounter = 1;
-              } else {
-                processedText = replaceAt(processedText, spaceIndex, "\n");
-                lineCounter += 1;
               }
+            } else {
+              processedText = replaceAt(processedText, spaceIndex, "\n");
+              lineCounter += 1;
             }
           }
           spaceIndex = -1;
           charCounter = wordCounter;
         }
     }
+    utf16Index += utf16char.length;
   }
   return processedText;
 }
@@ -127,9 +122,8 @@ function renderHtml(
     const padCounters: number[] = new Array(lineLimit).fill(0);
     const unsupportedChars: string[] = [];
 
-    for (let i = 0; i < dialog.length; i++) {
-      const utf16char = dialog.charAt(i);
-      const utf16int = utf16char.charCodeAt(0);
+    for (const utf16char of dialog) {
+      const utf16int = utf16char.codePointAt(0)!;
       if (charWidthMap[utf16char] > 0) {
         charCounters[lineIndex] += charWidthMap[utf16char];
         lineBuffers[lineIndex] +=
@@ -185,7 +179,7 @@ function renderHtml(
     infoBoxElement.appendChild(table);
 
     if (unsupportedChars.length > 0) {
-      const escaped = unsupportedChars.map(c => `&#${c.charCodeAt(0)};`).join(", ");
+      const escaped = unsupportedChars.map(c => `&#${c.codePointAt(0)};`).join(", ");
       warningBoxElement.innerHTML += `<div class="text-danger">Unsupported character(s): ${escaped}</div>`;
     }
 

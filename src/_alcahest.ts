@@ -56,7 +56,7 @@ const ALCAHEST_TEXT_REPLACER = (text: string): string => {
 };
 
 export const alcahestConfig: Config = makeConfig({
-  charLimit: 208,
+  charLimit: 134,
   lineLimit: 3,
   boxClasses: ["snes-256x224", "alcahest-box"],
   fontClass: "alcahest-main-font",

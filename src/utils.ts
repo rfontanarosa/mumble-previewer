@@ -23,8 +23,8 @@ export function generateCharWidthMap(charWidthPairs: [string, number][]): {
 } {
   const charWidthMap: { [key: string]: number } = {};
   for (const [char, frequency] of charWidthPairs) {
-    for (let i = 0; i < char.length; i++) {
-      charWidthMap[char[i]] = frequency;
+    for (const c of char) {
+      charWidthMap[c] = frequency;
     }
   }
   return charWidthMap;
