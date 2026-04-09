@@ -7,6 +7,7 @@ const ALCAHEST_CHAR_PAIRS: [string, number][] = [
   ["!\"'()1I[]`", 3],
   [" j{}" , 4],
   ["#$%&*+-/023456789<=>?@ABCDEFGHJKLMNOPQRSTUVWXYZ¥^_abcdefghkmnopqrstuvwxyz。「」、・", 5],
+  ["𝐗𝐘", 10],
 ];
 
 const ALCAHEST_CHAR_PAIRS_ITA: [string, number][] = [
@@ -18,7 +19,7 @@ const ALCAHEST_CHAR_PAIRS_ITA: [string, number][] = [
 ];
 
 const ALCAHEST_REGEXES: [string | RegExp, string][] = [
-  [/\[SPEED .. ..\]/g, ""],
+  [/\[POS .. ..\]/g, ""],
   [/\[DEFSPEED ..\]/g, ""],
   [/\[VAR ..\]/g, ""],
   [/\[TIMING .. ..\]/g, ""],
@@ -33,6 +34,7 @@ const ALCAHEST_REGEXES: [string | RegExp, string][] = [
   [/\[CALL 7D 1A 00\]/g, "Y"],
   [/\[CALL 83 1A 00\]/g, "X"],
   [/\[PAIR .. ..\]/g, ""],
+  [/\[PAUSE\]/g, ""],
   [/\[FLAG1\]/g, ""],
   [/\[FLAG2\]/g, ""],
   [/\[IF .. .. .. .. .. .. .. .. ..\]/g, ""],
