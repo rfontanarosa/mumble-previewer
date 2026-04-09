@@ -14,7 +14,7 @@ const ALCAHEST_CHAR_PAIRS_ITA: [string, number][] = [
   ...ALCAHEST_CHAR_PAIRS,
   ...([
     ["ì", 2],
-    ["àéèìòù°", 6]
+    ["àéèòùÈ", 5]
   ] as [string, number][]),
 ];
 
@@ -42,6 +42,7 @@ const ALCAHEST_REGEXES: [string | RegExp, string][] = [
   [/\[EVENT ..\]/g, ""],
   [/\[SPEAKER ..\]/g, ""],
   [/\[TRIGGER\]/g, ""],
+  [/\{..}/g, ""],
 ];
 
 const ALCAHEST_TEXT_REPLACER = (text: string): string => {
