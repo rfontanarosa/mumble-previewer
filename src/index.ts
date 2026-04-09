@@ -179,7 +179,7 @@ function renderHtml(
     infoBoxElement.appendChild(table);
 
     if (unsupportedChars.size > 0) {
-      const escaped = unsupportedChars.map(c => `&#${c.codePointAt(0)};`).join(", ");
+      const escaped = [...unsupportedChars].map((c: string) => `&#${c.codePointAt(0)};`).join(", ");
       warningBoxElement.innerHTML += `<div class="text-danger">Unsupported character(s): ${escaped}</div>`;
     }
 
