@@ -3,15 +3,15 @@ import { replaceAll } from "./utils";
 
 const STAROCEAN_CHAR_PAIRS: [string, number][] = [
   ["Iil,.:;", 3],
-  ["'!()Ìì", 4],
+  ["'!()", 4],
   ["1t² ", 5],
-  ["EFLScfjrs“”ÈÉ", 6],
-  ["02356789ABCDEGHJOPQRTUVXYZabdeghknopquvxyz¿?/+-=<>ÀÒÙàèéòù", 7],
+  ["EFLScfjrs“”", 6],
+  ["02356789ABCDGHJOPQRTUVXYZabdeghknopquvxyz¿?/+-=<>", 7],
   ["4KN*", 8],
   ["&", 9],
-  ["#♪", 10],
+  ["#♪♀", 10],
   ["MWm%★☆", 11],
-  ["w♥", 12],
+  ["w♥♂", 12],
 ];
 
 const STAROCEAN_REGEXES: [string | RegExp, string][] = [
@@ -55,4 +55,7 @@ export const staroceanConfig: Config = makeConfig({
   replacer: STAROCEAN_TEXT_REPLACER,
   autoLineBreak: true,
   autoBoxOverflow: true,
+  languages: {
+    it: { charWidthPairs: [["Ìì", 4], ["ÈÉ", 6], ["ÀÒÙ°àèéòù", 7]] }
+  }
 });

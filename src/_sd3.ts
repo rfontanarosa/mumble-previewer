@@ -56,7 +56,7 @@ const SD3_REGEXES: [string | RegExp, string][] = [
 export const sd3ConfigAlt: Config = makeConfig({
   charLimit: 239,
   lineLimit: 3,
-  boxClasses: ["sd3-bo", "window"],
+  boxClasses: ["sd3-box", "window"],
   fontClass: "sd3-main-font",
   charWidthPairs: SD3_CHAR_PAIRS,
   replacer: (text: string) => {

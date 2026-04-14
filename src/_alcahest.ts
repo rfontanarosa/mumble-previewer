@@ -3,10 +3,10 @@ import { replaceAll } from "./utils";
 
 const ALCAHEST_CHAR_PAIRS: [string, number][] = [
   [":i|", 1],
-  [",.;l", 2],
+  [",.;l・", 2],
   ["!\"'()1I[]`", 3],
   [" j{}" , 4],
-  ["#$%&*+-/023456789<=>?@ABCDEFGHJKLMNOPQRSTUVWXYZ¥^_abcdefghkmnopqrstuvwxyz。「」、・", 5],
+  ["#$%&*+-/023456789<=>?@ABCDEFGHJKLMNOPQRSTUVWXYZ¥^_abcdefghkmnopqrstuvwxyz。「」、", 5],
   ["𝐗𝐘", 10],
 ];
 
