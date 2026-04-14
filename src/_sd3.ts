@@ -3,7 +3,7 @@ import { replaceAll } from "./utils";
 
 const SD3_CHAR_PAIRS: [string, number][] = [
   ["il.:", 3],
-  [",'", 4],
+  [",';", 4],
   ["I!()", 5],
   [" ", 6],
   ["+fj1", 7],

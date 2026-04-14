@@ -125,9 +125,10 @@ function renderHtml(
     for (const utf16char of dialog) {
       const utf16int = utf16char.codePointAt(0)!;
       if (utf16char in charWidthMap) {
-        charCounters[lineIndex] += charWidthMap[utf16char];
+        const charWidth = charWidthMap[utf16char];
+        charCounters[lineIndex] += charWidth;
         lineBuffers[lineIndex] +=
-          `<div class="${fontClass} char char-${utf16int}"></div>`;
+          `<div class="${fontClass} char char-${utf16int}" style="width:${charWidth}px"></div>`;
       } else if (utf16char === "\t") {
         charCounters[lineIndex] += 1;
         padCounters[lineIndex] += 1;
