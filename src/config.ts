@@ -2,6 +2,7 @@ import { Config, LanguageExtension, makeConfig } from "./types";
 import { seventhsagaConfig } from "./_7thsaga";
 import { alcahestConfig } from "./_alcahest";
 import { bofConfig } from "./_bof";
+import { brandishdrConfig } from "./_brandishdr";
 import { brainlordConfig } from "./_brainlord";
 import { ffmqConfig } from "./_ffmq";
 import { gaiaConfig } from "./_gaia";
@@ -38,6 +39,7 @@ const BASE_CONFIGS: Record<string, (text: string) => Config> = {
   "7thsaga":   ()     => seventhsagaConfig,
   "alcahest":  ()     => alcahestConfig,
   "bof":       ()     => bofConfig,
+  "brandishdr": ()    => brandishdrConfig,
   "brainlord": ()     => brainlordConfig,
   "ffmq":      ()     => ffmqConfig,
   "gaia":      ()     => gaiaConfig,

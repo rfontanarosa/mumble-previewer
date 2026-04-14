@@ -1,6 +1,7 @@
 @use '_7thsaga' as *;
 @use '_alcahest' as *;
 @use '_bof' as *;
+@use '_brandishdr' as *;
 @use '_brainlord' as *;
 @use '_ffmq' as *;
 @use '_gaia' as *;
@@ -25,6 +26,16 @@
     }
     .info-box, .warning-box {
       width: 256px;
+    }
+  }
+
+  &.psp-480x272 {
+    .screen {
+      width: 480px;
+      height: 272px;
+    }
+    .info-box, .warning-box {
+      width: 480px;
     }
   }
 

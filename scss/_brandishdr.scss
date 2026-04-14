@@ -1,0 +1,51 @@
+.brandishdr-box {
+  .screen {
+    background: url(../images/_brandishdr/window.png) no-repeat;
+    background-color: black;
+
+    .text-box {
+      padding-left: 8px;
+      padding-top: 7px;
+
+      .text-line {
+        line-height: 16px !important;
+      }
+    }
+  }
+}
+
+.brandishdr-main-font {
+  min-height: 16px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  width: 16px;
+  background-image: url(../images/_brandishdr/pspfont.png);
+
+  &.char-64   { background-position:  -16px    -0px; } /* @ */
+  &.char-65   { background-position:  -16px   -16px; } /* A */
+  &.char-66   { background-position:  -16px   -32px; } /* B */
+  &.char-67   { background-position:  -16px   -48px; } /* C */
+  &.char-68   { background-position:  -16px   -64px; } /* D */
+  &.char-69   { background-position:  -16px   -80px; } /* E */
+  &.char-70   { background-position:  -16px   -96px; } /* F */
+  &.char-71   { background-position:  -16px  -112px; } /* G */
+  &.char-72   { background-position:  -16px  -128px; } /* H */
+  &.char-73   { background-position:  -16px  -144px; } /* I */
+  &.char-74   { background-position:  -16px  -160px; } /* J */
+  &.char-75   { background-position:  -16px  -176px; } /* K */
+  &.char-76   { background-position:  -16px  -192px; } /* L */
+  &.char-77   { background-position:  -16px  -208px; } /* M */
+  &.char-78   { background-position:  -16px  -224px; } /* N */
+  &.char-79   { background-position:  -16px  -240px; } /* O */
+  &.char-80   { background-position:  -16px  -256px; } /* P */
+  &.char-81   { background-position:  -16px  -272px; } /* Q */
+  &.char-82   { background-position:  -16px  -288px; } /* R */
+  &.char-83   { background-position:  -16px  -304px; } /* S */
+  &.char-84   { background-position:  -16px  -320px; } /* T */
+  &.char-85   { background-position:  -16px  -336px; } /* U */
+  &.char-86   { background-position:  -16px  -352px; } /* V */
+  &.char-87   { background-position:  -16px  -368px; } /* W */
+  &.char-88   { background-position:  -16px  -384px; } /* X */
+  &.char-89   { background-position:  -16px  -400px; } /* Y */
+  &.char-90   { background-position:  -16px  -416px; } /* Z */
+}
