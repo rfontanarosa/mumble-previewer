@@ -14,13 +14,13 @@ const SOM_REGEXES: [string | RegExp, string][] = [
   [/\[BOY\]/g, "BOY456"],
   [/\[GIRL\]/g, "GIRL56"],
   [/\[SPRITE\]/g, "SPRITE"],
+  [/\[MOVE .. ..\]\n/g, ''],
   [/\[.*?\]/g, ''],
 ];
 
 const SOM_TEXT_REPLACER = (text: string): string => {
   text = text.replaceAll(/\[OPEN\]\n/g, "\r");
   text = text.replaceAll(/\[CLEAR\]\n/g, "\r");
-  text = text.replaceAll(/\[MOVE .. ..\]\n/g, "\r");
   text.match(/\[SHIFT ..\]/g)?.forEach((matchResult) => {
     const width = parseInt(matchResult.slice(7, 9), 16);
     text = text.replaceAll(matchResult, "\t".repeat(width * 8));
