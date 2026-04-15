@@ -31,8 +31,11 @@ const STAROCEAN_REGEXES: [string | RegExp, string][] = [
   [/<COLOR><..>/g, ""],
   [/<WAIT><CLOSE>/g, ""],
   [/<CLOSE>/g, ""],
-  [/<CODE 88><..>/g, ""],
   [/<CODE 81><..><..>/g, ""],
+  [/<CODE 88><..>/g, ""],
+  [/<CODE 8B><..>/g, ""],
+  [/<CODE 8C>/g, ""],
+  [/<CODE 8D>/g, ""],
 ];
 
 const STAROCEAN_TEXT_REPLACER = (text: string): string => {
