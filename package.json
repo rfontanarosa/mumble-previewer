@@ -9,19 +9,22 @@
     "dist"
   ],
   "scripts": {
-    "dev": "rollup -c -w",
+    "dev": "run-p dev:*",
+    "dev:js": "rollup -c -w",
+    "dev:css": "sass --watch scss/index.scss dist/css/styles.css",
     "build": "npm run build-css && rollup -c rollup.config.js",
     "build-css": "sass scss/index.scss dist/css/styles.css",
     "prepare": "npm run build"
   },
   "author": "Roberto Fontanarosa",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@eslint/js": "^10.0.1",
     "@rollup/plugin-typescript": "^12.1.0",
     "@types/node": "^25.5.0",
     "eslint": "^10.1.0",
     "eslint-plugin-prettier": "^5.2.1",
+    "npm-run-all": "^4.1.5",
     "prettier": "^3.3.3",
     "rollup": "^4.60.0",
     "rollup-plugin-copy": "^3.5.0",
