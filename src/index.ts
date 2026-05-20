@@ -60,7 +60,7 @@ function processText(
           spaceIndex = -1;
           charCounter = wordCounter;
         }
-    }
+      }
     }
     utf16Index += utf16char.length;
   }
@@ -162,30 +162,34 @@ function renderHtml(
     `;
 
     const tableBody = document.createElement("tbody");
+    const tableRows: string[] = [];
+    const warnings: string[] = [];
 
     charCounters.forEach((count, i) => {
       const textExceedsCharacterLimit = count > charLimit;
-      tableBody.innerHTML += `
-        <tr>\
-          <td>${i + 1}</td>\
-          <td>${count}px</td>\
-          <td class="${textExceedsCharacterLimit ? "text-danger" : ""}">${charLimit - count}px</td>\
-          <td>${padCounters[i]}px</td>\
-          <td>${[0, 1].includes(padCounters[i] - (charLimit - count)) ? "Y" : "N"}</td>\
+      tableRows.push(`
+        <tr>
+          <td>${i + 1}</td>
+          <td>${count}px</td>
+          <td class="${textExceedsCharacterLimit ? "text-danger" : ""}">${charLimit - count}px</td>
+          <td>${padCounters[i]}px</td>
+          <td>${[0, 1].includes(padCounters[i] - (charLimit - count)) ? "Y" : "N"}</td>
         </tr>
-      `;
+      `);
 
       if (textExceedsCharacterLimit) {
-        warningBoxElement.innerHTML += `<div class="text-danger">Line ${i + 1} exceeds character limit</div>`;
+        warnings.push(`<div class="text-danger">Line ${i + 1} exceeds character limit</div>`);
       }
     });
+    tableBody.innerHTML = tableRows.join("");
     table.appendChild(tableBody);
     infoBoxElement.appendChild(table);
 
     if (unsupportedChars.size > 0) {
       const escaped = [...unsupportedChars].map((c: string) => `&#${c.codePointAt(0)};`).join(", ");
-      warningBoxElement.innerHTML += `<div class="text-danger">Unsupported character(s): ${escaped}</div>`;
+      warnings.push(`<div class="text-danger">Unsupported character(s): ${escaped}</div>`);
     }
+    if (warnings.length > 0) warningBoxElement.innerHTML = warnings.join("");
 
     warningBoxElement.style.display = warningBoxElement.hasChildNodes() ? '' : 'none';
   });
