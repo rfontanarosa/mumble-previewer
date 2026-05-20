@@ -48,6 +48,16 @@ export interface VariantInfo {
   label: string;
 }
 
+export interface LanguageInfo {
+  id: string;
+  label: string;
+}
+
+const LANGUAGE_LABELS: Record<string, string> = {
+  it: "Italian",
+  pt: "Portuguese",
+};
+
 function resolveFactory(factory: ConfigFactory, text: string): Config {
   return typeof factory === "function" ? factory(text) : factory;
 }
@@ -100,10 +110,12 @@ const BASE_CONFIGS: Record<string, GameDescriptor> = {
 
 export const CONFIG_IDS: string[] = Object.keys(BASE_CONFIGS);
 
-export function getAvailableLanguages(id: string): string[] {
+export function getAvailableLanguages(id: string): LanguageInfo[] {
   const descriptor = BASE_CONFIGS[id];
   if (!descriptor) return [];
-  return Object.keys(resolveFactory(descriptor.default, "").languages ?? {});
+  return Object.keys(resolveFactory(descriptor.default, "").languages ?? {}).map(
+    (code) => ({ id: code, label: LANGUAGE_LABELS[code] ?? code })
+  );
 }
 
 export function getAvailableVariants(id: string): VariantInfo[] {

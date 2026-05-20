@@ -62,8 +62,6 @@
         const variantSelect = document.getElementById('variant-select');
         const textInput = document.getElementById('text-input');
 
-        const LANGUAGE_LABELS = { it: 'Italian', pt: 'Portuguese' };
-
         const populateSelect = (select, options, defaultLabel) => {
           select.innerHTML = '';
           const defaultOpt = document.createElement('option');
@@ -82,7 +80,7 @@
         const refreshSelectors = () => {
           const id = gameSelect.value;
           const langs = id && window.MumblePreviewer
-            ? MumblePreviewer.getAvailableLanguages(id).map((code) => ({ id: code, label: LANGUAGE_LABELS[code] ?? code }))
+            ? MumblePreviewer.getAvailableLanguages(id)
             : [];
           const variants = id && window.MumblePreviewer
             ? MumblePreviewer.getAvailableVariants(id)
