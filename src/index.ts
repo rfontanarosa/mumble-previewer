@@ -41,7 +41,7 @@ function processText(
         charCounter += charWidthMap[utf16char] || 0;
         wordCounter = 0;
         break;
-      default:
+      default: {
         const charWidth = charWidthMap[utf16char] || 0;
         charCounter += charWidth;
         wordCounter += charWidth;
@@ -60,6 +60,7 @@ function processText(
           spaceIndex = -1;
           charCounter = wordCounter;
         }
+    }
     }
     utf16Index += utf16char.length;
   }
@@ -149,12 +150,14 @@ function renderHtml(
 
     const table = document.createElement("table");
     table.innerHTML = `
-      <thead>\
-        <th style="width: 12%;">#</th>\
-        <th style="width: 22%;">Used</th>\
-        <th style="width: 22%;">Available</th>\
-        <th style="width: 22%;">Padding</th>\
-        <th style="width: 22%;">Centered</th>\
+      <thead>
+        <tr>
+          <th style="width: 12%;">#</th>
+          <th style="width: 22%;">Used</th>
+          <th style="width: 22%;">Available</th>
+          <th style="width: 22%;">Padding</th>
+          <th style="width: 22%;">Centered</th>
+        </tr>
       </thead>
     `;
 
