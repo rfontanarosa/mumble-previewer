@@ -4,11 +4,14 @@
     background-color: black;
 
     .text-box {
-      padding-left: 8px;
-      padding-top: 7px;
+      padding-left: 33px;
+      padding-top: 15px;
+      transform: scale(0.8125);
+      transform-origin: top left;
 
       .text-line {
         line-height: 16px !important;
+        margin-bottom: 6px;
       }
     }
   }
@@ -20,6 +23,39 @@
   margin-bottom: 0px;
   width: 16px;
   background-image: url(../images/_brandishdr/pspfont.png);
+
+  &.char-32   { background-position:   -0px  -512px; } /*   */
+  &.char-33   { background-position:   -0px  -528px; } /* ! */
+  &.char-34   { background-position:   -0px  -544px; } /* " */
+  &.char-35   { background-position:   -0px  -560px; } /* # */
+  &.char-36   { background-position:   -0px  -576px; } /* $ */
+  &.char-37   { background-position:   -0px  -592px; } /* % */
+  &.char-38   { background-position:   -0px  -608px; } /* & */
+  &.char-39   { background-position:   -0px  -624px; } /* ' */
+  &.char-40   { background-position:   -0px  -640px; } /* ( */
+  &.char-41   { background-position:   -0px  -656px; } /* ) */
+  &.char-42   { background-position:   -0px  -672px; } /* * */
+  &.char-43   { background-position:   -0px  -688px; } /* + */
+  &.char-44   { background-position:   -0px  -704px; } /* , */
+  &.char-45   { background-position:   -0px  -720px; } /* - */
+  &.char-46   { background-position:   -0px  -736px; } /* . */
+  &.char-47   { background-position:   -0px  -752px; } /* / */
+  &.char-48   { background-position:   -0px  -768px; } /* 0 */
+  &.char-49   { background-position:   -0px  -784px; } /* 1 */
+  &.char-50   { background-position:   -0px  -800px; } /* 2 */
+  &.char-51   { background-position:   -0px  -816px; } /* 3 */
+  &.char-52   { background-position:   -0px  -832px; } /* 4 */
+  &.char-53   { background-position:   -0px  -848px; } /* 5 */
+  &.char-54   { background-position:   -0px  -864px; } /* 6 */
+  &.char-55   { background-position:   -0px  -880px; } /* 7 */
+  &.char-56   { background-position:   -0px  -896px; } /* 8 */
+  &.char-57   { background-position:   -0px  -912px; } /* 9 */
+  &.char-58   { background-position:   -0px  -928px; } /* : */
+  &.char-59   { background-position:   -0px  -944px; } /* ; */
+  &.char-60   { background-position:   -0px  -960px; } /* < */
+  &.char-61   { background-position:   -0px  -976px; } /* = */
+  &.char-62   { background-position:   -0px  -992px; } /* > */
+  &.char-63   { background-position:   -0px -1008px; } /* ? */
 
   &.char-64   { background-position:  -16px    -0px; } /* @ */
   &.char-65   { background-position:  -16px   -16px; } /* A */
@@ -83,4 +119,12 @@
   &.char-123  { background-position:  -16px  -944px; } /* { */
   &.char-124  { background-position:  -16px  -960px; } /* | */
   &.char-125  { background-position:  -16px  -976px; } /* } */
+
+  &.char-224  { background-position: -288px  -336px; } /* à */
+  &.char-233  { background-position: -288px  -352px; } /* é */
+  &.char-232  { background-position: -288px  -368px; } /* è */
+  &.char-236  { background-position: -288px  -384px; } /* ì */
+  &.char-242  { background-position: -288px  -400px; } /* ò */
+  &.char-249  { background-position: -288px  -416px; } /* ù */
+  &.char-200  { background-position: -288px  -448px; } /* È */
 }
