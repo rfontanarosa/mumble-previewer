@@ -27,6 +27,29 @@ export { makeConfig };
 export interface ConfigRef {
   id: string;
   language?: string;
+  variant?: string;
+}
+
+type ConfigFactory = Config | ((text: string) => Config);
+
+interface Variant {
+  label: string;
+  config: ConfigFactory;
+}
+
+interface GameDescriptor {
+  default: ConfigFactory;
+  variants?: Record<string, Variant>;
+  detect?: (text: string) => string | undefined;
+}
+
+export interface VariantInfo {
+  id: string;
+  label: string;
+}
+
+function resolveFactory(factory: ConfigFactory, text: string): Config {
+  return typeof factory === "function" ? factory(text) : factory;
 }
 
 function applyLanguage(base: Config, langCode: string, lang: LanguageExtension): Config {
@@ -41,51 +64,78 @@ function applyLanguage(base: Config, langCode: string, lang: LanguageExtension):
   };
 }
 
-const BASE_CONFIGS: Record<string, (text: string) => Config> = {
-  "7thsaga":   ()     => seventhsagaConfig,
-  "alcahest":  ()     => alcahestConfig,
-  "bof":       ()     => bofConfig,
-  "brandishdr": ()    => brandishdrConfig,
-  "brainlord": ()     => brainlordConfig,
-  "ffmq":      ()     => ffmqConfig,
-  "gaia":      ()     => gaiaConfig,
-  "ignition":  ()     => ignitionConfig,
-  "lom":       ()     => lomConfig,
-  "lufia":     ()     => lufiaConfig,
-  "mmlegends": (text) => ({ ...MMLEGENDS.config, ...MMLEGENDS.getConfigByText(text) }),
-  "neugier":   ()     => neugierConfig,
-  "sd3":       (text) => {
-    if (text.startsWith("<ALT>"))  return sd3ConfigAlt;
-    if (text.startsWith("<LINE>")) return sd3ConfigLine;
-    // <BOX>, <CHOICE>, <MULTI> all use the standard box config
-    return sd3Config;
+const BASE_CONFIGS: Record<string, GameDescriptor> = {
+  "7thsaga":   { default: seventhsagaConfig },
+  "alcahest":  { default: alcahestConfig },
+  "bof":       { default: bofConfig },
+  "brandishdr": { default: brandishdrConfig },
+  "brainlord": { default: brainlordConfig },
+  "ffmq":      { default: ffmqConfig },
+  "gaia":      { default: gaiaConfig },
+  "ignition":  { default: ignitionConfig },
+  "lom":       { default: lomConfig },
+  "lufia":     { default: lufiaConfig },
+  "mmlegends": { default: (text) => ({ ...MMLEGENDS.config, ...MMLEGENDS.getConfigByText(text) }) },
+  "neugier":   { default: neugierConfig },
+  "sd3":       {
+    default: sd3Config,
+    variants: {
+      alt:  { label: "Alternate", config: sd3ConfigAlt },
+      line: { label: "Single line", config: sd3ConfigLine },
+    },
+    detect: (text) => {
+      if (text.startsWith("<ALT>"))  return "alt";
+      if (text.startsWith("<LINE>")) return "line";
+      return undefined;
+    },
   },
-  "smrpg":     ()     => smrpgConfig,
-  "soe":       ()     => soeConfig,
-  "som":       ()     => somConfig,
-  "spike":     ()     => spikeConfig,
-  "starocean": ()     => staroceanConfig,
-  "valkyrie":  ()     => valkyrieConfig,
-  "ys3":       (text) => ({ ...YS3.config, ...YS3.getConfigByText(text) }),
+  "smrpg":     { default: smrpgConfig },
+  "soe":       { default: soeConfig },
+  "som":       { default: somConfig },
+  "spike":     { default: spikeConfig },
+  "starocean": { default: staroceanConfig },
+  "valkyrie":  { default: valkyrieConfig },
+  "ys3":       { default: (text) => ({ ...YS3.config, ...YS3.getConfigByText(text) }) },
 };
 
 export const CONFIG_IDS: string[] = Object.keys(BASE_CONFIGS);
 
 export function getAvailableLanguages(id: string): string[] {
-  const factory = BASE_CONFIGS[id];
-  if (!factory) return [];
-  return Object.keys(factory("").languages ?? {});
+  const descriptor = BASE_CONFIGS[id];
+  if (!descriptor) return [];
+  return Object.keys(resolveFactory(descriptor.default, "").languages ?? {});
+}
+
+export function getAvailableVariants(id: string): VariantInfo[] {
+  const descriptor = BASE_CONFIGS[id];
+  if (!descriptor) return [];
+  return Object.entries(descriptor.variants ?? {}).map(
+    ([id, v]) => ({ id, label: v.label })
+  );
 }
 
 export function getConfig(ref: ConfigRef, text: string): Config {
-  const { id, language } = ref;
-  const factory = BASE_CONFIGS[id];
-  if (!factory) {
+  const { id, language, variant } = ref;
+  const descriptor = BASE_CONFIGS[id];
+  if (!descriptor) {
     console.warn(`mumble-previewer: unknown config id "${id}", falling back to brandishdr`);
     return brandishdrConfig;
   }
 
-  const base = factory(text);
+  let factory: ConfigFactory | undefined;
+  if (variant) {
+    factory = descriptor.variants?.[variant]?.config;
+    if (!factory) {
+      console.warn(`mumble-previewer: unknown variant "${variant}" for "${id}", using default`);
+    }
+  }
+  if (!factory) {
+    const detected = descriptor.detect?.(text);
+    if (detected) factory = descriptor.variants?.[detected]?.config;
+  }
+  if (!factory) factory = descriptor.default;
+
+  const base = resolveFactory(factory, text);
   if (language) {
     const langExt = base.languages?.[language];
     if (langExt) return applyLanguage(base, language, langExt);

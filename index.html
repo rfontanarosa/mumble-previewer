@@ -48,6 +48,7 @@
         </optgroup>
       </select>
       <select id="language-select"></select>
+      <select id="variant-select"></select>
     </div>
     <div style="margin-bottom: 1rem;">
       <textarea id="text-input">This is a test!</textarea>
@@ -58,27 +59,36 @@
         const containerId = "preview-container";
         const gameSelect = document.getElementById('game-select');
         const languageSelect = document.getElementById('language-select');
+        const variantSelect = document.getElementById('variant-select');
         const textInput = document.getElementById('text-input');
 
         const LANGUAGE_LABELS = { it: 'Italian', pt: 'Portuguese' };
 
-        const refreshLanguages = () => {
-          const id = gameSelect.value;
-          const langs = id && window.MumblePreviewer
-            ? MumblePreviewer.getAvailableLanguages(id)
-            : [];
-          languageSelect.innerHTML = '';
+        const populateSelect = (select, options, defaultLabel) => {
+          select.innerHTML = '';
           const defaultOpt = document.createElement('option');
           defaultOpt.value = '';
-          defaultOpt.textContent = '-- Default --';
-          languageSelect.appendChild(defaultOpt);
-          for (const lang of langs) {
+          defaultOpt.textContent = defaultLabel;
+          select.appendChild(defaultOpt);
+          for (const { id, label } of options) {
             const opt = document.createElement('option');
-            opt.value = lang;
-            opt.textContent = LANGUAGE_LABELS[lang] ?? lang;
-            languageSelect.appendChild(opt);
+            opt.value = id;
+            opt.textContent = label;
+            select.appendChild(opt);
           }
-          languageSelect.disabled = langs.length === 0;
+          select.disabled = options.length === 0;
+        };
+
+        const refreshSelectors = () => {
+          const id = gameSelect.value;
+          const langs = id && window.MumblePreviewer
+            ? MumblePreviewer.getAvailableLanguages(id).map((code) => ({ id: code, label: LANGUAGE_LABELS[code] ?? code }))
+            : [];
+          const variants = id && window.MumblePreviewer
+            ? MumblePreviewer.getAvailableVariants(id)
+            : [];
+          populateSelect(languageSelect, langs, '-- Default --');
+          populateSelect(variantSelect, variants, '-- Auto --');
         };
 
         const updatePreview = () => {
@@ -86,18 +96,22 @@
           const id = gameSelect.value;
           if (!id || !window.MumblePreviewer) return;
           const language = languageSelect.value;
-          const config = language ? { id, language } : { id };
+          const variant = variantSelect.value;
+          const config = { id };
+          if (language) config.language = language;
+          if (variant) config.variant = variant;
           MumblePreviewer.renderPreview(containerId, text, config);
         };
 
         gameSelect.addEventListener('change', () => {
-          refreshLanguages();
+          refreshSelectors();
           updatePreview();
         });
         languageSelect.addEventListener('change', updatePreview);
+        variantSelect.addEventListener('change', updatePreview);
         textInput.addEventListener('input', updatePreview);
 
-        refreshLanguages();
+        refreshSelectors();
         updatePreview();
       });
     </script>

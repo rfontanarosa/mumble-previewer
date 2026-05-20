@@ -1,8 +1,8 @@
-import { Config, ConfigRef, getAvailableLanguages, getConfig } from "./config";
+import { Config, ConfigRef, VariantInfo, getAvailableLanguages, getAvailableVariants, getConfig } from "./config";
 import { replaceAt } from "./utils";
 
-export type { ConfigRef };
-export { getAvailableLanguages };
+export type { ConfigRef, VariantInfo };
+export { getAvailableLanguages, getAvailableVariants };
 
 function processText(
   text: string,
