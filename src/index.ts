@@ -1,5 +1,8 @@
-import { Config, getConfig } from "./config";
+import { Config, ConfigRef, getAvailableLanguages, getConfig } from "./config";
 import { replaceAt } from "./utils";
+
+export type { ConfigRef };
+export { getAvailableLanguages };
 
 function processText(
   text: string,
@@ -213,12 +216,18 @@ function renderHtml(
 export function renderPreview(
   containerId: string,
   text: string,
-  config: string | Config
+  config: string | ConfigRef | Config
 ): void {
   const container = document.getElementById(containerId);
   if (container) {
-    const options =
-      typeof config === "string" ? getConfig(config, text) : config;
+    let options: Config;
+    if (typeof config === "string") {
+      options = getConfig({ id: config }, text);
+    } else if ("id" in config) {
+      options = getConfig(config, text);
+    } else {
+      options = config;
+    }
     const charWidthMap = options.charWidthMap;
     const processedText = processText(text, charWidthMap, options);
     renderHtml(containerId, processedText, charWidthMap, options);

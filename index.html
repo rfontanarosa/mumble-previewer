@@ -22,27 +22,19 @@
         <option value="">-- Select a game --</option>
         <optgroup label="Super Nintendo (SNES)">
           <option value="7thsaga">7th Saga, The (SNES)</option>
-          <option value="7thsaga_it">7th Saga, The (SNES) - Italian</option>
           <option value="alcahest">Alcahest (SNES)</option>
-          <option value="alcahest_it">Alcahest (SNES) - Italian</option>
           <option value="brainlord">Brain Lord (SNES)</option>
-          <option value="brainlord_it">Brain Lord (SNES) - Italian</option>
-          <option value="brainlord_pt">Brain Lord (SNES) - Portuguese</option>
           <option value="bof">Breath of Fire (SNES)</option>
           <option value="ffmq">Final Fantasy: Mystic Quest (SNES)</option>
           <option value="ignition">Ignition Factor, The (SNES)</option>
           <option value="gaia">Illusion of Gaia (SNES)</option>
           <option value="lufia">Lufia &amp; the Fortress of Doom (SNES)</option>
           <option value="neugier">Neugier: Umi to Kaze no Koudou (SNES)</option>
-          <option value="soe">Secret of Evermore (SNES) - English</option>
-          <option value="soe_it">Secret of Evermore (SNES) - Italian</option>
-          <option value="soe_pt">Secret of Evermore (SNES) - Portuguese</option>
-          <option value="som">Secret of Mana (SNES) - English</option>
-          <option value="som_it">Secret of Mana (SNES) - Italian</option>
+          <option value="soe">Secret of Evermore (SNES)</option>
+          <option value="som">Secret of Mana (SNES)</option>
           <option value="sd3">Seiken Densetsu 3 (SNES)</option>
           <option value="smrpg">Super Mario RPG: Legend of the Seven Stars (SNES)</option>
           <option value="starocean">Star Ocean (SNES)</option>
-          <option value="starocean_it">Star Ocean (SNES) - Italian</option>
           <option value="spike">Twisted Tales of Spike McFang, The (SNES)</option>
           <option value="ys3">Ys III: Wanderers from Ys (SNES)</option>
         </optgroup>
@@ -53,9 +45,9 @@
         </optgroup>
         <optgroup label="PlayStation Portable (PSP)">
           <option value="brandishdr">Brandish: The Dark Revenant (PSP)</option>
-          <option value="brandishdr_it">Brandish: The Dark Revenant (PSP) - Italian</option>
         </optgroup>
       </select>
+      <select id="language-select"></select>
     </div>
     <div style="margin-bottom: 1rem;">
       <textarea id="text-input">This is a test!</textarea>
@@ -65,19 +57,47 @@
       document.addEventListener('DOMContentLoaded', () => {
         const containerId = "preview-container";
         const gameSelect = document.getElementById('game-select');
+        const languageSelect = document.getElementById('language-select');
         const textInput = document.getElementById('text-input');
+
+        const LANGUAGE_LABELS = { it: 'Italian', pt: 'Portuguese' };
+
+        const refreshLanguages = () => {
+          const id = gameSelect.value;
+          const langs = id && window.MumblePreviewer
+            ? MumblePreviewer.getAvailableLanguages(id)
+            : [];
+          languageSelect.innerHTML = '';
+          const defaultOpt = document.createElement('option');
+          defaultOpt.value = '';
+          defaultOpt.textContent = '-- Default --';
+          languageSelect.appendChild(defaultOpt);
+          for (const lang of langs) {
+            const opt = document.createElement('option');
+            opt.value = lang;
+            opt.textContent = LANGUAGE_LABELS[lang] ?? lang;
+            languageSelect.appendChild(opt);
+          }
+          languageSelect.disabled = langs.length === 0;
+        };
 
         const updatePreview = () => {
           const text = textInput.value;
-          const config = gameSelect.value;
-          if (window.MumblePreviewer) {
-            MumblePreviewer.renderPreview(containerId, text, config);
-          }
+          const id = gameSelect.value;
+          if (!id || !window.MumblePreviewer) return;
+          const language = languageSelect.value;
+          const config = language ? { id, language } : { id };
+          MumblePreviewer.renderPreview(containerId, text, config);
         };
 
-        gameSelect.addEventListener('change', updatePreview);
+        gameSelect.addEventListener('change', () => {
+          refreshLanguages();
+          updatePreview();
+        });
+        languageSelect.addEventListener('change', updatePreview);
         textInput.addEventListener('input', updatePreview);
 
+        refreshLanguages();
         updatePreview();
       });
     </script>
