@@ -7,14 +7,15 @@ const ALCAHEST_CHAR_PAIRS: [string, number][] = [
   ["!\"'()1I[]`", 3],
   [" j{}" , 4],
   ["#$%&*+-/023456789<=>?@ABCDEFGHJKLMNOPQRSTUVWXYZ¥^_abcdefghkmnopqrstuvwxyz。「」、", 5],
-  ["𝐗𝐘", 10],
+  ["𝐀𝐁𝐂𝐃𝐄𝐅𝐆𝐇𝐈𝐉𝐊𝐋𝐌𝐍𝐎𝐏𝐐𝐑𝐒𝐓𝐔𝐖𝐗𝐘𝐙", 10],
 ];
 
 const ALCAHEST_CHAR_PAIRS_ITA: [string, number][] = [
   ...ALCAHEST_CHAR_PAIRS,
   ...([
     ["ì", 2],
-    ["àéèòùÈ", 5]
+    ["àéèòù", 5],
+    ["È", 6]
   ] as [string, number][]),
 ];
 
@@ -31,8 +32,11 @@ const ALCAHEST_REGEXES: [string | RegExp, string][] = [
   [/\[PTR .. ..\]/g, ""],
   [/\[COLOR .. .. .. ..\]/g, ""],
   [/\[GOTO .. ..\]/g, ""],
-  [/\[CALL 7D 1A 00\]/g, "Y"],
-  [/\[CALL 83 1A 00\]/g, "X"],
+  [/\[CALL 7D 1A 00\]/g, "𝐘"],
+  [/\[CALL 80 1A 00\]/g, "𝐁"],
+  [/\[CALL 83 1A 00\]/g, "𝐗"],
+  [/\[CALL 86 1A 00\]/g, "𝐋・𝐑"],
+  [/\[CALL 89 1A 00\]/g, "𝐀"],
   [/\[PAIR .. ..\]/g, ""],
   [/\[PAUSE\]/g, ""],
   [/\[FLAG1\]/g, ""],
@@ -48,11 +52,6 @@ const ALCAHEST_REGEXES: [string | RegExp, string][] = [
 const ALCAHEST_TEXT_REPLACER = (text: string): string => {
   text = replaceAll(text, ALCAHEST_REGEXES);
   text = text.replaceAll("[CLOSE]\n", "\r");
-  text.match(/<PAD><..><..>/g)?.forEach((matchResult) => {
-    const width = parseInt(matchResult.slice(6, 8), 16);
-    // const height = parseInt(matchResult.slice(10, 12), 16);
-    text = text.replaceAll(matchResult, "\t".repeat(width));
-  });
   return text;
 };
 
