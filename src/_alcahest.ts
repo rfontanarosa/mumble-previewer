@@ -46,6 +46,8 @@ const ALCAHEST_REGEXES: [string | RegExp, string][] = [
   [/\[EVENT ..\]/g, ""],
   [/\[SPEAKER ..\]/g, ""],
   [/\[TRIGGER\]/g, ""],
+  [/\[IF .. .. .. .. .. .. BRANCH:.\]/g, ""],
+  [/\[BRANCH:.\]/g, ""],
   [/\{..}/g, ""],
 ];
 
