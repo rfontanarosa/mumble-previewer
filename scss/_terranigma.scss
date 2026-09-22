@@ -1,0 +1,145 @@
+.terranigma-box {
+  .screen {
+    height: 80px !important;
+    background: url(../images/_terranigma/terranigma_dialog_box.png) no-repeat;
+    background-color: black;
+
+    .text-box {
+      padding-left: 8px;
+      padding-top: 4px;
+
+      .text-line {
+        line-height: 10px !important;
+      }
+    }
+  }
+}
+
+.terranigma-main-font {
+  min-height: 16px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  width: 12px;
+  background-image: url(../images/_terranigma/terranigma-font.png);
+
+  &.char-32   { background-position:   -0px   -64px; } /*   */
+  &.char-65   { background-position:  -16px   -64px; } /* A */
+  &.char-66   { background-position:  -32px   -64px; } /* B */
+  &.char-67   { background-position:  -48px   -64px; } /* C */
+  &.char-68   { background-position:  -64px   -64px; } /* D */
+  &.char-69   { background-position:  -80px   -64px; } /* E */
+  &.char-70   { background-position:  -96px   -64px; } /* F */
+  &.char-71   { background-position: -112px   -64px; } /* G */
+
+  &.char-72   { background-position:   -0px   -80px; } /* H */
+  &.char-73   { background-position:  -16px   -80px; } /* I */
+  &.char-74   { background-position:  -32px   -80px; } /* J */
+  &.char-75   { background-position:  -48px   -80px; } /* K */
+  &.char-76   { background-position:  -64px   -80px; } /* L */
+  &.char-77   { background-position:  -80px   -80px; } /* M */
+  &.char-78   { background-position:  -96px   -80px; } /* N */
+  &.char-79   { background-position: -112px   -80px; } /* O */
+ 
+  &.char-80   { background-position:   -0px   -96px; } /* P */
+  &.char-81   { background-position:  -16px   -96px; } /* Q */
+  &.char-82   { background-position:  -32px   -96px; } /* R */
+  &.char-83   { background-position:  -48px   -96px; } /* S */
+  &.char-84   { background-position:  -64px   -96px; } /* T */
+  &.char-85   { background-position:  -80px   -96px; } /* U */
+  &.char-86   { background-position:  -96px   -96px; } /* V */
+  &.char-87   { background-position: -112px   -96px; } /* W */
+
+  &.char-88   { background-position:   -0px  -112px; } /* X */
+  &.char-89   { background-position:  -16px  -112px; } /* Y */
+  &.char-90   { background-position:  -32px  -112px; } /* Z */
+  /* */
+  /* */
+  /* */
+  /* */
+  /* */
+
+  /* */
+  &.char-97   { background-position:  -16px  -128px; } /* a */
+  &.char-98   { background-position:  -32px  -128px; } /* b */
+  &.char-99   { background-position:  -48px  -128px; } /* c */
+  &.char-100  { background-position:  -64px  -128px; } /* d */
+  &.char-101  { background-position:  -80px  -128px; } /* e */
+  &.char-102  { background-position:  -96px  -128px; } /* f */
+  &.char-103  { background-position: -112px  -128px; } /* g */
+
+  &.char-104  { background-position:   -0px  -144px; } /* h */
+  &.char-105  { background-position:  -16px  -144px; } /* i */
+  &.char-106  { background-position:  -32px  -144px; } /* j */
+  &.char-107  { background-position:  -48px  -144px; } /* k */
+  &.char-108  { background-position:  -64px  -144px; } /* l */
+  &.char-109  { background-position:  -80px  -144px; } /* m */
+  &.char-110  { background-position:  -96px  -144px; } /* n */
+  &.char-111  { background-position: -112px  -144px; } /* o */
+
+  &.char-112  { background-position:   -0px  -160px; } /* p */
+  &.char-113  { background-position:  -16px  -160px; } /* q */
+  &.char-114  { background-position:  -32px  -160px; } /* r */
+  &.char-115  { background-position:  -48px  -160px; } /* s */
+  &.char-116  { background-position:  -64px  -160px; } /* t */
+  &.char-117  { background-position:  -80px  -160px; } /* u */
+  &.char-118  { background-position:  -96px  -160px; } /* v */
+  &.char-119  { background-position: -112px  -160px; } /* w */
+
+  &.char-120  { background-position:   -0px  -176px; } /* x */
+  &.char-121  { background-position:  -16px  -176px; } /* y */
+  &.char-122  { background-position:  -32px  -176px; } /* z */
+  /* */
+  /* */
+  /* */
+  /* */
+  /* */
+
+  &.char-63   { background-position:   -0px -192px; } /* ? */
+  &.char-40   { background-position:  -16px -192px; } /* ( */
+  &.char-41   { background-position:  -32px -192px; } /* ) */
+  &.char-48   { background-position:  -48px -192px; } /* 0 */
+  &.char-49   { background-position:  -64px -192px; } /* 1 */
+  &.char-50   { background-position:  -80px -192px; } /* 2 */
+  &.char-51   { background-position:  -96px -192px; } /* 3 */
+  &.char-52   { background-position: -112px -192px; } /* 4 */
+
+  &.char-53   { background-position:   -0px -208px; } /* 5 */
+  &.char-54   { background-position:  -16px -208px; } /* 6 */
+  &.char-55   { background-position:  -32px -208px; } /* 7 */
+  &.char-56   { background-position:  -48px -208px; } /* 8 */
+  &.char-57   { background-position:  -64px -208px; } /* 9 */
+  &.char-33   { background-position:  -80px -208px; } /* ! */
+  &.char-44   { background-position:  -96px -208px; } /* , */
+  &.char-58   { background-position: -112px -208px; } /* : */
+
+  &.char-8594 { background-position:   -0px -224px; } /* → */
+  &.char-8592 { background-position:  -16px -224px; } /* ← */
+  &.char-8593 { background-position:  -32px -224px; } /* ↑ */
+  &.char-8595 { background-position:  -48px -224px; } /* ↓ */
+  &.char-8220 { background-position:  -64px -224px; } /* “ */
+  &.char-8221 { background-position:  -80px -224px; } /* ” */
+  &.char-39   { background-position:  -96px -224px; } /* ' */
+  &.char-61   { background-position: -112px -224px; } /* = */
+
+  /* */
+  &.char-37   { background-position:  -16px -240px; } /* % */
+  &.char-42   { background-position:  -32px -240px; } /* * */
+  &.char-43   { background-position:  -48px -240px; } /* + */
+  &.char-45   { background-position:  -64px -240px; } /* - */
+  &.char-47   { background-position:  -80px -240px; } /* / */
+  &.char-38   { background-position:  -96px -240px; } /* & */
+  &.char-46   { background-position: -112px -240px; } /* . */
+
+  &.it {
+    background-image: url(../images/_terranigma/terranigma-font-ita.png);
+
+    &.char-224  { background-position:  -48px  -112px; } /* à */
+    &.char-233  { background-position:  -64px  -112px; } /* é */
+    &.char-232  { background-position:  -80px  -112px; } /* è */
+    &.char-236  { background-position:  -96px  -112px; } /* ì */
+    &.char-242  { background-position: -112px  -112px; } /* ò */
+
+    &.char-249  { background-position:  -48px  -176px; } /* ù */
+    &.char-200  { background-position:  -64px  -176px; } /* È */
+  }
+}

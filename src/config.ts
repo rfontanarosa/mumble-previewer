@@ -17,6 +17,7 @@ import { somConfig } from "./_som";
 import { staroceanConfig } from "./_starocean";
 import { sd3Config, sd3ConfigAlt, sd3ConfigLine } from "./_sd3";
 import { smrpgConfig } from "./_smrpg";
+import { terranigmaConfig } from "./_terranigma";
 import { valkyrieConfig } from "./_valkyrie";
 import { YS3 } from "./_ys3";
 import { generateCharWidthMap } from "./utils";
@@ -104,6 +105,7 @@ const BASE_CONFIGS: Record<string, GameDescriptor> = {
   "som":       { default: somConfig },
   "spike":     { default: spikeConfig },
   "starocean": { default: staroceanConfig },
+  "terranigma": { default: terranigmaConfig },
   "valkyrie":  { default: valkyrieConfig },
   "ys3":       { default: (text) => ({ ...YS3.config, ...YS3.getConfigByText(text) }) },
 };

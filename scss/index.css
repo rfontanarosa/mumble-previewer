@@ -1,0 +1,7302 @@
+@charset "UTF-8";
+.seventhsaga-box .screen {
+  background: url(../images/_7thsaga/7thsaga-preview.png) no-repeat;
+}
+.seventhsaga-box .screen .text-box {
+  padding-left: 24px;
+  padding-top: 144px;
+}
+
+.seventhsaga-main-font {
+  min-height: 16px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  width: 8px;
+  background-image: url(../images/_7thsaga/7thsaga_font_ita.png);
+  /* 0 */
+  /* 1 */
+  /* 2 */
+  /* 3 */
+  /* 4 */
+  /* 5 */
+  /* 6 */
+  /* 7 */
+  /* 8 */
+  /* 9 */
+  /*   */
+  /* ) */
+  /* · */
+  /* / */
+  /* A */
+  /* B */
+  /* C */
+  /* D */
+  /* E */
+  /* F */
+  /* G */
+  /* H */
+  /* I */
+  /* J */
+  /* K */
+  /* L */
+  /* M */
+  /* N */
+  /* O */
+  /* P */
+  /* Q */
+  /* R */
+  /* S */
+  /* T */
+  /* U */
+  /* V */
+  /* W */
+  /* X */
+  /* Y */
+  /* Z */
+  /* a */
+  /* b */
+  /* c */
+  /* d */
+  /* e */
+  /* f */
+  /* g */
+  /* h */
+  /* i */
+  /* j */
+  /* k */
+  /* l */
+  /* m */
+  /* n */
+  /* o */
+  /* p */
+  /* q */
+  /* r */
+  /* s */
+  /* t */
+  /* u */
+  /* v */
+  /* w */
+  /* x */
+  /* y */
+  /* z */
+  /**/
+  /**/
+  /* ? */
+  /**/
+  /**/
+  /* : */
+  /* ; */
+  /**/
+  /* à */
+  /* è */
+  /* é */
+  /* ì */
+  /* ò */
+  /* ù */
+  /* È */
+  /* ° */
+  /**/
+  /* ' */
+  /* " */
+  /* - */
+  /* , */
+  /* . */
+  /* ! */
+  /* ♪ */
+}
+.seventhsaga-main-font.char-48 {
+  background-position: 0px 0px;
+}
+.seventhsaga-main-font.char-49 {
+  background-position: -16px 0px;
+}
+.seventhsaga-main-font.char-50 {
+  background-position: -32px 0px;
+}
+.seventhsaga-main-font.char-51 {
+  background-position: -48px 0px;
+}
+.seventhsaga-main-font.char-52 {
+  background-position: -64px 0px;
+}
+.seventhsaga-main-font.char-53 {
+  background-position: -80px 0px;
+}
+.seventhsaga-main-font.char-54 {
+  background-position: -96px 0px;
+}
+.seventhsaga-main-font.char-55 {
+  background-position: -112px 0px;
+}
+.seventhsaga-main-font.char-56 {
+  background-position: 0px -16px;
+}
+.seventhsaga-main-font.char-57 {
+  background-position: -16px -16px;
+}
+.seventhsaga-main-font.char-32 {
+  background-position: -80px -16px;
+}
+.seventhsaga-main-font.char-41 {
+  background-position: 0px -32px;
+}
+.seventhsaga-main-font.char-183 {
+  background-position: -112px -32px;
+}
+.seventhsaga-main-font.char-47 {
+  background-position: -16px -48px;
+}
+.seventhsaga-main-font.char-65 {
+  background-position: 0px -64px;
+}
+.seventhsaga-main-font.char-66 {
+  background-position: -16px -64px;
+}
+.seventhsaga-main-font.char-67 {
+  background-position: -32px -64px;
+}
+.seventhsaga-main-font.char-68 {
+  background-position: -48px -64px;
+}
+.seventhsaga-main-font.char-69 {
+  background-position: -64px -64px;
+}
+.seventhsaga-main-font.char-70 {
+  background-position: -80px -64px;
+}
+.seventhsaga-main-font.char-71 {
+  background-position: -96px -64px;
+}
+.seventhsaga-main-font.char-72 {
+  background-position: -112px -64px;
+}
+.seventhsaga-main-font.char-73 {
+  background-position: 0px -80px;
+}
+.seventhsaga-main-font.char-74 {
+  background-position: -16px -80px;
+}
+.seventhsaga-main-font.char-75 {
+  background-position: -32px -80px;
+}
+.seventhsaga-main-font.char-76 {
+  background-position: -48px -80px;
+}
+.seventhsaga-main-font.char-77 {
+  background-position: -64px -80px;
+}
+.seventhsaga-main-font.char-78 {
+  background-position: -80px -80px;
+}
+.seventhsaga-main-font.char-79 {
+  background-position: -96px -80px;
+}
+.seventhsaga-main-font.char-80 {
+  background-position: -112px -80px;
+}
+.seventhsaga-main-font.char-81 {
+  background-position: 0px -96px;
+}
+.seventhsaga-main-font.char-82 {
+  background-position: -16px -96px;
+}
+.seventhsaga-main-font.char-83 {
+  background-position: -32px -96px;
+}
+.seventhsaga-main-font.char-84 {
+  background-position: -48px -96px;
+}
+.seventhsaga-main-font.char-85 {
+  background-position: -64px -96px;
+}
+.seventhsaga-main-font.char-86 {
+  background-position: -80px -96px;
+}
+.seventhsaga-main-font.char-87 {
+  background-position: -96px -96px;
+}
+.seventhsaga-main-font.char-88 {
+  background-position: -112px -96px;
+}
+.seventhsaga-main-font.char-89 {
+  background-position: 0px -112px;
+}
+.seventhsaga-main-font.char-90 {
+  background-position: -16px -112px;
+}
+.seventhsaga-main-font.char-97 {
+  background-position: -32px -112px;
+}
+.seventhsaga-main-font.char-98 {
+  background-position: -48px -112px;
+}
+.seventhsaga-main-font.char-99 {
+  background-position: -64px -112px;
+}
+.seventhsaga-main-font.char-100 {
+  background-position: -80px -112px;
+}
+.seventhsaga-main-font.char-101 {
+  background-position: -96px -112px;
+}
+.seventhsaga-main-font.char-102 {
+  background-position: -112px -112px;
+}
+.seventhsaga-main-font.char-103 {
+  background-position: 0px -128px;
+}
+.seventhsaga-main-font.char-104 {
+  background-position: -16px -128px;
+}
+.seventhsaga-main-font.char-105 {
+  background-position: -32px -128px;
+}
+.seventhsaga-main-font.char-106 {
+  background-position: -48px -128px;
+}
+.seventhsaga-main-font.char-107 {
+  background-position: -64px -128px;
+}
+.seventhsaga-main-font.char-108 {
+  background-position: -80px -128px;
+}
+.seventhsaga-main-font.char-109 {
+  background-position: -96px -128px;
+}
+.seventhsaga-main-font.char-110 {
+  background-position: -112px -128px;
+}
+.seventhsaga-main-font.char-111 {
+  background-position: 0px -144px;
+}
+.seventhsaga-main-font.char-112 {
+  background-position: -16px -144px;
+}
+.seventhsaga-main-font.char-113 {
+  background-position: -32px -144px;
+}
+.seventhsaga-main-font.char-114 {
+  background-position: -48px -144px;
+}
+.seventhsaga-main-font.char-115 {
+  background-position: -64px -144px;
+}
+.seventhsaga-main-font.char-116 {
+  background-position: -80px -144px;
+}
+.seventhsaga-main-font.char-117 {
+  background-position: -96px -144px;
+}
+.seventhsaga-main-font.char-118 {
+  background-position: -112px -144px;
+}
+.seventhsaga-main-font.char-119 {
+  background-position: 0px -160px;
+}
+.seventhsaga-main-font.char-120 {
+  background-position: -16px -160px;
+}
+.seventhsaga-main-font.char-121 {
+  background-position: -32px -160px;
+}
+.seventhsaga-main-font.char-122 {
+  background-position: -48px -160px;
+}
+.seventhsaga-main-font.char-63 {
+  background-position: -96px -160px;
+}
+.seventhsaga-main-font.char-58 {
+  background-position: -32px -176px;
+}
+.seventhsaga-main-font.char-59 {
+  background-position: -48px -176px;
+}
+.seventhsaga-main-font.char-224 {
+  background-position: -80px -176px;
+}
+.seventhsaga-main-font.char-232 {
+  background-position: -96px -176px;
+}
+.seventhsaga-main-font.char-233 {
+  background-position: -112px -176px;
+}
+.seventhsaga-main-font.char-236 {
+  background-position: 0px -192px;
+}
+.seventhsaga-main-font.char-242 {
+  background-position: -16px -192px;
+}
+.seventhsaga-main-font.char-249 {
+  background-position: -32px -192px;
+}
+.seventhsaga-main-font.char-200 {
+  background-position: -48px -192px;
+}
+.seventhsaga-main-font.char-176 {
+  background-position: -64px -192px;
+}
+.seventhsaga-main-font.char-39 {
+  background-position: -96px -192px;
+}
+.seventhsaga-main-font.char-34 {
+  background-position: -112px -192px;
+}
+.seventhsaga-main-font.char-45 {
+  background-position: 0px -208px;
+}
+.seventhsaga-main-font.char-44 {
+  background-position: -16px -208px;
+}
+.seventhsaga-main-font.char-46 {
+  background-position: -32px -208px;
+}
+.seventhsaga-main-font.char-33 {
+  background-position: -80px -256px;
+}
+.seventhsaga-main-font.char-9834 {
+  background-position: -80px -400px;
+}
+
+.bof-box .screen {
+  background: url(../images/_bof/bof-preview.png) no-repeat;
+}
+.bof-box .screen .text-box {
+  padding-top: 151px;
+  padding-left: 24px;
+}
+
+.bof-main-font {
+  min-height: 16px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  width: 8px;
+  background-image: url(../images/_bof/bof_font_preview_ita.png);
+  /* A */
+  /* B */
+  /* C */
+  /* D */
+  /* E */
+  /* F */
+  /* G */
+  /* H */
+  /* I */
+  /* J */
+  /* K */
+  /* L */
+  /* M */
+  /* N */
+  /* O */
+  /* P */
+  /* Q */
+  /* R */
+  /* S */
+  /* T */
+  /* U */
+  /* V */
+  /* W */
+  /* X */
+  /* Y */
+  /* Z */
+  /* a */
+  /* b */
+  /* c */
+  /* d */
+  /* e */
+  /* f */
+  /* g */
+  /* h */
+  /* i */
+  /* j */
+  /* k */
+  /* l */
+  /* m */
+  /* n */
+  /* o */
+  /* p */
+  /* q */
+  /* r */
+  /* s */
+  /* t */
+  /* u */
+  /* v */
+  /* w */
+  /* x */
+  /* y */
+  /* z */
+  /* 0 */
+  /* 1 */
+  /* 2 */
+  /* 3 */
+  /* 4 */
+  /* 5 */
+  /* 6 */
+  /* 7 */
+  /* 8 */
+  /* 9 */
+  /* , */
+  /* . */
+  /* ! */
+  /* ? */
+  /* ' */
+  /* : */
+  /*   */
+  /* à */
+  /* è */
+  /* é */
+  /* ì */
+  /* ò */
+  /* ù */
+  /* È */
+}
+.bof-main-font.char-65 {
+  background-position: 0px 0;
+}
+.bof-main-font.char-66 {
+  background-position: -8px 0;
+}
+.bof-main-font.char-67 {
+  background-position: -16px 0;
+}
+.bof-main-font.char-68 {
+  background-position: -24px 0;
+}
+.bof-main-font.char-69 {
+  background-position: -32px 0;
+}
+.bof-main-font.char-70 {
+  background-position: -40px 0;
+}
+.bof-main-font.char-71 {
+  background-position: -48px 0;
+}
+.bof-main-font.char-72 {
+  background-position: -56px 0;
+}
+.bof-main-font.char-73 {
+  background-position: -64px 0;
+}
+.bof-main-font.char-74 {
+  background-position: -72px 0;
+}
+.bof-main-font.char-75 {
+  background-position: -80px 0;
+}
+.bof-main-font.char-76 {
+  background-position: -88px 0;
+}
+.bof-main-font.char-77 {
+  background-position: -96px 0;
+}
+.bof-main-font.char-78 {
+  background-position: -104px 0;
+}
+.bof-main-font.char-79 {
+  background-position: -112px 0;
+}
+.bof-main-font.char-80 {
+  background-position: -120px 0;
+}
+.bof-main-font.char-81 {
+  background-position: -128px 0;
+}
+.bof-main-font.char-82 {
+  background-position: -136px 0;
+}
+.bof-main-font.char-83 {
+  background-position: -144px 0;
+}
+.bof-main-font.char-84 {
+  background-position: -152px 0;
+}
+.bof-main-font.char-85 {
+  background-position: -160px 0;
+}
+.bof-main-font.char-86 {
+  background-position: -168px 0;
+}
+.bof-main-font.char-87 {
+  background-position: -176px 0;
+}
+.bof-main-font.char-88 {
+  background-position: -184px 0;
+}
+.bof-main-font.char-89 {
+  background-position: -192px 0;
+}
+.bof-main-font.char-90 {
+  background-position: -200px 0;
+}
+.bof-main-font.char-97 {
+  background-position: -208px 0;
+}
+.bof-main-font.char-98 {
+  background-position: -216px 0;
+}
+.bof-main-font.char-99 {
+  background-position: -224px 0;
+}
+.bof-main-font.char-100 {
+  background-position: -232px 0;
+}
+.bof-main-font.char-101 {
+  background-position: -240px 0;
+}
+.bof-main-font.char-102 {
+  background-position: -248px 0;
+}
+.bof-main-font.char-103 {
+  background-position: -256px 0;
+}
+.bof-main-font.char-104 {
+  background-position: -264px 0;
+}
+.bof-main-font.char-105 {
+  background-position: -272px 0;
+}
+.bof-main-font.char-106 {
+  background-position: -280px 0;
+}
+.bof-main-font.char-107 {
+  background-position: -288px 0;
+}
+.bof-main-font.char-108 {
+  background-position: -296px 0;
+}
+.bof-main-font.char-109 {
+  background-position: -304px 0;
+}
+.bof-main-font.char-110 {
+  background-position: -312px 0;
+}
+.bof-main-font.char-111 {
+  background-position: -320px 0;
+}
+.bof-main-font.char-112 {
+  background-position: -328px 0;
+}
+.bof-main-font.char-113 {
+  background-position: -336px 0;
+}
+.bof-main-font.char-114 {
+  background-position: -344px 0;
+}
+.bof-main-font.char-115 {
+  background-position: -352px 0;
+}
+.bof-main-font.char-116 {
+  background-position: -360px 0;
+}
+.bof-main-font.char-117 {
+  background-position: -368px 0;
+}
+.bof-main-font.char-118 {
+  background-position: -376px 0;
+}
+.bof-main-font.char-119 {
+  background-position: -384px 0;
+}
+.bof-main-font.char-120 {
+  background-position: -392px 0;
+}
+.bof-main-font.char-121 {
+  background-position: -400px 0;
+}
+.bof-main-font.char-122 {
+  background-position: -408px 0;
+}
+.bof-main-font.char-48 {
+  background-position: -416px 0;
+}
+.bof-main-font.char-49 {
+  background-position: -424px 0;
+}
+.bof-main-font.char-50 {
+  background-position: -432px 0;
+}
+.bof-main-font.char-51 {
+  background-position: -440px 0;
+}
+.bof-main-font.char-52 {
+  background-position: -448px 0;
+}
+.bof-main-font.char-53 {
+  background-position: -456px 0;
+}
+.bof-main-font.char-54 {
+  background-position: -464px 0;
+}
+.bof-main-font.char-55 {
+  background-position: -472px 0;
+}
+.bof-main-font.char-56 {
+  background-position: -480px 0;
+}
+.bof-main-font.char-57 {
+  background-position: -488px 0;
+}
+.bof-main-font.char-44 {
+  background-position: -496px 0;
+}
+.bof-main-font.char-45 {
+  background-position: -504px 0;
+}
+.bof-main-font.char-33 {
+  background-position: -512px 0;
+}
+.bof-main-font.char-63 {
+  background-position: -520px 0;
+}
+.bof-main-font.char-39 {
+  background-position: -528px 0;
+}
+.bof-main-font.char-58 {
+  background-position: -536px 0;
+}
+.bof-main-font.char-32 {
+  background-position: -544px 0;
+}
+.bof-main-font.char-224 {
+  background-position: -584px 0;
+}
+.bof-main-font.char-232 {
+  background-position: -592px 0;
+}
+.bof-main-font.char-233 {
+  background-position: -600px 0;
+}
+.bof-main-font.char-236 {
+  background-position: -608px 0;
+}
+.bof-main-font.char-242 {
+  background-position: -616px 0;
+}
+.bof-main-font.char-249 {
+  background-position: -624px 0;
+}
+.bof-main-font.char-200 {
+  background-position: -632px 0;
+}
+
+.brainlord-box .screen {
+  background: url(../images/_brainlord/bl-preview.png) no-repeat;
+}
+.brainlord-box .screen .text-box {
+  padding-left: 24px;
+  padding-top: 144px;
+}
+
+.brainlord-main-font {
+  min-height: 16px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  width: 8px;
+  background-image: url(../images/_brainlord/bl-font-text.png);
+  background-image: url(../images/_brainlord/bl-font-text-mog.png);
+  background-image: url(../images/_brainlord/bl-font-text-ita.png);
+  /* 0 */
+  /* 1 */
+  /* 2 */
+  /* 3 */
+  /* 4 */
+  /* 5 */
+  /* 6 */
+  /* 7 */
+  /* 8 */
+  /* 9 */
+  /*   */
+  /* ) */
+  /* . */
+  /* / */
+  /* A */
+  /* B */
+  /* C */
+  /* D */
+  /* E */
+  /* F */
+  /* G */
+  /* H */
+  /* I */
+  /* J */
+  /* K */
+  /* L */
+  /* M */
+  /* N */
+  /* O */
+  /* P */
+  /* Q */
+  /* R */
+  /* S */
+  /* T */
+  /* U */
+  /* V */
+  /* W */
+  /* X */
+  /* Y */
+  /* Z */
+  /* a */
+  /* b */
+  /* c */
+  /* d */
+  /* e */
+  /* f */
+  /* g */
+  /* h */
+  /* i */
+  /* j */
+  /* k */
+  /* l */
+  /* m */
+  /* n */
+  /* o */
+  /* p */
+  /* q */
+  /* r */
+  /* s */
+  /* t */
+  /* u */
+  /* v */
+  /* w */
+  /* x */
+  /* y */
+  /* z */
+  /**/
+  /**/
+  /* ? */
+  /**/
+  /**/
+  /* : */
+  /* ; */
+  /**/
+  /* à */
+  /* è */
+  /* é */
+  /* ì */
+  /* ò */
+  /* ù */
+  /* È */
+  /* ° */
+  /**/
+  /* ' */
+  /* " */
+  /* - */
+  /* , */
+  /* · */
+  /* ! */
+  /* ♪ */
+}
+.brainlord-main-font.char-48 {
+  background-position: 0px 0px;
+}
+.brainlord-main-font.char-49 {
+  background-position: -16px 0px;
+}
+.brainlord-main-font.char-50 {
+  background-position: -32px 0px;
+}
+.brainlord-main-font.char-51 {
+  background-position: -48px 0px;
+}
+.brainlord-main-font.char-52 {
+  background-position: -64px 0px;
+}
+.brainlord-main-font.char-53 {
+  background-position: -80px 0px;
+}
+.brainlord-main-font.char-54 {
+  background-position: -96px 0px;
+}
+.brainlord-main-font.char-55 {
+  background-position: -112px 0px;
+}
+.brainlord-main-font.char-56 {
+  background-position: 0px -16px;
+}
+.brainlord-main-font.char-57 {
+  background-position: -16px -16px;
+}
+.brainlord-main-font.char-32 {
+  background-position: -80px -16px;
+}
+.brainlord-main-font.char-41 {
+  background-position: 0px -32px;
+}
+.brainlord-main-font.char-46 {
+  background-position: -112px -32px;
+}
+.brainlord-main-font.char-47 {
+  background-position: -16px -48px;
+}
+.brainlord-main-font.char-65 {
+  background-position: 0px -64px;
+}
+.brainlord-main-font.char-66 {
+  background-position: -16px -64px;
+}
+.brainlord-main-font.char-67 {
+  background-position: -32px -64px;
+}
+.brainlord-main-font.char-68 {
+  background-position: -48px -64px;
+}
+.brainlord-main-font.char-69 {
+  background-position: -64px -64px;
+}
+.brainlord-main-font.char-70 {
+  background-position: -80px -64px;
+}
+.brainlord-main-font.char-71 {
+  background-position: -96px -64px;
+}
+.brainlord-main-font.char-72 {
+  background-position: -112px -64px;
+}
+.brainlord-main-font.char-73 {
+  background-position: 0px -80px;
+}
+.brainlord-main-font.char-74 {
+  background-position: -16px -80px;
+}
+.brainlord-main-font.char-75 {
+  background-position: -32px -80px;
+}
+.brainlord-main-font.char-76 {
+  background-position: -48px -80px;
+}
+.brainlord-main-font.char-77 {
+  background-position: -64px -80px;
+}
+.brainlord-main-font.char-78 {
+  background-position: -80px -80px;
+}
+.brainlord-main-font.char-79 {
+  background-position: -96px -80px;
+}
+.brainlord-main-font.char-80 {
+  background-position: -112px -80px;
+}
+.brainlord-main-font.char-81 {
+  background-position: 0px -96px;
+}
+.brainlord-main-font.char-82 {
+  background-position: -16px -96px;
+}
+.brainlord-main-font.char-83 {
+  background-position: -32px -96px;
+}
+.brainlord-main-font.char-84 {
+  background-position: -48px -96px;
+}
+.brainlord-main-font.char-85 {
+  background-position: -64px -96px;
+}
+.brainlord-main-font.char-86 {
+  background-position: -80px -96px;
+}
+.brainlord-main-font.char-87 {
+  background-position: -96px -96px;
+}
+.brainlord-main-font.char-88 {
+  background-position: -112px -96px;
+}
+.brainlord-main-font.char-89 {
+  background-position: 0px -112px;
+}
+.brainlord-main-font.char-90 {
+  background-position: -16px -112px;
+}
+.brainlord-main-font.char-97 {
+  background-position: -32px -112px;
+}
+.brainlord-main-font.char-98 {
+  background-position: -48px -112px;
+}
+.brainlord-main-font.char-99 {
+  background-position: -64px -112px;
+}
+.brainlord-main-font.char-100 {
+  background-position: -80px -112px;
+}
+.brainlord-main-font.char-101 {
+  background-position: -96px -112px;
+}
+.brainlord-main-font.char-102 {
+  background-position: -112px -112px;
+}
+.brainlord-main-font.char-103 {
+  background-position: 0px -128px;
+}
+.brainlord-main-font.char-104 {
+  background-position: -16px -128px;
+}
+.brainlord-main-font.char-105 {
+  background-position: -32px -128px;
+}
+.brainlord-main-font.char-106 {
+  background-position: -48px -128px;
+}
+.brainlord-main-font.char-107 {
+  background-position: -64px -128px;
+}
+.brainlord-main-font.char-108 {
+  background-position: -80px -128px;
+}
+.brainlord-main-font.char-109 {
+  background-position: -96px -128px;
+}
+.brainlord-main-font.char-110 {
+  background-position: -112px -128px;
+}
+.brainlord-main-font.char-111 {
+  background-position: 0px -144px;
+}
+.brainlord-main-font.char-112 {
+  background-position: -16px -144px;
+}
+.brainlord-main-font.char-113 {
+  background-position: -32px -144px;
+}
+.brainlord-main-font.char-114 {
+  background-position: -48px -144px;
+}
+.brainlord-main-font.char-115 {
+  background-position: -64px -144px;
+}
+.brainlord-main-font.char-116 {
+  background-position: -80px -144px;
+}
+.brainlord-main-font.char-117 {
+  background-position: -96px -144px;
+}
+.brainlord-main-font.char-118 {
+  background-position: -112px -144px;
+}
+.brainlord-main-font.char-119 {
+  background-position: 0px -160px;
+}
+.brainlord-main-font.char-120 {
+  background-position: -16px -160px;
+}
+.brainlord-main-font.char-121 {
+  background-position: -32px -160px;
+}
+.brainlord-main-font.char-122 {
+  background-position: -48px -160px;
+}
+.brainlord-main-font.char-63 {
+  background-position: -96px -160px;
+}
+.brainlord-main-font.char-58 {
+  background-position: -32px -176px;
+}
+.brainlord-main-font.char-59 {
+  background-position: -48px -176px;
+}
+.brainlord-main-font.char-224 {
+  background-position: -80px -176px;
+}
+.brainlord-main-font.char-232 {
+  background-position: -96px -176px;
+}
+.brainlord-main-font.char-233 {
+  background-position: -112px -176px;
+}
+.brainlord-main-font.char-236 {
+  background-position: 0px -192px;
+}
+.brainlord-main-font.char-242 {
+  background-position: -16px -192px;
+}
+.brainlord-main-font.char-249 {
+  background-position: -32px -192px;
+}
+.brainlord-main-font.char-200 {
+  background-position: -48px -192px;
+}
+.brainlord-main-font.char-176 {
+  background-position: -64px -192px;
+}
+.brainlord-main-font.char-39 {
+  background-position: -96px -192px;
+}
+.brainlord-main-font.char-34 {
+  background-position: -112px -192px;
+}
+.brainlord-main-font.char-45 {
+  background-position: 0px -208px;
+}
+.brainlord-main-font.char-44 {
+  background-position: -16px -208px;
+}
+.brainlord-main-font.char-183 {
+  background-position: -32px -208px;
+}
+.brainlord-main-font.char-33 {
+  background-position: -80px -256px;
+}
+.brainlord-main-font.char-9834 {
+  background-position: -80px -400px;
+}
+
+.ffmq-box .screen {
+  background: url(../images/_ffmq/bg1.png) no-repeat;
+}
+.ffmq-box .screen .text-box {
+  padding-left: 23px;
+  padding-top: 26px;
+}
+
+.ffmq-main-font {
+  min-height: 12px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  width: 8px;
+  background-image: url(../images/_ffmq/font_ffmq_8x12_ita.png);
+  /* 0 */
+  /* 1 */
+  /* 2 */
+  /* 3 */
+  /* 4 */
+  /* 5 */
+  /* 6 */
+  /* 7 */
+  /* 8 */
+  /* 9 */
+  /* A */
+  /* B */
+  /* C */
+  /* D */
+  /* E */
+  /* F */
+  /* G */
+  /* H */
+  /* I */
+  /* J */
+  /* K */
+  /* L */
+  /* M */
+  /* N */
+  /* O */
+  /* P */
+  /* Q */
+  /* R */
+  /* S */
+  /* T */
+  /* U */
+  /* V */
+  /* W */
+  /* X */
+  /* Y */
+  /* Z */
+  /* a */
+  /* b */
+  /* c */
+  /* d */
+  /* e */
+  /* f */
+  /* g */
+  /* h */
+  /* i */
+  /* j */
+  /* k */
+  /* l */
+  /* m */
+  /* n */
+  /* o */
+  /* p */
+  /* q */
+  /* r */
+  /* s */
+  /* t */
+  /* u */
+  /* v */
+  /* w */
+  /* x */
+  /* y */
+  /* z */
+  /* ! */
+  /* ? */
+  /* , */
+  /* ' */
+  /* . */
+  /* “ */
+  /* ” */
+  /* ." */
+  /* ; */
+  /* : */
+  /* … */
+  /* / */
+  /* - */
+  /* & */
+  /* % */
+  /*   */
+  /* g */
+  /* j */
+  /* p */
+  /* q */
+  /* y */
+  /* h */
+  /* È */
+  /* à */
+  /* é */
+  /* è */
+  /* ì */
+  /* ò */
+  /* ù */
+}
+.ffmq-main-font.char-48 {
+  width: 8px;
+  background-position: 0px 0px;
+}
+.ffmq-main-font.char-49 {
+  width: 5px;
+  background-position: -9px 0px;
+}
+.ffmq-main-font.char-50 {
+  width: 8px;
+  background-position: -16px 0px;
+}
+.ffmq-main-font.char-51 {
+  width: 8px;
+  background-position: -24px 0px;
+}
+.ffmq-main-font.char-52 {
+  width: 8px;
+  background-position: -32px 0px;
+}
+.ffmq-main-font.char-53 {
+  width: 8px;
+  background-position: -40px 0px;
+}
+.ffmq-main-font.char-54 {
+  width: 8px;
+  background-position: -48px 0px;
+}
+.ffmq-main-font.char-55 {
+  width: 8px;
+  background-position: -56px 0px;
+}
+.ffmq-main-font.char-56 {
+  width: 8px;
+  background-position: -64px 0px;
+}
+.ffmq-main-font.char-57 {
+  width: 8px;
+  background-position: -72px 0px;
+}
+.ffmq-main-font.char-65 {
+  width: 8px;
+  background-position: -80px 0px;
+}
+.ffmq-main-font.char-66 {
+  width: 8px;
+  background-position: -88px 0px;
+}
+.ffmq-main-font.char-67 {
+  width: 8px;
+  background-position: -96px 0px;
+}
+.ffmq-main-font.char-68 {
+  width: 8px;
+  background-position: -104px 0px;
+}
+.ffmq-main-font.char-69 {
+  width: 8px;
+  background-position: -112px 0px;
+}
+.ffmq-main-font.char-70 {
+  width: 8px;
+  background-position: -120px 0px;
+}
+.ffmq-main-font.char-71 {
+  width: 8px;
+  background-position: 0px -12px;
+}
+.ffmq-main-font.char-72 {
+  width: 8px;
+  background-position: -8px -12px;
+}
+.ffmq-main-font.char-73 {
+  width: 5px;
+  background-position: -18px -12px;
+}
+.ffmq-main-font.char-74 {
+  width: 8px;
+  background-position: -24px -12px;
+}
+.ffmq-main-font.char-75 {
+  width: 8px;
+  background-position: -32px -12px;
+}
+.ffmq-main-font.char-76 {
+  width: 8px;
+  background-position: -40px -12px;
+}
+.ffmq-main-font.char-77 {
+  width: 8px;
+  background-position: -48px -12px;
+}
+.ffmq-main-font.char-78 {
+  width: 8px;
+  background-position: -56px -12px;
+}
+.ffmq-main-font.char-79 {
+  width: 8px;
+  background-position: -64px -12px;
+}
+.ffmq-main-font.char-80 {
+  width: 8px;
+  background-position: -72px -12px;
+}
+.ffmq-main-font.char-81 {
+  width: 8px;
+  background-position: -80px -12px;
+}
+.ffmq-main-font.char-82 {
+  width: 8px;
+  background-position: -88px -12px;
+}
+.ffmq-main-font.char-83 {
+  width: 8px;
+  background-position: -96px -12px;
+}
+.ffmq-main-font.char-84 {
+  width: 7px;
+  background-position: -104px -12px;
+}
+.ffmq-main-font.char-85 {
+  width: 8px;
+  background-position: -112px -12px;
+}
+.ffmq-main-font.char-86 {
+  width: 8px;
+  background-position: -120px -12px;
+}
+.ffmq-main-font.char-87 {
+  width: 8px;
+  background-position: 0px -24px;
+}
+.ffmq-main-font.char-88 {
+  width: 8px;
+  background-position: -8px -24px;
+}
+.ffmq-main-font.char-89 {
+  width: 7px;
+  background-position: -17px -24px;
+}
+.ffmq-main-font.char-90 {
+  width: 8px;
+  background-position: -24px -24px;
+}
+.ffmq-main-font.char-97 {
+  width: 8px;
+  background-position: -32px -24px;
+}
+.ffmq-main-font.char-98 {
+  width: 7px;
+  background-position: -41px -24px;
+}
+.ffmq-main-font.char-99 {
+  width: 7px;
+  background-position: -49px -24px;
+}
+.ffmq-main-font.char-100 {
+  width: 7px;
+  background-position: -57px -24px;
+}
+.ffmq-main-font.char-101 {
+  width: 7px;
+  background-position: -65px -24px;
+}
+.ffmq-main-font.char-102 {
+  width: 7px;
+  background-position: -73px -24px;
+}
+.ffmq-main-font.char-103 {
+  width: 8px;
+  background-position: -80px -24px;
+}
+.ffmq-main-font.char-104 {
+  width: 8px;
+  background-position: -88px -24px;
+}
+.ffmq-main-font.char-105 {
+  width: 3px;
+  background-position: -99px -24px;
+}
+.ffmq-main-font.char-106 {
+  width: 8px;
+  background-position: -104px -24px;
+}
+.ffmq-main-font.char-107 {
+  width: 7px;
+  background-position: -112px -24px;
+}
+.ffmq-main-font.char-108 {
+  width: 4px;
+  background-position: -122px -24px;
+}
+.ffmq-main-font.char-109 {
+  width: 8px;
+  background-position: 0px -36px;
+}
+.ffmq-main-font.char-110 {
+  width: 7px;
+  background-position: -9px -36px;
+}
+.ffmq-main-font.char-111 {
+  width: 7px;
+  background-position: -17px -36px;
+}
+.ffmq-main-font.char-112 {
+  width: 8px;
+  background-position: -24px -36px;
+}
+.ffmq-main-font.char-113 {
+  width: 8px;
+  background-position: -32px -36px;
+}
+.ffmq-main-font.char-114 {
+  width: 7px;
+  background-position: -41px -36px;
+}
+.ffmq-main-font.char-115 {
+  width: 7px;
+  background-position: -49px -36px;
+}
+.ffmq-main-font.char-116 {
+  width: 6px;
+  background-position: -57px -36px;
+}
+.ffmq-main-font.char-117 {
+  width: 7px;
+  background-position: -65px -36px;
+}
+.ffmq-main-font.char-118 {
+  width: 7px;
+  background-position: -73px -36px;
+}
+.ffmq-main-font.char-119 {
+  width: 8px;
+  background-position: -80px -36px;
+}
+.ffmq-main-font.char-120 {
+  width: 8px;
+  background-position: -88px -36px;
+}
+.ffmq-main-font.char-121 {
+  width: 8px;
+  background-position: -96px -36px;
+}
+.ffmq-main-font.char-122 {
+  width: 8px;
+  background-position: -105px -36px;
+}
+.ffmq-main-font.char-33 {
+  width: 4px;
+  background-position: -113px -36px;
+}
+.ffmq-main-font.char-63 {
+  width: 7px;
+  background-position: -120px -36px;
+}
+.ffmq-main-font.char-44 {
+  width: 4px;
+  background-position: 0px -48px;
+}
+.ffmq-main-font.char-39 {
+  width: 3px;
+  background-position: -9px -48px;
+}
+.ffmq-main-font.char-46 {
+  width: 4px;
+  background-position: -16px -48px;
+}
+.ffmq-main-font.char-8220 {
+  width: 6px;
+  background-position: -24px -48px;
+}
+.ffmq-main-font.char-8221 {
+  width: 7px;
+  background-position: -32px -48px;
+}
+.ffmq-main-font.char-34 {
+  width: 7px;
+  background-position: -40px -48px;
+}
+.ffmq-main-font.char-59 {
+  width: 3px;
+  background-position: -50px -48px;
+}
+.ffmq-main-font.char-58 {
+  width: 3px;
+  background-position: -57px -48px;
+}
+.ffmq-main-font.char-8230 {
+  width: 8px;
+  background-position: -64px -48px;
+}
+.ffmq-main-font.char-47 {
+  width: 8px;
+  background-position: -72px -48px;
+}
+.ffmq-main-font.char-45 {
+  width: 6px;
+  background-position: -80px -48px;
+}
+.ffmq-main-font.char-38 {
+  width: 8px;
+  background-position: -88px -48px;
+}
+.ffmq-main-font.char-37 {
+  width: 8px;
+  background-position: -104px -48px;
+}
+.ffmq-main-font.char-32 {
+  width: 5px;
+  background-position: -112px -48px;
+}
+.ffmq-main-font.char-103 {
+  width: 7px;
+  background-position: 0px -60px;
+}
+.ffmq-main-font.char-106 {
+  width: 7px;
+  background-position: -8px -60px;
+}
+.ffmq-main-font.char-112 {
+  width: 7px;
+  background-position: -17px -60px;
+}
+.ffmq-main-font.char-113 {
+  width: 8px;
+  background-position: -24px -60px;
+}
+.ffmq-main-font.char-121 {
+  width: 7px;
+  background-position: -33px -60px;
+}
+.ffmq-main-font.char-104 {
+  width: 7px;
+  background-position: -41px -60px;
+}
+.ffmq-main-font.char-200 {
+  width: 8px;
+  background-position: 0px -72px;
+}
+.ffmq-main-font.char-224 {
+  width: 8px;
+  background-position: -8px -72px;
+}
+.ffmq-main-font.char-233 {
+  width: 7px;
+  background-position: -17px -72px;
+}
+.ffmq-main-font.char-232 {
+  width: 7px;
+  background-position: -25px -72px;
+}
+.ffmq-main-font.char-236 {
+  width: 3px;
+  background-position: -35px -72px;
+}
+.ffmq-main-font.char-242 {
+  width: 7px;
+  background-position: -41px -72px;
+}
+.ffmq-main-font.char-249 {
+  width: 7px;
+  background-position: -49px -72px;
+}
+
+.gaia-box .screen {
+  height: 86px !important;
+  background: url(../images/_gaia/gaia_textbox.png) no-repeat;
+}
+.gaia-box .screen .text-box {
+  padding-left: 7px;
+  padding-top: 7px;
+}
+
+.gaia-main-font {
+  min-height: 16px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  width: 8px;
+  background-image: url(../images/_gaia/font_text_8x16.png);
+  /* ? */
+  /* ' */
+  /* 0 */
+  /* 1 */
+  /* 2 */
+  /* 3 */
+  /* 4 */
+  /* 5 */
+  /* 6 */
+  /* 7 */
+  /* 8 */
+  /* 9 */
+  /* . */
+  /* , */
+  /* > */
+  /* “ */
+  /* ” */
+  /* : */
+  /* A */
+  /* B */
+  /* C */
+  /* D */
+  /* E */
+  /* F */
+  /* G */
+  /* H */
+  /* I */
+  /* J */
+  /* K */
+  /* L */
+  /* M */
+  /* N */
+  /* O */
+  /* ! */
+  /* P */
+  /* Q */
+  /* R */
+  /* S */
+  /* T */
+  /* U */
+  /* V */
+  /* W */
+  /* X */
+  /* Y */
+  /* Z */
+  /* / */
+  /* * */
+  /* - */
+  /* ( */
+  /* ) */
+  /* a */
+  /* b */
+  /* c */
+  /* d */
+  /* e */
+  /* f */
+  /* g */
+  /* h */
+  /* i */
+  /* j */
+  /* k */
+  /* l */
+  /* m */
+  /* n */
+  /* o */
+  /* p */
+  /* q */
+  /* r */
+  /* s */
+  /* t */
+  /* u */
+  /* v */
+  /* w */
+  /* x */
+  /* y */
+  /* z */
+  /**/
+  /*   */
+}
+.gaia-main-font.char-63 {
+  background-position: -104px 0px;
+}
+.gaia-main-font.char-39 {
+  background-position: -112px 0px;
+}
+.gaia-main-font.char-48 {
+  background-position: 0px -16px;
+}
+.gaia-main-font.char-49 {
+  background-position: -8px -16px;
+}
+.gaia-main-font.char-50 {
+  background-position: -16px -16px;
+}
+.gaia-main-font.char-51 {
+  background-position: -24px -16px;
+}
+.gaia-main-font.char-52 {
+  background-position: -32px -16px;
+}
+.gaia-main-font.char-53 {
+  background-position: -40px -16px;
+}
+.gaia-main-font.char-54 {
+  background-position: -48px -16px;
+}
+.gaia-main-font.char-55 {
+  background-position: -56px -16px;
+}
+.gaia-main-font.char-56 {
+  background-position: -64px -16px;
+}
+.gaia-main-font.char-57 {
+  background-position: -72px -16px;
+}
+.gaia-main-font.char-46 {
+  background-position: -80px -16px;
+}
+.gaia-main-font.char-44 {
+  background-position: -88px -16px;
+}
+.gaia-main-font.char-62 {
+  background-position: -96px -16px;
+}
+.gaia-main-font.char-8220 {
+  background-position: -104px -16px;
+}
+.gaia-main-font.char-8221 {
+  background-position: -112px -16px;
+}
+.gaia-main-font.char-58 {
+  background-position: -120px -16px;
+}
+.gaia-main-font.char-65 {
+  background-position: 0px -32px;
+}
+.gaia-main-font.char-66 {
+  background-position: -8px -32px;
+}
+.gaia-main-font.char-67 {
+  background-position: -16px -32px;
+}
+.gaia-main-font.char-68 {
+  background-position: -24px -32px;
+}
+.gaia-main-font.char-69 {
+  background-position: -32px -32px;
+}
+.gaia-main-font.char-70 {
+  background-position: -40px -32px;
+}
+.gaia-main-font.char-71 {
+  background-position: -48px -32px;
+}
+.gaia-main-font.char-72 {
+  background-position: -56px -32px;
+}
+.gaia-main-font.char-73 {
+  background-position: -64px -32px;
+}
+.gaia-main-font.char-74 {
+  background-position: -72px -32px;
+}
+.gaia-main-font.char-75 {
+  background-position: -80px -32px;
+}
+.gaia-main-font.char-76 {
+  background-position: -88px -32px;
+}
+.gaia-main-font.char-77 {
+  background-position: -96px -32px;
+}
+.gaia-main-font.char-78 {
+  background-position: -104px -32px;
+}
+.gaia-main-font.char-79 {
+  background-position: -112px -32px;
+}
+.gaia-main-font.char-33 {
+  background-position: -120px -32px;
+}
+.gaia-main-font.char-80 {
+  background-position: 0px -48px;
+}
+.gaia-main-font.char-81 {
+  background-position: -8px -48px;
+}
+.gaia-main-font.char-82 {
+  background-position: -16px -48px;
+}
+.gaia-main-font.char-83 {
+  background-position: -24px -48px;
+}
+.gaia-main-font.char-84 {
+  background-position: -32px -48px;
+}
+.gaia-main-font.char-85 {
+  background-position: -40px -48px;
+}
+.gaia-main-font.char-86 {
+  background-position: -48px -48px;
+}
+.gaia-main-font.char-87 {
+  background-position: -56px -48px;
+}
+.gaia-main-font.char-88 {
+  background-position: -64px -48px;
+}
+.gaia-main-font.char-89 {
+  background-position: -72px -48px;
+}
+.gaia-main-font.char-90 {
+  background-position: -80px -48px;
+}
+.gaia-main-font.char-47 {
+  background-position: -88px -48px;
+}
+.gaia-main-font.char-42 {
+  background-position: -96px -48px;
+}
+.gaia-main-font.char-45 {
+  background-position: -104px -48px;
+}
+.gaia-main-font.char-40 {
+  background-position: -112px -48px;
+}
+.gaia-main-font.char-41 {
+  background-position: -120px -48px;
+}
+.gaia-main-font.char-97 {
+  background-position: 0px -64px;
+}
+.gaia-main-font.char-98 {
+  background-position: -8px -64px;
+}
+.gaia-main-font.char-99 {
+  background-position: -16px -64px;
+}
+.gaia-main-font.char-100 {
+  background-position: -24px -64px;
+}
+.gaia-main-font.char-101 {
+  background-position: -32px -64px;
+}
+.gaia-main-font.char-102 {
+  background-position: -40px -64px;
+}
+.gaia-main-font.char-103 {
+  background-position: -48px -64px;
+}
+.gaia-main-font.char-104 {
+  background-position: -56px -64px;
+}
+.gaia-main-font.char-105 {
+  background-position: -64px -64px;
+}
+.gaia-main-font.char-106 {
+  background-position: -72px -64px;
+}
+.gaia-main-font.char-107 {
+  background-position: -80px -64px;
+}
+.gaia-main-font.char-108 {
+  background-position: -88px -64px;
+}
+.gaia-main-font.char-109 {
+  background-position: -96px -64px;
+}
+.gaia-main-font.char-110 {
+  background-position: -104px -64px;
+}
+.gaia-main-font.char-111 {
+  background-position: -112px -64px;
+}
+.gaia-main-font.char-112 {
+  background-position: 0px -80px;
+}
+.gaia-main-font.char-113 {
+  background-position: -8px -80px;
+}
+.gaia-main-font.char-114 {
+  background-position: -16px -80px;
+}
+.gaia-main-font.char-115 {
+  background-position: -24px -80px;
+}
+.gaia-main-font.char-116 {
+  background-position: -32px -80px;
+}
+.gaia-main-font.char-117 {
+  background-position: -40px -80px;
+}
+.gaia-main-font.char-118 {
+  background-position: -48px -80px;
+}
+.gaia-main-font.char-119 {
+  background-position: -56px -80px;
+}
+.gaia-main-font.char-120 {
+  background-position: -64px -80px;
+}
+.gaia-main-font.char-121 {
+  background-position: -72px -80px;
+}
+.gaia-main-font.char-122 {
+  background-position: -80px -80px;
+}
+.gaia-main-font.char-32 {
+  background-position: -96px -80px;
+}
+.gaia-main-font.italian {
+  background-image: url(../images/_gaia/1146A8_font_ita.png);
+  /* À */
+  /* È */
+  /* É */
+  /* Ì */
+  /* Ò */
+  /* Ù */
+  /* à */
+  /* è */
+  /* é */
+  /* ì */
+  /* ò */
+  /* ù */
+}
+.gaia-main-font.italian.char-192 {
+  background-position: 0px 0px;
+}
+.gaia-main-font.italian.char-200 {
+  background-position: -8px 0px;
+}
+.gaia-main-font.italian.char-201 {
+  background-position: -16px 0px;
+}
+.gaia-main-font.italian.char-204 {
+  background-position: -24px 0px;
+}
+.gaia-main-font.italian.char-210 {
+  background-position: -32px 0px;
+}
+.gaia-main-font.italian.char-217 {
+  background-position: -40px 0px;
+}
+.gaia-main-font.italian.char-224 {
+  background-position: -48px 0px;
+}
+.gaia-main-font.italian.char-232 {
+  background-position: -56px 0px;
+}
+.gaia-main-font.italian.char-233 {
+  background-position: -64px 0px;
+}
+.gaia-main-font.italian.char-236 {
+  background-position: -72px 0px;
+}
+.gaia-main-font.italian.char-242 {
+  background-position: -80px 0px;
+}
+.gaia-main-font.italian.char-249 {
+  background-position: -88px 0px;
+}
+
+.ignition-box .screen {
+  height: 64px !important;
+  background: url(../images/_ignition/text_box.png) no-repeat;
+}
+.ignition-box .screen .text-box {
+  padding-left: 8px;
+  padding-top: 8px;
+}
+
+.ignition-main-font {
+  min-height: 16px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  width: 8px;
+  background-image: url(../images/_ignition/font_8x12.png);
+  /*   */
+  /* a */
+  /* b */
+  /* c */
+  /* d */
+  /* e */
+  /* f */
+  /* g */
+  /* h */
+  /* i */
+  /* j */
+  /* k */
+  /* l */
+  /* m */
+  /* n */
+  /* o */
+  /* p */
+  /* q */
+  /* r */
+  /* s */
+  /* t */
+  /* u */
+  /* v */
+  /* w */
+  /* x */
+  /* y */
+  /* z */
+  /* . */
+  /* " */
+  /* , */
+  /* - */
+  /* ' */
+  /* : */
+  /* A */
+  /* B */
+  /* C */
+  /* D */
+  /* E */
+  /* F */
+  /* G */
+  /* H */
+  /* I */
+  /* J */
+  /* K */
+  /* L */
+  /* M */
+  /* N */
+  /* O */
+  /* P */
+  /* Q */
+  /* R */
+  /* S */
+  /* T */
+  /* U */
+  /* V */
+  /* W */
+  /* X */
+  /* Y */
+  /* Z */
+  /* ? */
+  /* ! */
+  /* ( */
+  /* ) */
+  /* / */
+  /* 0 */
+  /* 1 */
+  /* 2 */
+  /* 3 */
+  /* 4 */
+  /* 5 */
+  /* 6 */
+  /* 7 */
+  /* 8 */
+  /* 9 */
+  /* ; */
+  /* à */
+  /* é */
+  /* è */
+  /* ì */
+  /* ò */
+  /* ù */
+  /* È */
+  /* ° */
+}
+.ignition-main-font.char-32 {
+  background-position: 0px 0px;
+}
+.ignition-main-font.char-97 {
+  background-position: -8px 0px;
+}
+.ignition-main-font.char-98 {
+  background-position: -16px 0px;
+}
+.ignition-main-font.char-99 {
+  background-position: -24px 0px;
+}
+.ignition-main-font.char-100 {
+  background-position: -32px 0px;
+}
+.ignition-main-font.char-101 {
+  background-position: -40px 0px;
+}
+.ignition-main-font.char-102 {
+  background-position: -48px 0px;
+}
+.ignition-main-font.char-103 {
+  background-position: -56px 0px;
+}
+.ignition-main-font.char-104 {
+  background-position: -64px 0px;
+}
+.ignition-main-font.char-105 {
+  background-position: -72px 0px;
+}
+.ignition-main-font.char-106 {
+  background-position: -80px 0px;
+}
+.ignition-main-font.char-107 {
+  background-position: -88px 0px;
+}
+.ignition-main-font.char-108 {
+  background-position: -96px 0px;
+}
+.ignition-main-font.char-109 {
+  background-position: -104px 0px;
+}
+.ignition-main-font.char-110 {
+  background-position: -112px 0px;
+}
+.ignition-main-font.char-111 {
+  background-position: -120px 0px;
+}
+.ignition-main-font.char-112 {
+  background-position: 0px -16px;
+}
+.ignition-main-font.char-113 {
+  background-position: -8px -16px;
+}
+.ignition-main-font.char-114 {
+  background-position: -16px -16px;
+}
+.ignition-main-font.char-115 {
+  background-position: -24px -16px;
+}
+.ignition-main-font.char-116 {
+  background-position: -32px -16px;
+}
+.ignition-main-font.char-117 {
+  background-position: -40px -16px;
+}
+.ignition-main-font.char-118 {
+  background-position: -48px -16px;
+}
+.ignition-main-font.char-119 {
+  background-position: -56px -16px;
+}
+.ignition-main-font.char-120 {
+  background-position: -64px -16px;
+}
+.ignition-main-font.char-121 {
+  background-position: -72px -16px;
+}
+.ignition-main-font.char-122 {
+  background-position: -80px -16px;
+}
+.ignition-main-font.char-46 {
+  background-position: -88px -16px;
+}
+.ignition-main-font.char-34 {
+  background-position: -96px -16px;
+}
+.ignition-main-font.char-44 {
+  background-position: -104px -16px;
+}
+.ignition-main-font.char-45 {
+  background-position: -112px -16px;
+}
+.ignition-main-font.char-39 {
+  background-position: -120px -16px;
+}
+.ignition-main-font.char-58 {
+  background-position: 0px -32px;
+}
+.ignition-main-font.char-65 {
+  background-position: -8px -32px;
+}
+.ignition-main-font.char-66 {
+  background-position: -16px -32px;
+}
+.ignition-main-font.char-67 {
+  background-position: -24px -32px;
+}
+.ignition-main-font.char-68 {
+  background-position: -32px -32px;
+}
+.ignition-main-font.char-69 {
+  background-position: -40px -32px;
+}
+.ignition-main-font.char-70 {
+  background-position: -48px -32px;
+}
+.ignition-main-font.char-71 {
+  background-position: -56px -32px;
+}
+.ignition-main-font.char-72 {
+  background-position: -64px -32px;
+}
+.ignition-main-font.char-73 {
+  background-position: -72px -32px;
+}
+.ignition-main-font.char-74 {
+  background-position: -80px -32px;
+}
+.ignition-main-font.char-75 {
+  background-position: -88px -32px;
+}
+.ignition-main-font.char-76 {
+  background-position: -96px -32px;
+}
+.ignition-main-font.char-77 {
+  background-position: -104px -32px;
+}
+.ignition-main-font.char-78 {
+  background-position: -112px -32px;
+}
+.ignition-main-font.char-79 {
+  background-position: -120px -32px;
+}
+.ignition-main-font.char-80 {
+  background-position: 0px -48px;
+}
+.ignition-main-font.char-81 {
+  background-position: -8px -48px;
+}
+.ignition-main-font.char-82 {
+  background-position: -16px -48px;
+}
+.ignition-main-font.char-83 {
+  background-position: -24px -48px;
+}
+.ignition-main-font.char-84 {
+  background-position: -32px -48px;
+}
+.ignition-main-font.char-85 {
+  background-position: -40px -48px;
+}
+.ignition-main-font.char-86 {
+  background-position: -48px -48px;
+}
+.ignition-main-font.char-87 {
+  background-position: -56px -48px;
+}
+.ignition-main-font.char-88 {
+  background-position: -64px -48px;
+}
+.ignition-main-font.char-89 {
+  background-position: -72px -48px;
+}
+.ignition-main-font.char-90 {
+  background-position: -80px -48px;
+}
+.ignition-main-font.char-63 {
+  background-position: -88px -48px;
+}
+.ignition-main-font.char-33 {
+  background-position: -96px -48px;
+}
+.ignition-main-font.char-40 {
+  background-position: -104px -48px;
+}
+.ignition-main-font.char-41 {
+  background-position: -112px -48px;
+}
+.ignition-main-font.char-47 {
+  background-position: -120px -48px;
+}
+.ignition-main-font.char-48 {
+  background-position: 0px -64px;
+}
+.ignition-main-font.char-49 {
+  background-position: -8px -64px;
+}
+.ignition-main-font.char-50 {
+  background-position: -16px -64px;
+}
+.ignition-main-font.char-51 {
+  background-position: -24px -64px;
+}
+.ignition-main-font.char-52 {
+  background-position: -32px -64px;
+}
+.ignition-main-font.char-53 {
+  background-position: -40px -64px;
+}
+.ignition-main-font.char-54 {
+  background-position: -48px -64px;
+}
+.ignition-main-font.char-55 {
+  background-position: -56px -64px;
+}
+.ignition-main-font.char-56 {
+  background-position: -64px -64px;
+}
+.ignition-main-font.char-57 {
+  background-position: -72px -64px;
+}
+.ignition-main-font.char-59 {
+  background-position: -80px -64px;
+}
+.ignition-main-font.char-224 {
+  background-position: 0px -80px;
+}
+.ignition-main-font.char-233 {
+  background-position: -8px -80px;
+}
+.ignition-main-font.char-232 {
+  background-position: -16px -80px;
+}
+.ignition-main-font.char-236 {
+  background-position: -24px -80px;
+}
+.ignition-main-font.char-242 {
+  background-position: -32px -80px;
+}
+.ignition-main-font.char-249 {
+  background-position: -40px -80px;
+}
+.ignition-main-font.char-200 {
+  background-position: -48px -80px;
+}
+.ignition-main-font.char-176 {
+  background-position: -56px -80px;
+}
+
+.lufia-box .screen {
+  background: url(../images/_lufia/lufia_textbox.png) no-repeat;
+}
+.lufia-box .screen .text-box {
+  padding-left: 8px;
+  padding-top: 15px;
+}
+
+.lufia-main-font {
+  min-height: 16px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  width: 8px;
+  background-image: url(../images/_lufia/054250_font_main_ita.png);
+  /*   */
+  /* ! */
+  /* " */
+  /* à */
+  /* è */
+  /* é */
+  /* ì */
+  /* ' */
+  /* ( */
+  /* ) */
+  /* * */
+  /* ‥ */
+  /* , */
+  /* - */
+  /* . */
+  /* / */
+  /* 0 */
+  /* 1 */
+  /* 2 */
+  /* 3 */
+  /* 4 */
+  /* 5 */
+  /* 6 */
+  /* 7 */
+  /* 8 */
+  /* 9 */
+  /* : */
+  /* ; */
+  /* < */
+  /* = */
+  /* > */
+  /* ? */
+  /**/
+  /* A */
+  /* B */
+  /* C */
+  /* D */
+  /* E */
+  /* F */
+  /* G */
+  /* H */
+  /* I */
+  /* J */
+  /* K */
+  /* L */
+  /* M */
+  /* N */
+  /* O */
+  /* P */
+  /* Q */
+  /* R */
+  /* S */
+  /* T */
+  /* U */
+  /* V */
+  /* W */
+  /* X */
+  /* Y */
+  /* Z */
+  /* [ */
+  /* ò */
+  /* ] */
+  /* ù */
+  /* _ */
+  /**/
+  /* a */
+  /* b */
+  /* c */
+  /* d */
+  /* e */
+  /* f */
+  /* g */
+  /* h */
+  /* i */
+  /* j */
+  /* k */
+  /* l */
+  /* m */
+  /* n */
+  /* o */
+  /* p */
+  /* q */
+  /* r */
+  /* s */
+  /* t */
+  /* u */
+  /* v */
+  /* w */
+  /* x */
+  /* y */
+  /* z */
+  /* { */
+  /* È */
+  /* } */
+  /* ~ */
+  /**/
+}
+.lufia-main-font.char-32 {
+  background-position: 0px -32px;
+}
+.lufia-main-font.char-33 {
+  background-position: -8px -32px;
+}
+.lufia-main-font.char-34 {
+  background-position: -16px -32px;
+}
+.lufia-main-font.char-224 {
+  background-position: -24px -32px;
+}
+.lufia-main-font.char-232 {
+  background-position: -32px -32px;
+}
+.lufia-main-font.char-233 {
+  background-position: -40px -32px;
+}
+.lufia-main-font.char-236 {
+  background-position: -48px -32px;
+}
+.lufia-main-font.char-39 {
+  background-position: -56px -32px;
+}
+.lufia-main-font.char-40 {
+  background-position: -64px -32px;
+}
+.lufia-main-font.char-41 {
+  background-position: -72px -32px;
+}
+.lufia-main-font.char-42 {
+  background-position: -80px -32px;
+}
+.lufia-main-font.char-8229 {
+  background-position: -88px -32px;
+}
+.lufia-main-font.char-44 {
+  background-position: -96px -32px;
+}
+.lufia-main-font.char-45 {
+  background-position: -104px -32px;
+}
+.lufia-main-font.char-46 {
+  background-position: -112px -32px;
+}
+.lufia-main-font.char-47 {
+  background-position: -120px -32px;
+}
+.lufia-main-font.char-48 {
+  background-position: 0px -48px;
+}
+.lufia-main-font.char-49 {
+  background-position: -8px -48px;
+}
+.lufia-main-font.char-50 {
+  background-position: -16px -48px;
+}
+.lufia-main-font.char-51 {
+  background-position: -24px -48px;
+}
+.lufia-main-font.char-52 {
+  background-position: -32px -48px;
+}
+.lufia-main-font.char-53 {
+  background-position: -40px -48px;
+}
+.lufia-main-font.char-54 {
+  background-position: -48px -48px;
+}
+.lufia-main-font.char-55 {
+  background-position: -56px -48px;
+}
+.lufia-main-font.char-56 {
+  background-position: -64px -48px;
+}
+.lufia-main-font.char-57 {
+  background-position: -72px -48px;
+}
+.lufia-main-font.char-58 {
+  background-position: -80px -48px;
+}
+.lufia-main-font.char-59 {
+  background-position: -88px -48px;
+}
+.lufia-main-font.char-60 {
+  background-position: -96px -48px;
+}
+.lufia-main-font.char-61 {
+  background-position: -104px -48px;
+}
+.lufia-main-font.char-62 {
+  background-position: -112px -48px;
+}
+.lufia-main-font.char-63 {
+  background-position: -120px -48px;
+}
+.lufia-main-font.char-65 {
+  background-position: -8px -64px;
+}
+.lufia-main-font.char-66 {
+  background-position: -16px -64px;
+}
+.lufia-main-font.char-67 {
+  background-position: -24px -64px;
+}
+.lufia-main-font.char-68 {
+  background-position: -32px -64px;
+}
+.lufia-main-font.char-69 {
+  background-position: -40px -64px;
+}
+.lufia-main-font.char-70 {
+  background-position: -48px -64px;
+}
+.lufia-main-font.char-71 {
+  background-position: -56px -64px;
+}
+.lufia-main-font.char-72 {
+  background-position: -64px -64px;
+}
+.lufia-main-font.char-73 {
+  background-position: -72px -64px;
+}
+.lufia-main-font.char-74 {
+  background-position: -80px -64px;
+}
+.lufia-main-font.char-75 {
+  background-position: -88px -64px;
+}
+.lufia-main-font.char-76 {
+  background-position: -96px -64px;
+}
+.lufia-main-font.char-77 {
+  background-position: -104px -64px;
+}
+.lufia-main-font.char-78 {
+  background-position: -112px -64px;
+}
+.lufia-main-font.char-79 {
+  background-position: -120px -64px;
+}
+.lufia-main-font.char-80 {
+  background-position: 0px -80px;
+}
+.lufia-main-font.char-81 {
+  background-position: -8px -80px;
+}
+.lufia-main-font.char-82 {
+  background-position: -16px -80px;
+}
+.lufia-main-font.char-83 {
+  background-position: -24px -80px;
+}
+.lufia-main-font.char-84 {
+  background-position: -32px -80px;
+}
+.lufia-main-font.char-85 {
+  background-position: -40px -80px;
+}
+.lufia-main-font.char-86 {
+  background-position: -48px -80px;
+}
+.lufia-main-font.char-87 {
+  background-position: -56px -80px;
+}
+.lufia-main-font.char-88 {
+  background-position: -64px -80px;
+}
+.lufia-main-font.char-89 {
+  background-position: -72px -80px;
+}
+.lufia-main-font.char-90 {
+  background-position: -80px -80px;
+}
+.lufia-main-font.char-91 {
+  background-position: -88px -80px;
+}
+.lufia-main-font.char-242 {
+  background-position: -96px -80px;
+}
+.lufia-main-font.char-93 {
+  background-position: -104px -80px;
+}
+.lufia-main-font.char-249 {
+  background-position: -112px -80px;
+}
+.lufia-main-font.char-95 {
+  background-position: -120px -80px;
+}
+.lufia-main-font.char-97 {
+  background-position: -8px -96px;
+}
+.lufia-main-font.char-98 {
+  background-position: -16px -96px;
+}
+.lufia-main-font.char-99 {
+  background-position: -24px -96px;
+}
+.lufia-main-font.char-100 {
+  background-position: -32px -96px;
+}
+.lufia-main-font.char-101 {
+  background-position: -40px -96px;
+}
+.lufia-main-font.char-102 {
+  background-position: -48px -96px;
+}
+.lufia-main-font.char-103 {
+  background-position: -56px -96px;
+}
+.lufia-main-font.char-104 {
+  background-position: -64px -96px;
+}
+.lufia-main-font.char-105 {
+  background-position: -72px -96px;
+}
+.lufia-main-font.char-106 {
+  background-position: -80px -96px;
+}
+.lufia-main-font.char-107 {
+  background-position: -88px -96px;
+}
+.lufia-main-font.char-108 {
+  background-position: -96px -96px;
+}
+.lufia-main-font.char-109 {
+  background-position: -104px -96px;
+}
+.lufia-main-font.char-110 {
+  background-position: -112px -96px;
+}
+.lufia-main-font.char-111 {
+  background-position: -120px -96px;
+}
+.lufia-main-font.char-112 {
+  background-position: 0px -112px;
+}
+.lufia-main-font.char-113 {
+  background-position: -8px -112px;
+}
+.lufia-main-font.char-114 {
+  background-position: -16px -112px;
+}
+.lufia-main-font.char-115 {
+  background-position: -24px -112px;
+}
+.lufia-main-font.char-116 {
+  background-position: -32px -112px;
+}
+.lufia-main-font.char-117 {
+  background-position: -40px -112px;
+}
+.lufia-main-font.char-118 {
+  background-position: -48px -112px;
+}
+.lufia-main-font.char-119 {
+  background-position: -56px -112px;
+}
+.lufia-main-font.char-120 {
+  background-position: -64px -112px;
+}
+.lufia-main-font.char-121 {
+  background-position: -72px -112px;
+}
+.lufia-main-font.char-122 {
+  background-position: -80px -112px;
+}
+.lufia-main-font.char-123 {
+  background-position: -88px -112px;
+}
+.lufia-main-font.char-200 {
+  background-position: -96px -112px;
+}
+.lufia-main-font.char-125 {
+  background-position: -104px -112px;
+}
+.lufia-main-font.char-126 {
+  background-position: -112px -112px;
+}
+
+.mmlegends-box .screen {
+  background: black;
+}
+.mmlegends-box .screen .text-box {
+  background-color: #007;
+  outline: 1px solid white;
+  position: absolute;
+}
+
+.mmlegends-main-font {
+  min-height: 12px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  width: 12px;
+  background-image: url(../images/_mmlegends/mml_kaifont.png);
+  /* 0 */
+  /* 1 */
+  /* 2 */
+  /* 3 */
+  /* 4 */
+  /* 5 */
+  /* 6 */
+  /* 7 */
+  /* 8 */
+  /* 9 */
+  /* ç */
+  /* ß */
+  /* ' */
+  /* ! */
+  /* ? */
+  /* ( */
+  /* ) */
+  /* : */
+  /* A */
+  /* B */
+  /* C */
+  /* D */
+  /* E */
+  /* F */
+  /* G */
+  /* H */
+  /* I */
+  /* J */
+  /* K */
+  /* L */
+  /* M */
+  /* N */
+  /* O */
+  /* P */
+  /* Q */
+  /* R */
+  /* S */
+  /* T */
+  /* U */
+  /* V */
+  /* W */
+  /* X */
+  /* Y */
+  /* Z */
+  /* a */
+  /* b */
+  /* c */
+  /* d */
+  /* e */
+  /* f */
+  /* g */
+  /* h */
+  /* i */
+  /* j */
+  /* k */
+  /* l */
+  /* m */
+  /* n */
+  /* o */
+  /* p */
+  /* q */
+  /* r */
+  /* s */
+  /* t */
+  /* u */
+  /* v */
+  /* w */
+  /* x */
+  /* y */
+  /* z */
+  /* & */
+  /*   */
+}
+.mmlegends-main-font.char-48 {
+  width: 12px;
+  background-position: 0px 0px;
+}
+.mmlegends-main-font.char-49 {
+  width: 12px;
+  background-position: -12px 0px;
+}
+.mmlegends-main-font.char-50 {
+  width: 12px;
+  background-position: -24px 0px;
+}
+.mmlegends-main-font.char-51 {
+  width: 12px;
+  background-position: -36px 0px;
+}
+.mmlegends-main-font.char-52 {
+  width: 12px;
+  background-position: -48px 0px;
+}
+.mmlegends-main-font.char-53 {
+  width: 12px;
+  background-position: -60px 0px;
+}
+.mmlegends-main-font.char-54 {
+  width: 12px;
+  background-position: -72px 0px;
+}
+.mmlegends-main-font.char-55 {
+  width: 12px;
+  background-position: -84px 0px;
+}
+.mmlegends-main-font.char-56 {
+  width: 12px;
+  background-position: -96px 0px;
+}
+.mmlegends-main-font.char-57 {
+  width: 12px;
+  background-position: -108px 0px;
+}
+.mmlegends-main-font.char-231 {
+  width: 8px;
+  background-position: -120px 0px;
+}
+.mmlegends-main-font.char-223 {
+  width: 9px;
+  background-position: -132px 0px;
+}
+.mmlegends-main-font.char-39 {
+  width: 4px;
+  background-position: -144px 0px;
+}
+.mmlegends-main-font.char-33 {
+  width: 7px;
+  background-position: -156px 0px;
+}
+.mmlegends-main-font.char-63 {
+  width: 9px;
+  background-position: -168px 0px;
+}
+.mmlegends-main-font.char-40 {
+  width: 7px;
+  background-position: -204px 0px;
+}
+.mmlegends-main-font.char-41 {
+  width: 8px;
+  background-position: -216px 0px;
+}
+.mmlegends-main-font.char-58 {
+  width: 6px;
+  background-position: -228px 0px;
+}
+.mmlegends-main-font.char-65 {
+  width: 10px;
+  background-position: 0px -12px;
+}
+.mmlegends-main-font.char-66 {
+  width: 8px;
+  background-position: -12px -12px;
+}
+.mmlegends-main-font.char-67 {
+  width: 10px;
+  background-position: -24px -12px;
+}
+.mmlegends-main-font.char-68 {
+  width: 9px;
+  background-position: -36px -12px;
+}
+.mmlegends-main-font.char-69 {
+  width: 8px;
+  background-position: -48px -12px;
+}
+.mmlegends-main-font.char-70 {
+  width: 8px;
+  background-position: -60px -12px;
+}
+.mmlegends-main-font.char-71 {
+  width: 10px;
+  background-position: -72px -12px;
+}
+.mmlegends-main-font.char-72 {
+  width: 9px;
+  background-position: -84px -12px;
+}
+.mmlegends-main-font.char-73 {
+  width: 5px;
+  background-position: -96px -12px;
+}
+.mmlegends-main-font.char-74 {
+  width: 7px;
+  background-position: -108px -12px;
+}
+.mmlegends-main-font.char-75 {
+  width: 8px;
+  background-position: -120px -12px;
+}
+.mmlegends-main-font.char-76 {
+  width: 8px;
+  background-position: -132px -12px;
+}
+.mmlegends-main-font.char-77 {
+  width: 10px;
+  background-position: -144px -12px;
+}
+.mmlegends-main-font.char-78 {
+  width: 9px;
+  background-position: -156px -12px;
+}
+.mmlegends-main-font.char-79 {
+  width: 10px;
+  background-position: -168px -12px;
+}
+.mmlegends-main-font.char-80 {
+  width: 8px;
+  background-position: -180px -12px;
+}
+.mmlegends-main-font.char-81 {
+  width: 10px;
+  background-position: -192px -12px;
+}
+.mmlegends-main-font.char-82 {
+  width: 8px;
+  background-position: -204px -12px;
+}
+.mmlegends-main-font.char-83 {
+  width: 8px;
+  background-position: -216px -12px;
+}
+.mmlegends-main-font.char-84 {
+  width: 9px;
+  background-position: -228px -12px;
+}
+.mmlegends-main-font.char-85 {
+  width: 9px;
+  background-position: 0px -24px;
+}
+.mmlegends-main-font.char-86 {
+  width: 9px;
+  background-position: -12px -24px;
+}
+.mmlegends-main-font.char-87 {
+  width: 11px;
+  background-position: -24px -24px;
+}
+.mmlegends-main-font.char-88 {
+  width: 10px;
+  background-position: -36px -24px;
+}
+.mmlegends-main-font.char-89 {
+  width: 9px;
+  background-position: -48px -24px;
+}
+.mmlegends-main-font.char-90 {
+  width: 8px;
+  background-position: -60px -24px;
+}
+.mmlegends-main-font.char-97 {
+  width: 8px;
+  background-position: -72px -24px;
+}
+.mmlegends-main-font.char-98 {
+  width: 8px;
+  background-position: -84px -24px;
+}
+.mmlegends-main-font.char-99 {
+  width: 8px;
+  background-position: -96px -24px;
+}
+.mmlegends-main-font.char-100 {
+  width: 8px;
+  background-position: -108px -24px;
+}
+.mmlegends-main-font.char-101 {
+  width: 8px;
+  background-position: -120px -24px;
+}
+.mmlegends-main-font.char-102 {
+  width: 7px;
+  background-position: -132px -24px;
+}
+.mmlegends-main-font.char-103 {
+  width: 8px;
+  background-position: -144px -24px;
+}
+.mmlegends-main-font.char-104 {
+  width: 8px;
+  background-position: -156px -24px;
+}
+.mmlegends-main-font.char-105 {
+  width: 3px;
+  background-position: -168px -24px;
+}
+.mmlegends-main-font.char-106 {
+  width: 6px;
+  background-position: -180px -24px;
+}
+.mmlegends-main-font.char-107 {
+  width: 7px;
+  background-position: -192px -24px;
+}
+.mmlegends-main-font.char-108 {
+  width: 3px;
+  background-position: -204px -24px;
+}
+.mmlegends-main-font.char-109 {
+  width: 11px;
+  background-position: -216px -24px;
+}
+.mmlegends-main-font.char-110 {
+  width: 8px;
+  background-position: -228px -24px;
+}
+.mmlegends-main-font.char-111 {
+  width: 8px;
+  background-position: 0px -36px;
+}
+.mmlegends-main-font.char-112 {
+  width: 7px;
+  background-position: -12px -36px;
+}
+.mmlegends-main-font.char-113 {
+  width: 7px;
+  background-position: -24px -36px;
+}
+.mmlegends-main-font.char-114 {
+  width: 6px;
+  background-position: -36px -36px;
+}
+.mmlegends-main-font.char-115 {
+  width: 7px;
+  background-position: -48px -36px;
+}
+.mmlegends-main-font.char-116 {
+  width: 7px;
+  background-position: -60px -36px;
+}
+.mmlegends-main-font.char-117 {
+  width: 7px;
+  background-position: -72px -36px;
+}
+.mmlegends-main-font.char-118 {
+  width: 7px;
+  background-position: -84px -36px;
+}
+.mmlegends-main-font.char-119 {
+  width: 11px;
+  background-position: -96px -36px;
+}
+.mmlegends-main-font.char-120 {
+  width: 7px;
+  background-position: -108px -36px;
+}
+.mmlegends-main-font.char-121 {
+  width: 7px;
+  background-position: -120px -36px;
+}
+.mmlegends-main-font.char-122 {
+  width: 7px;
+  background-position: -132px -36px;
+}
+.mmlegends-main-font.char-38 {
+  width: 9px;
+  background-position: -144px -36px;
+}
+.mmlegends-main-font.char-32 {
+  width: 8px;
+  background-position: -192px -36px;
+}
+
+.neugier-box .screen {
+  background: url(../images/_neugier/neugier-preview.png) no-repeat;
+}
+.neugier-box .screen .text-box {
+  padding-left: 40px;
+  padding-top: 127px;
+}
+
+.neugier-main-font {
+  min-height: 16px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  width: 8px;
+  background-image: url(../images/_neugier/neugier_font_ita.png);
+  /* … */
+  /* , */
+  /* . */
+  /* ! */
+  /* ? */
+  /* ) */
+  /* ” */
+  /* ' */
+  /*   */
+  /* A */
+  /* B */
+  /* C */
+  /* D */
+  /* E */
+  /* F */
+  /* G */
+  /* H */
+  /* I */
+  /* J */
+  /* K */
+  /* L */
+  /* M */
+  /* N */
+  /* O */
+  /* P */
+  /* Q */
+  /* R */
+  /* S */
+  /* T */
+  /* U */
+  /* V */
+  /* W */
+  /* ‘ */
+  /* Y */
+  /* Z */
+  /* a */
+  /* b */
+  /* c */
+  /* d */
+  /* e */
+  /* f */
+  /* g */
+  /* h */
+  /* i */
+  /* j */
+  /* k */
+  /* l */
+  /* m */
+  /* n */
+  /* o */
+  /* p */
+  /* q */
+  /* r */
+  /* s */
+  /* t */
+  /* u */
+  /* v */
+  /* w */
+  /* x */
+  /* y */
+  /* z */
+  /* : */
+  /* - */
+  /**/
+  /* à */
+  /* è */
+  /* é */
+  /* ì */
+  /* ò */
+  /* ù */
+  /* È */
+  /**/
+  /**/
+  /* 0 */
+  /* 0 */
+  /* 1 */
+  /* 2 */
+  /* 3 */
+  /* 4 */
+  /* 5 */
+  /* 6 */
+  /* 7 */
+  /* 8 */
+  /* 9 */
+  /* ( */
+  /* ~ */
+  /**/
+  /* + */
+  /**/
+  /* ; */
+}
+.neugier-main-font.char-8230 {
+  width: 6px;
+  background-position: 0px -16px;
+}
+.neugier-main-font.char-44 {
+  width: 4px;
+  background-position: -8px -16px;
+}
+.neugier-main-font.char-46 {
+  width: 3px;
+  background-position: -16px -16px;
+}
+.neugier-main-font.char-33 {
+  width: 4px;
+  background-position: -24px -16px;
+}
+.neugier-main-font.char-63 {
+  width: 7px;
+  background-position: -32px -16px;
+}
+.neugier-main-font.char-41 {
+  width: 4px;
+  background-position: -40px -16px;
+}
+.neugier-main-font.char-8221 {
+  width: 6px;
+  background-position: -48px -16px;
+}
+.neugier-main-font.char-39 {
+  width: 3px;
+  background-position: -56px -16px;
+}
+.neugier-main-font.char-32 {
+  width: 6px;
+  background-position: -64px -16px;
+}
+.neugier-main-font.char-65 {
+  width: 8px;
+  background-position: -72px -16px;
+}
+.neugier-main-font.char-66 {
+  width: 8px;
+  background-position: -80px -16px;
+}
+.neugier-main-font.char-67 {
+  width: 8px;
+  background-position: -88px -16px;
+}
+.neugier-main-font.char-68 {
+  width: 8px;
+  background-position: -96px -16px;
+}
+.neugier-main-font.char-69 {
+  width: 8px;
+  background-position: -104px -16px;
+}
+.neugier-main-font.char-70 {
+  width: 8px;
+  background-position: -112px -16px;
+}
+.neugier-main-font.char-71 {
+  width: 8px;
+  background-position: -120px -16px;
+}
+.neugier-main-font.char-72 {
+  width: 8px;
+  background-position: 0px -32px;
+}
+.neugier-main-font.char-73 {
+  width: 4px;
+  background-position: -8px -32px;
+}
+.neugier-main-font.char-74 {
+  width: 6px;
+  background-position: -16px -32px;
+}
+.neugier-main-font.char-75 {
+  width: 8px;
+  background-position: -24px -32px;
+}
+.neugier-main-font.char-76 {
+  width: 7px;
+  background-position: -32px -32px;
+}
+.neugier-main-font.char-77 {
+  width: 8px;
+  background-position: -40px -32px;
+}
+.neugier-main-font.char-78 {
+  width: 8px;
+  background-position: -48px -32px;
+}
+.neugier-main-font.char-79 {
+  width: 8px;
+  background-position: -56px -32px;
+}
+.neugier-main-font.char-80 {
+  width: 8px;
+  background-position: -64px -32px;
+}
+.neugier-main-font.char-81 {
+  width: 8px;
+  background-position: -72px -32px;
+}
+.neugier-main-font.char-82 {
+  width: 8px;
+  background-position: -80px -32px;
+}
+.neugier-main-font.char-83 {
+  width: 8px;
+  background-position: -88px -32px;
+}
+.neugier-main-font.char-84 {
+  width: 8px;
+  background-position: -96px -32px;
+}
+.neugier-main-font.char-85 {
+  width: 8px;
+  background-position: -104px -32px;
+}
+.neugier-main-font.char-86 {
+  width: 8px;
+  background-position: -112px -32px;
+}
+.neugier-main-font.char-87 {
+  width: 8px;
+  background-position: -120px -32px;
+}
+.neugier-main-font.char-8216 {
+  width: 6px;
+  background-position: 0px -48px;
+}
+.neugier-main-font.char-89 {
+  width: 8px;
+  background-position: -8px -48px;
+}
+.neugier-main-font.char-90 {
+  width: 8px;
+  background-position: -16px -48px;
+}
+.neugier-main-font.char-97 {
+  width: 7px;
+  background-position: -24px -48px;
+}
+.neugier-main-font.char-98 {
+  width: 8px;
+  background-position: -32px -48px;
+}
+.neugier-main-font.char-99 {
+  width: 7px;
+  background-position: -40px -48px;
+}
+.neugier-main-font.char-100 {
+  width: 8px;
+  background-position: -48px -48px;
+}
+.neugier-main-font.char-101 {
+  width: 7px;
+  background-position: -56px -48px;
+}
+.neugier-main-font.char-102 {
+  width: 6px;
+  background-position: -64px -48px;
+}
+.neugier-main-font.char-103 {
+  width: 7px;
+  background-position: -72px -48px;
+}
+.neugier-main-font.char-104 {
+  width: 8px;
+  background-position: -80px -48px;
+}
+.neugier-main-font.char-105 {
+  width: 4px;
+  background-position: -88px -48px;
+}
+.neugier-main-font.char-106 {
+  width: 5px;
+  background-position: -96px -48px;
+}
+.neugier-main-font.char-107 {
+  width: 8px;
+  background-position: -104px -48px;
+}
+.neugier-main-font.char-108 {
+  width: 4px;
+  background-position: -112px -48px;
+}
+.neugier-main-font.char-109 {
+  width: 8px;
+  background-position: -120px -48px;
+}
+.neugier-main-font.char-110 {
+  width: 8px;
+  background-position: 0px -64px;
+}
+.neugier-main-font.char-111 {
+  width: 7px;
+  background-position: -8px -64px;
+}
+.neugier-main-font.char-112 {
+  width: 8px;
+  background-position: -16px -64px;
+}
+.neugier-main-font.char-113 {
+  width: 8px;
+  background-position: -24px -64px;
+}
+.neugier-main-font.char-114 {
+  width: 7px;
+  background-position: -32px -64px;
+}
+.neugier-main-font.char-115 {
+  width: 7px;
+  background-position: -40px -64px;
+}
+.neugier-main-font.char-116 {
+  width: 6px;
+  background-position: -48px -64px;
+}
+.neugier-main-font.char-117 {
+  width: 8px;
+  background-position: -56px -64px;
+}
+.neugier-main-font.char-118 {
+  width: 8px;
+  background-position: -64px -64px;
+}
+.neugier-main-font.char-119 {
+  width: 8px;
+  background-position: -72px -64px;
+}
+.neugier-main-font.char-120 {
+  width: 8px;
+  background-position: -80px -64px;
+}
+.neugier-main-font.char-121 {
+  width: 8px;
+  background-position: -88px -64px;
+}
+.neugier-main-font.char-122 {
+  width: 8px;
+  background-position: -96px -64px;
+}
+.neugier-main-font.char-58 {
+  width: 2px;
+  background-position: -104px -64px;
+}
+.neugier-main-font.char-45 {
+  width: 6px;
+  background-position: -112px -64px;
+}
+.neugier-main-font.char-224 {
+  width: 7px;
+  background-position: -64px -80px;
+}
+.neugier-main-font.char-232 {
+  width: 7px;
+  background-position: -72px -80px;
+}
+.neugier-main-font.char-233 {
+  width: 7px;
+  background-position: -80px -80px;
+}
+.neugier-main-font.char-236 {
+  width: 4px;
+  background-position: -88px -80px;
+}
+.neugier-main-font.char-242 {
+  width: 7px;
+  background-position: -96px -80px;
+}
+.neugier-main-font.char-249 {
+  width: 8px;
+  background-position: -104px -80px;
+}
+.neugier-main-font.char-200 {
+  width: 8px;
+  background-position: -112px -80px;
+}
+.neugier-main-font.char-8220 {
+  width: 6px;
+  background-position: -56px -112px;
+}
+.neugier-main-font.char-48 {
+  width: 8px;
+  background-position: -64px -128px;
+}
+.neugier-main-font.char-49 {
+  width: 6px;
+  background-position: -72px -128px;
+}
+.neugier-main-font.char-50 {
+  width: 8px;
+  background-position: -80px -128px;
+}
+.neugier-main-font.char-51 {
+  width: 8px;
+  background-position: -88px -128px;
+}
+.neugier-main-font.char-52 {
+  width: 8px;
+  background-position: -96px -128px;
+}
+.neugier-main-font.char-53 {
+  width: 8px;
+  background-position: -104px -128px;
+}
+.neugier-main-font.char-54 {
+  width: 8px;
+  background-position: -112px -128px;
+}
+.neugier-main-font.char-55 {
+  width: 8px;
+  background-position: -120px -128px;
+}
+.neugier-main-font.char-56 {
+  width: 8px;
+  background-position: 0px -144px;
+}
+.neugier-main-font.char-57 {
+  width: 8px;
+  background-position: -8px -144px;
+}
+.neugier-main-font.char-40 {
+  width: 4px;
+  background-position: -16px -144px;
+}
+.neugier-main-font.char-126 {
+  width: 8px;
+  background-position: -24px -144px;
+}
+.neugier-main-font.char-43 {
+  width: 8px;
+  background-position: -40px -144px;
+}
+.neugier-main-font.char-59 {
+  width: 8px;
+  background-position: -56px -144px;
+}
+
+.sd3-box.line .screen {
+  height: 54px !important;
+  background: url(../images/_sd3/line.png) no-repeat;
+}
+.sd3-box.line .text-box {
+  height: 54px;
+  margin-top: 15px;
+}
+.sd3-box.window .screen {
+  height: 54px !important;
+  background: url(../images/_sd3/window.png) no-repeat;
+}
+.sd3-box.window .text-box {
+  padding-left: 9px;
+  padding-top: 4px;
+}
+
+.sd3-main-font {
+  min-height: 16px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  width: 16px;
+  background-image: url(../images/_sd3/SD3_Font_8x16_VWF_White.png);
+  /*   */
+  /* ! */
+  /* " */
+  /* # */
+  /* $ */
+  /* % */
+  /* & */
+  /* ' */
+  /* ( */
+  /* ) */
+  /* * */
+  /* + */
+  /* , */
+  /* - */
+  /* . */
+  /* / */
+  /* 0 */
+  /* 1 */
+  /* 2 */
+  /* 3 */
+  /* 4 */
+  /* 5 */
+  /* 6 */
+  /* 7 */
+  /* 8 */
+  /* 9 */
+  /* : */
+  /* ; */
+  /* ? */
+  /* A */
+  /* B */
+  /* C */
+  /* D */
+  /* E */
+  /* F */
+  /* G */
+  /* H */
+  /* I */
+  /* J */
+  /* K */
+  /* L */
+  /* M */
+  /* N */
+  /* O */
+  /* P */
+  /* Q */
+  /* R */
+  /* S */
+  /* T */
+  /* U */
+  /* V */
+  /* W */
+  /* X */
+  /* Y */
+  /* Z */
+  /* */
+  /* */
+  /* a */
+  /* b */
+  /* c */
+  /* d */
+  /* e */
+  /* f */
+  /* g */
+  /* h */
+  /* i */
+  /* j */
+  /* k */
+  /* l */
+  /* m */
+  /* n */
+  /* o */
+  /* p */
+  /* q */
+  /* r */
+  /* s */
+  /* t */
+  /* u */
+  /* v */
+  /* w */
+  /* x */
+  /* y */
+  /* z */
+  /* */
+  /* à */
+  /* è */
+  /* é */
+  /* ì */
+  /* ò */
+  /* ù */
+  /* */
+  /* */
+  /* À */
+  /* È */
+  /* É */
+  /* Ì */
+  /* Ò */
+  /* Ù */
+  /* */
+  /* */
+  /* */
+  /* */
+  /* */
+  /* */
+  /* */
+  /* */
+  /* */
+  /* */
+  /* */
+  /* */
+  /* */
+  /* */
+  /* */
+  /* */
+  /* */
+  /* */
+}
+.sd3-main-font.char-32 {
+  width: 6px;
+  background-position: 0px 0px;
+}
+.sd3-main-font.char-33 {
+  width: 5px;
+  background-position: -16px 0px;
+}
+.sd3-main-font.char-34 {
+  width: 8px;
+  background-position: -32px 0px;
+}
+.sd3-main-font.char-35 {
+  width: 8px;
+  background-position: -48px 0px;
+}
+.sd3-main-font.char-36 {
+  width: 8px;
+  background-position: -64px 0px;
+}
+.sd3-main-font.char-37 {
+  width: 8px;
+  background-position: -80px 0px;
+}
+.sd3-main-font.char-38 {
+  width: 8px;
+  background-position: -96px 0px;
+}
+.sd3-main-font.char-39 {
+  width: 4px;
+  background-position: -112px 0px;
+}
+.sd3-main-font.char-40 {
+  width: 5px;
+  background-position: 0px -16px;
+}
+.sd3-main-font.char-41 {
+  width: 5px;
+  background-position: -16px -16px;
+}
+.sd3-main-font.char-42 {
+  width: 9px;
+  background-position: -32px -16px;
+}
+.sd3-main-font.char-43 {
+  width: 7px;
+  background-position: -48px -16px;
+}
+.sd3-main-font.char-44 {
+  width: 4px;
+  background-position: -64px -16px;
+}
+.sd3-main-font.char-45 {
+  width: 8px;
+  background-position: -80px -16px;
+}
+.sd3-main-font.char-46 {
+  width: 3px;
+  background-position: -96px -16px;
+}
+.sd3-main-font.char-47 {
+  width: 8px;
+  background-position: -112px -16px;
+}
+.sd3-main-font.char-48 {
+  width: 9px;
+  background-position: 0px -32px;
+}
+.sd3-main-font.char-49 {
+  width: 7px;
+  background-position: -16px -32px;
+}
+.sd3-main-font.char-50 {
+  width: 8px;
+  background-position: -32px -32px;
+}
+.sd3-main-font.char-51 {
+  width: 8px;
+  background-position: -48px -32px;
+}
+.sd3-main-font.char-52 {
+  width: 8px;
+  background-position: -64px -32px;
+}
+.sd3-main-font.char-53 {
+  width: 8px;
+  background-position: -80px -32px;
+}
+.sd3-main-font.char-54 {
+  width: 8px;
+  background-position: -96px -32px;
+}
+.sd3-main-font.char-55 {
+  width: 8px;
+  background-position: -112px -32px;
+}
+.sd3-main-font.char-56 {
+  width: 8px;
+  background-position: 0px -48px;
+}
+.sd3-main-font.char-57 {
+  width: 8px;
+  background-position: -16px -48px;
+}
+.sd3-main-font.char-58 {
+  width: 3px;
+  background-position: -32px -48px;
+}
+.sd3-main-font.char-59 {
+  width: 4px;
+  background-position: -48px -48px;
+}
+.sd3-main-font.char-63 {
+  width: 8px;
+  background-position: -112px -48px;
+}
+.sd3-main-font.char-65 {
+  width: 8px;
+  background-position: -16px -64px;
+}
+.sd3-main-font.char-66 {
+  width: 8px;
+  background-position: -32px -64px;
+}
+.sd3-main-font.char-67 {
+  width: 8px;
+  background-position: -48px -64px;
+}
+.sd3-main-font.char-68 {
+  width: 8px;
+  background-position: -64px -64px;
+}
+.sd3-main-font.char-69 {
+  width: 8px;
+  background-position: -80px -64px;
+}
+.sd3-main-font.char-70 {
+  width: 8px;
+  background-position: -96px -64px;
+}
+.sd3-main-font.char-71 {
+  width: 8px;
+  background-position: -112px -64px;
+}
+.sd3-main-font.char-72 {
+  width: 8px;
+  background-position: 0px -80px;
+}
+.sd3-main-font.char-73 {
+  width: 5px;
+  background-position: -16px -80px;
+}
+.sd3-main-font.char-74 {
+  width: 8px;
+  background-position: -32px -80px;
+}
+.sd3-main-font.char-75 {
+  width: 8px;
+  background-position: -48px -80px;
+}
+.sd3-main-font.char-76 {
+  width: 8px;
+  background-position: -64px -80px;
+}
+.sd3-main-font.char-77 {
+  width: 9px;
+  background-position: -80px -80px;
+}
+.sd3-main-font.char-78 {
+  width: 8px;
+  background-position: -96px -80px;
+}
+.sd3-main-font.char-79 {
+  width: 9px;
+  background-position: -112px -80px;
+}
+.sd3-main-font.char-80 {
+  width: 8px;
+  background-position: 0px -96px;
+}
+.sd3-main-font.char-81 {
+  width: 9px;
+  background-position: -16px -96px;
+}
+.sd3-main-font.char-82 {
+  width: 8px;
+  background-position: -32px -96px;
+}
+.sd3-main-font.char-83 {
+  width: 8px;
+  background-position: -48px -96px;
+}
+.sd3-main-font.char-84 {
+  width: 9px;
+  background-position: -64px -96px;
+}
+.sd3-main-font.char-85 {
+  width: 8px;
+  background-position: -80px -96px;
+}
+.sd3-main-font.char-86 {
+  width: 8px;
+  background-position: -96px -96px;
+}
+.sd3-main-font.char-87 {
+  width: 9px;
+  background-position: -112px -96px;
+}
+.sd3-main-font.char-88 {
+  width: 9px;
+  background-position: 0px -112px;
+}
+.sd3-main-font.char-89 {
+  width: 9px;
+  background-position: -16px -112px;
+}
+.sd3-main-font.char-90 {
+  width: 9px;
+  background-position: -32px -112px;
+}
+.sd3-main-font.char-97 {
+  width: 8px;
+  background-position: -16px -128px;
+}
+.sd3-main-font.char-98 {
+  width: 8px;
+  background-position: -32px -128px;
+}
+.sd3-main-font.char-99 {
+  width: 8px;
+  background-position: -48px -128px;
+}
+.sd3-main-font.char-100 {
+  width: 8px;
+  background-position: -64px -128px;
+}
+.sd3-main-font.char-101 {
+  width: 8px;
+  background-position: -80px -128px;
+}
+.sd3-main-font.char-102 {
+  width: 7px;
+  background-position: -96px -128px;
+}
+.sd3-main-font.char-103 {
+  width: 8px;
+  background-position: -112px -128px;
+}
+.sd3-main-font.char-104 {
+  width: 8px;
+  background-position: 0px -144px;
+}
+.sd3-main-font.char-105 {
+  width: 3px;
+  background-position: -16px -144px;
+}
+.sd3-main-font.char-106 {
+  width: 7px;
+  background-position: -32px -144px;
+}
+.sd3-main-font.char-107 {
+  width: 8px;
+  background-position: -48px -144px;
+}
+.sd3-main-font.char-108 {
+  width: 3px;
+  background-position: -64px -144px;
+}
+.sd3-main-font.char-109 {
+  width: 9px;
+  background-position: -80px -144px;
+}
+.sd3-main-font.char-110 {
+  width: 8px;
+  background-position: -96px -144px;
+}
+.sd3-main-font.char-111 {
+  width: 8px;
+  background-position: -112px -144px;
+}
+.sd3-main-font.char-112 {
+  width: 8px;
+  background-position: 0px -160px;
+}
+.sd3-main-font.char-113 {
+  width: 8px;
+  background-position: -16px -160px;
+}
+.sd3-main-font.char-114 {
+  width: 8px;
+  background-position: -32px -160px;
+}
+.sd3-main-font.char-115 {
+  width: 8px;
+  background-position: -48px -160px;
+}
+.sd3-main-font.char-116 {
+  width: 8px;
+  background-position: -64px -160px;
+}
+.sd3-main-font.char-117 {
+  width: 8px;
+  background-position: -80px -160px;
+}
+.sd3-main-font.char-118 {
+  width: 8px;
+  background-position: -96px -160px;
+}
+.sd3-main-font.char-119 {
+  width: 8px;
+  background-position: -112px -160px;
+}
+.sd3-main-font.char-120 {
+  width: 9px;
+  background-position: 0px -176px;
+}
+.sd3-main-font.char-121 {
+  width: 8px;
+  background-position: -16px -176px;
+}
+.sd3-main-font.char-122 {
+  width: 8px;
+  background-position: -32px -176px;
+}
+.sd3-main-font.char-224 {
+  width: 8px;
+  background-position: 0px -192px;
+}
+.sd3-main-font.char-232 {
+  width: 8px;
+  background-position: -16px -192px;
+}
+.sd3-main-font.char-233 {
+  width: 8px;
+  background-position: -32px -192px;
+}
+.sd3-main-font.char-236 {
+  width: 8px;
+  background-position: -48px -192px;
+}
+.sd3-main-font.char-242 {
+  width: 8px;
+  background-position: -64px -192px;
+}
+.sd3-main-font.char-249 {
+  width: 8px;
+  background-position: -80px -192px;
+}
+.sd3-main-font.char-192 {
+  width: 8px;
+  background-position: 0px -208px;
+}
+.sd3-main-font.char-200 {
+  width: 8px;
+  background-position: -16px -208px;
+}
+.sd3-main-font.char-201 {
+  width: 8px;
+  background-position: -32px -208px;
+}
+.sd3-main-font.char-204 {
+  width: 8px;
+  background-position: -48px -208px;
+}
+.sd3-main-font.char-210 {
+  width: 8px;
+  background-position: -64px -208px;
+}
+.sd3-main-font.char-217 {
+  width: 8px;
+  background-position: -80px -208px;
+}
+
+.smrpg-box .screen {
+  background: url(../images/_smrpg/bg1.png) no-repeat;
+}
+.smrpg-box .screen .text-box {
+  padding-left: 17px;
+  padding-top: 18px;
+}
+.smrpg-box .screen .text-box .text-line .newline_newpage_arrow {
+  width: 15px;
+  height: 8px;
+  background: url(../images/_smrpg/newline_newpage_arrow.png) no-repeat;
+  position: absolute;
+  top: 56px;
+  right: 17px;
+}
+
+.smrpg-main-font {
+  min-height: 12px;
+  margin-right: 1px;
+  margin-bottom: 4px;
+  background-image: url(../images/_smrpg/fontTableDialogue3.png);
+  /*   */
+  /* ! */
+  /* “ */
+  /* ” */
+  /* ♥ */
+  /* ♪ */
+  /* ( */
+  /* ) */
+  /* · */
+  /* ‥ */
+  /* , */
+  /* - */
+  /* . */
+  /* / */
+  /* 0 */
+  /* 1 */
+  /* 2 */
+  /* 3 */
+  /* 4 */
+  /* 5 */
+  /* 6 */
+  /* 7 */
+  /* 8 */
+  /* 9 */
+  /* ~ */
+  /* ? */
+  /* © */
+  /* A */
+  /* B */
+  /* C */
+  /* D */
+  /* E */
+  /* F */
+  /* G */
+  /* H */
+  /* I */
+  /* J */
+  /* K */
+  /* L */
+  /* M */
+  /* N */
+  /* O */
+  /* P */
+  /* Q */
+  /* R */
+  /* S */
+  /* T */
+  /* U */
+  /* V */
+  /* W */
+  /* X */
+  /* Y */
+  /* Z */
+  /* a */
+  /* b */
+  /* c */
+  /* d */
+  /* e */
+  /* f */
+  /* g */
+  /* h */
+  /* i */
+  /* j */
+  /* k */
+  /* l */
+  /* m */
+  /* n */
+  /* o */
+  /* p */
+  /* q */
+  /* r */
+  /* s */
+  /* t */
+  /* u */
+  /* v */
+  /* w */
+  /* x */
+  /* y */
+  /* z */
+  /* à */
+  /* è */
+  /* é */
+  /* ì */
+  /* ò */
+  /* ù */
+  /* À */
+  /* È */
+  /* É */
+  /* Ì */
+  /* Ò */
+  /* : */
+  /* ; */
+  /* < */
+  /* > */
+  /* … */
+  /* # */
+  /* + */
+  /* × */
+  /* % */
+  /* * */
+  /* ' */
+  /* & */
+  /* Ù */
+}
+.smrpg-main-font.char-32 {
+  width: 4px;
+  background-position: 0px 0px;
+}
+.smrpg-main-font.char-33 {
+  width: 6px;
+  background-position: -16px 0px;
+}
+.smrpg-main-font.char-8220 {
+  width: 6px;
+  background-position: -32px 0px;
+}
+.smrpg-main-font.char-8221 {
+  width: 6px;
+  background-position: -48px 0px;
+}
+.smrpg-main-font.char-9829 {
+  width: 8px;
+  background-position: -64px 0px;
+}
+.smrpg-main-font.char-9834 {
+  width: 8px;
+  background-position: -80px 0px;
+}
+.smrpg-main-font.char-40 {
+  width: 5px;
+  background-position: 0px -12px;
+}
+.smrpg-main-font.char-41 {
+  width: 5px;
+  background-position: -16px -12px;
+}
+.smrpg-main-font.char-183 {
+  width: 6px;
+  background-position: -32px -12px;
+}
+.smrpg-main-font.char-8229 {
+  width: 8px;
+  background-position: -48px -12px;
+}
+.smrpg-main-font.char-44 {
+  width: 5px;
+  background-position: -64px -12px;
+}
+.smrpg-main-font.char-45 {
+  width: 5px;
+  background-position: -80px -12px;
+}
+.smrpg-main-font.char-46 {
+  width: 5px;
+  background-position: -96px -12px;
+}
+.smrpg-main-font.char-47 {
+  width: 6px;
+  background-position: -112px -12px;
+}
+.smrpg-main-font.char-48 {
+  width: 7px;
+  background-position: 0px -24px;
+}
+.smrpg-main-font.char-49 {
+  width: 5px;
+  background-position: -16px -24px;
+}
+.smrpg-main-font.char-50 {
+  width: 7px;
+  background-position: -32px -24px;
+}
+.smrpg-main-font.char-51 {
+  width: 7px;
+  background-position: -48px -24px;
+}
+.smrpg-main-font.char-52 {
+  width: 7px;
+  background-position: -64px -24px;
+}
+.smrpg-main-font.char-53 {
+  width: 7px;
+  background-position: -80px -24px;
+}
+.smrpg-main-font.char-54 {
+  width: 7px;
+  background-position: -96px -24px;
+}
+.smrpg-main-font.char-55 {
+  width: 7px;
+  background-position: -112px -24px;
+}
+.smrpg-main-font.char-56 {
+  width: 7px;
+  background-position: 0px -36px;
+}
+.smrpg-main-font.char-57 {
+  width: 7px;
+  background-position: -16px -36px;
+}
+.smrpg-main-font.char-126 {
+  width: 8px;
+  background-position: -32px -36px;
+}
+.smrpg-main-font.char-63 {
+  width: 8px;
+  background-position: -112px -36px;
+}
+.smrpg-main-font.char-169 {
+  width: 8px;
+  background-position: 0px -48px;
+}
+.smrpg-main-font.char-65 {
+  width: 8px;
+  background-position: -16px -48px;
+}
+.smrpg-main-font.char-66 {
+  width: 7px;
+  background-position: -32px -48px;
+}
+.smrpg-main-font.char-67 {
+  width: 7px;
+  background-position: -48px -48px;
+}
+.smrpg-main-font.char-68 {
+  width: 6px;
+  background-position: -64px -48px;
+}
+.smrpg-main-font.char-69 {
+  width: 7px;
+  background-position: -80px -48px;
+}
+.smrpg-main-font.char-70 {
+  width: 6px;
+  background-position: -96px -48px;
+}
+.smrpg-main-font.char-71 {
+  width: 7px;
+  background-position: -112px -48px;
+}
+.smrpg-main-font.char-72 {
+  width: 7px;
+  background-position: 0px -60px;
+}
+.smrpg-main-font.char-73 {
+  width: 3px;
+  background-position: -16px -60px;
+}
+.smrpg-main-font.char-74 {
+  width: 6px;
+  background-position: -32px -60px;
+}
+.smrpg-main-font.char-75 {
+  width: 7px;
+  background-position: -48px -60px;
+}
+.smrpg-main-font.char-76 {
+  width: 5px;
+  background-position: -64px -60px;
+}
+.smrpg-main-font.char-77 {
+  width: 9px;
+  background-position: -80px -60px;
+}
+.smrpg-main-font.char-78 {
+  width: 6px;
+  background-position: -96px -60px;
+}
+.smrpg-main-font.char-79 {
+  width: 7px;
+  background-position: -112px -60px;
+}
+.smrpg-main-font.char-80 {
+  width: 7px;
+  background-position: 0px -72px;
+}
+.smrpg-main-font.char-81 {
+  width: 7px;
+  background-position: -16px -72px;
+}
+.smrpg-main-font.char-82 {
+  width: 8px;
+  background-position: -32px -72px;
+}
+.smrpg-main-font.char-83 {
+  width: 6px;
+  background-position: -48px -72px;
+}
+.smrpg-main-font.char-84 {
+  width: 6px;
+  background-position: -64px -72px;
+}
+.smrpg-main-font.char-85 {
+  width: 7px;
+  background-position: -80px -72px;
+}
+.smrpg-main-font.char-86 {
+  width: 7px;
+  background-position: -96px -72px;
+}
+.smrpg-main-font.char-87 {
+  width: 9px;
+  background-position: -112px -72px;
+}
+.smrpg-main-font.char-88 {
+  width: 6px;
+  background-position: 0px -84px;
+}
+.smrpg-main-font.char-89 {
+  width: 6px;
+  background-position: -16px -84px;
+}
+.smrpg-main-font.char-90 {
+  width: 7px;
+  background-position: -32px -84px;
+}
+.smrpg-main-font.char-97 {
+  width: 6px;
+  background-position: -16px -96px;
+}
+.smrpg-main-font.char-98 {
+  width: 5px;
+  background-position: -32px -96px;
+}
+.smrpg-main-font.char-99 {
+  width: 6px;
+  background-position: -48px -96px;
+}
+.smrpg-main-font.char-100 {
+  width: 6px;
+  background-position: -64px -96px;
+}
+.smrpg-main-font.char-101 {
+  width: 5px;
+  background-position: -80px -96px;
+}
+.smrpg-main-font.char-102 {
+  width: 5px;
+  background-position: -96px -96px;
+}
+.smrpg-main-font.char-103 {
+  width: 6px;
+  background-position: -112px -96px;
+}
+.smrpg-main-font.char-104 {
+  width: 5px;
+  background-position: 0px -108px;
+}
+.smrpg-main-font.char-105 {
+  width: 3px;
+  background-position: -16px -108px;
+}
+.smrpg-main-font.char-106 {
+  width: 5px;
+  background-position: -32px -108px;
+}
+.smrpg-main-font.char-107 {
+  width: 6px;
+  background-position: -48px -108px;
+}
+.smrpg-main-font.char-108 {
+  width: 3px;
+  background-position: -64px -108px;
+}
+.smrpg-main-font.char-109 {
+  width: 7px;
+  background-position: -80px -108px;
+}
+.smrpg-main-font.char-110 {
+  width: 6px;
+  background-position: -96px -108px;
+}
+.smrpg-main-font.char-111 {
+  width: 6px;
+  background-position: -112px -108px;
+}
+.smrpg-main-font.char-112 {
+  width: 6px;
+  background-position: 0px -120px;
+}
+.smrpg-main-font.char-113 {
+  width: 6px;
+  background-position: -16px -120px;
+}
+.smrpg-main-font.char-114 {
+  width: 5px;
+  background-position: -32px -120px;
+}
+.smrpg-main-font.char-115 {
+  width: 6px;
+  background-position: -48px -120px;
+}
+.smrpg-main-font.char-116 {
+  width: 5px;
+  background-position: -64px -120px;
+}
+.smrpg-main-font.char-117 {
+  width: 6px;
+  background-position: -80px -120px;
+}
+.smrpg-main-font.char-118 {
+  width: 7px;
+  background-position: -96px -120px;
+}
+.smrpg-main-font.char-119 {
+  width: 8px;
+  background-position: -112px -120px;
+}
+.smrpg-main-font.char-120 {
+  width: 6px;
+  background-position: 0px -132px;
+}
+.smrpg-main-font.char-121 {
+  width: 5px;
+  background-position: -16px -132px;
+}
+.smrpg-main-font.char-122 {
+  width: 6px;
+  background-position: -32px -132px;
+}
+.smrpg-main-font.char-224 {
+  width: 6px;
+  background-position: -48px -132px;
+}
+.smrpg-main-font.char-232 {
+  width: 5px;
+  background-position: -64px -132px;
+}
+.smrpg-main-font.char-233 {
+  width: 5px;
+  background-position: -80px -132px;
+}
+.smrpg-main-font.char-236 {
+  width: 3px;
+  background-position: -96px -132px;
+}
+.smrpg-main-font.char-242 {
+  width: 6px;
+  background-position: -112px -132px;
+}
+.smrpg-main-font.char-249 {
+  width: 6px;
+  background-position: 0px -156px;
+}
+.smrpg-main-font.char-192 {
+  width: 8px;
+  background-position: -16px -156px;
+}
+.smrpg-main-font.char-200 {
+  width: 5px;
+  background-position: -32px -156px;
+}
+.smrpg-main-font.char-201 {
+  width: 5px;
+  background-position: -48px -156px;
+}
+.smrpg-main-font.char-204 {
+  width: 3px;
+  background-position: -64px -156px;
+}
+.smrpg-main-font.char-210 {
+  width: 7px;
+  background-position: -80px -156px;
+}
+.smrpg-main-font.char-58 {
+  width: 7px;
+  background-position: -96px -156px;
+}
+.smrpg-main-font.char-59 {
+  width: 7px;
+  background-position: -112px -156px;
+}
+.smrpg-main-font.char-60 {
+  width: 8px;
+  background-position: 0px -168px;
+}
+.smrpg-main-font.char-62 {
+  width: 8px;
+  background-position: -16px -168px;
+}
+.smrpg-main-font.char-8230 {
+  width: 9px;
+  background-position: -32px -168px;
+}
+.smrpg-main-font.char-35 {
+  width: 9px;
+  background-position: -48px -168px;
+}
+.smrpg-main-font.char-43 {
+  width: 9px;
+  background-position: -64px -168px;
+}
+.smrpg-main-font.char-215 {
+  width: 9px;
+  background-position: -80px -168px;
+}
+.smrpg-main-font.char-37 {
+  width: 9px;
+  background-position: -96px -168px;
+}
+.smrpg-main-font.char-42 {
+  width: 9px;
+  background-position: -32px -180px;
+}
+.smrpg-main-font.char-39 {
+  width: 4px;
+  background-position: -48px -180px;
+}
+.smrpg-main-font.char-38 {
+  width: 8px;
+  background-position: -64px -180px;
+}
+.smrpg-main-font.char-217 {
+  width: 7px;
+  background-position: -80px -180px;
+}
+
+.soe-box .screen {
+  background: url(../images/_soe/background0.png) no-repeat;
+}
+.soe-box .screen .text-box {
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+.soe-main-font {
+  min-height: 12px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  width: 16px;
+  background-image: url(../images/_soe/soe_gfx_font1_it.png);
+  /* */
+  /* ! */
+  /* " */
+  /* # */
+  /* $ */
+  /* % */
+  /* & */
+  /* ' */
+  /* ( */
+  /* ) */
+  /* * */
+  /* + */
+  /* , */
+  /* - */
+  /* . */
+  /* / */
+  /* 0 */
+  /* 1 */
+  /* 2 */
+  /* 3 */
+  /* 4 */
+  /* 5 */
+  /* 6 */
+  /* 7 */
+  /* 8 */
+  /* 9 */
+  /* : */
+  /* ; */
+  /* < */
+  /* = */
+  /* > */
+  /* ? */
+  /* @ */
+  /* A */
+  /* B */
+  /* C */
+  /* D */
+  /* E */
+  /* F */
+  /* G */
+  /* H */
+  /* I */
+  /* J */
+  /* K */
+  /* L */
+  /* M */
+  /* N */
+  /* O */
+  /* P */
+  /* Q */
+  /* R */
+  /* S */
+  /* T */
+  /* U */
+  /* V */
+  /* W */
+  /* X */
+  /* Y */
+  /* Z */
+  /* [ */
+  /* \ */
+  /* ] */
+  /* */
+  /* … */
+  /* ` */
+  /* a */
+  /* b */
+  /* c */
+  /* d */
+  /* e */
+  /* f */
+  /* g */
+  /* h */
+  /* i */
+  /* j */
+  /* k */
+  /* l */
+  /* m */
+  /* n */
+  /* o */
+  /* p */
+  /* q */
+  /* r */
+  /* s */
+  /* t */
+  /* u */
+  /* v */
+  /* w */
+  /* x */
+  /* y */
+  /* z */
+  /* */
+  /* | */
+  /* */
+  /* */
+  /* */
+  /* */
+  /* */
+  /* */
+  /* */
+  /*   */
+  /* */
+  /* */
+  /* */
+}
+.soe-main-font.char-33 {
+  width: 4px;
+  background-position: -16px -24px;
+}
+.soe-main-font.char-34 {
+  width: 6px;
+  background-position: -32px -24px;
+}
+.soe-main-font.char-35 {
+  width: 9px;
+  background-position: -48px -24px;
+}
+.soe-main-font.char-36 {
+  width: 7px;
+  background-position: -64px -24px;
+}
+.soe-main-font.char-37 {
+  width: 9px;
+  background-position: -80px -24px;
+}
+.soe-main-font.char-38 {
+  width: 8px;
+  background-position: -96px -24px;
+}
+.soe-main-font.char-39 {
+  width: 3px;
+  background-position: -112px -24px;
+}
+.soe-main-font.char-40 {
+  width: 4px;
+  background-position: 0px -36px;
+}
+.soe-main-font.char-41 {
+  width: 4px;
+  background-position: -16px -36px;
+}
+.soe-main-font.char-42 {
+  width: 6px;
+  background-position: -32px -36px;
+}
+.soe-main-font.char-43 {
+  width: 6px;
+  background-position: -48px -36px;
+}
+.soe-main-font.char-44 {
+  width: 3px;
+  background-position: -64px -36px;
+}
+.soe-main-font.char-45 {
+  width: 7px;
+  background-position: -80px -36px;
+}
+.soe-main-font.char-46 {
+  width: 3px;
+  background-position: -96px -36px;
+}
+.soe-main-font.char-47 {
+  width: 6px;
+  background-position: -112px -36px;
+}
+.soe-main-font.char-48 {
+  width: 7px;
+  background-position: 0px -48px;
+}
+.soe-main-font.char-49 {
+  width: 4px;
+  background-position: -16px -48px;
+}
+.soe-main-font.char-50 {
+  width: 7px;
+  background-position: -32px -48px;
+}
+.soe-main-font.char-51 {
+  width: 7px;
+  background-position: -48px -48px;
+}
+.soe-main-font.char-52 {
+  width: 8px;
+  background-position: -64px -48px;
+}
+.soe-main-font.char-53 {
+  width: 7px;
+  background-position: -80px -48px;
+}
+.soe-main-font.char-54 {
+  width: 7px;
+  background-position: -96px -48px;
+}
+.soe-main-font.char-55 {
+  width: 7px;
+  background-position: -112px -48px;
+}
+.soe-main-font.char-56 {
+  width: 7px;
+  background-position: 0px -60px;
+}
+.soe-main-font.char-57 {
+  width: 7px;
+  background-position: -16px -60px;
+}
+.soe-main-font.char-58 {
+  width: 3px;
+  background-position: -32px -60px;
+}
+.soe-main-font.char-59 {
+  width: 3px;
+  background-position: -48px -60px;
+}
+.soe-main-font.char-60 {
+  width: 5px;
+  background-position: -64px -60px;
+}
+.soe-main-font.char-61 {
+  width: 7px;
+  background-position: -80px -60px;
+}
+.soe-main-font.char-62 {
+  width: 5px;
+  background-position: -96px -60px;
+}
+.soe-main-font.char-63 {
+  width: 7px;
+  background-position: -112px -60px;
+}
+.soe-main-font.char-64 {
+  width: 9px;
+  background-position: 0px -72px;
+}
+.soe-main-font.char-65 {
+  width: 7px;
+  background-position: -16px -72px;
+}
+.soe-main-font.char-66 {
+  width: 7px;
+  background-position: -32px -72px;
+}
+.soe-main-font.char-67 {
+  width: 7px;
+  background-position: -48px -72px;
+}
+.soe-main-font.char-68 {
+  width: 7px;
+  background-position: -64px -72px;
+}
+.soe-main-font.char-69 {
+  width: 6px;
+  background-position: -80px -72px;
+}
+.soe-main-font.char-70 {
+  width: 6px;
+  background-position: -96px -72px;
+}
+.soe-main-font.char-71 {
+  width: 7px;
+  background-position: -112px -72px;
+}
+.soe-main-font.char-72 {
+  width: 7px;
+  background-position: 0px -84px;
+}
+.soe-main-font.char-73 {
+  width: 5px;
+  background-position: -16px -84px;
+}
+.soe-main-font.char-74 {
+  width: 7px;
+  background-position: -32px -84px;
+}
+.soe-main-font.char-75 {
+  width: 8px;
+  background-position: -48px -84px;
+}
+.soe-main-font.char-76 {
+  width: 6px;
+  background-position: -64px -84px;
+}
+.soe-main-font.char-77 {
+  width: 9px;
+  background-position: -80px -84px;
+}
+.soe-main-font.char-78 {
+  width: 8px;
+  background-position: -96px -84px;
+}
+.soe-main-font.char-79 {
+  width: 7px;
+  background-position: -112px -84px;
+}
+.soe-main-font.char-80 {
+  width: 7px;
+  background-position: 0px -96px;
+}
+.soe-main-font.char-81 {
+  width: 7px;
+  background-position: -16px -96px;
+}
+.soe-main-font.char-82 {
+  width: 7px;
+  background-position: -32px -96px;
+}
+.soe-main-font.char-83 {
+  width: 6px;
+  background-position: -48px -96px;
+}
+.soe-main-font.char-84 {
+  width: 7px;
+  background-position: -64px -96px;
+}
+.soe-main-font.char-85 {
+  width: 7px;
+  background-position: -80px -96px;
+}
+.soe-main-font.char-86 {
+  width: 7px;
+  background-position: -96px -96px;
+}
+.soe-main-font.char-87 {
+  width: 11px;
+  background-position: -112px -96px;
+}
+.soe-main-font.char-88 {
+  width: 7px;
+  background-position: 0px -108px;
+}
+.soe-main-font.char-89 {
+  width: 7px;
+  background-position: -16px -108px;
+}
+.soe-main-font.char-90 {
+  width: 7px;
+  background-position: -32px -108px;
+}
+.soe-main-font.char-91 {
+  width: 4px;
+  background-position: -48px -108px;
+}
+.soe-main-font.char-92 {
+  width: 6px;
+  background-position: -64px -108px;
+}
+.soe-main-font.char-93 {
+  width: 4px;
+  background-position: -80px -108px;
+}
+.soe-main-font.char-8230 {
+  width: 9px;
+  background-position: -112px -108px;
+}
+.soe-main-font.char-96 {
+  width: 3px;
+  background-position: 0px -120px;
+}
+.soe-main-font.char-97 {
+  width: 7px;
+  background-position: -16px -120px;
+}
+.soe-main-font.char-98 {
+  width: 7px;
+  background-position: -32px -120px;
+}
+.soe-main-font.char-99 {
+  width: 6px;
+  background-position: -48px -120px;
+}
+.soe-main-font.char-100 {
+  width: 7px;
+  background-position: -64px -120px;
+}
+.soe-main-font.char-101 {
+  width: 7px;
+  background-position: -80px -120px;
+}
+.soe-main-font.char-102 {
+  width: 6px;
+  background-position: -96px -120px;
+}
+.soe-main-font.char-103 {
+  width: 7px;
+  background-position: -112px -120px;
+}
+.soe-main-font.char-104 {
+  width: 7px;
+  background-position: 0px -132px;
+}
+.soe-main-font.char-105 {
+  width: 3px;
+  background-position: -16px -132px;
+}
+.soe-main-font.char-106 {
+  width: 6px;
+  background-position: -32px -132px;
+}
+.soe-main-font.char-107 {
+  width: 7px;
+  background-position: -48px -132px;
+}
+.soe-main-font.char-108 {
+  width: 3px;
+  background-position: -64px -132px;
+}
+.soe-main-font.char-109 {
+  width: 11px;
+  background-position: -80px -132px;
+}
+.soe-main-font.char-110 {
+  width: 7px;
+  background-position: -96px -132px;
+}
+.soe-main-font.char-111 {
+  width: 7px;
+  background-position: -112px -132px;
+}
+.soe-main-font.char-112 {
+  width: 7px;
+  background-position: 0px -144px;
+}
+.soe-main-font.char-113 {
+  width: 7px;
+  background-position: -16px -144px;
+}
+.soe-main-font.char-114 {
+  width: 6px;
+  background-position: -32px -144px;
+}
+.soe-main-font.char-115 {
+  width: 6px;
+  background-position: -48px -144px;
+}
+.soe-main-font.char-116 {
+  width: 5px;
+  background-position: -64px -144px;
+}
+.soe-main-font.char-117 {
+  width: 7px;
+  background-position: -80px -144px;
+}
+.soe-main-font.char-118 {
+  width: 7px;
+  background-position: -96px -144px;
+}
+.soe-main-font.char-119 {
+  width: 11px;
+  background-position: -112px -144px;
+}
+.soe-main-font.char-120 {
+  width: 7px;
+  background-position: 0px -156px;
+}
+.soe-main-font.char-121 {
+  width: 7px;
+  background-position: -16px -156px;
+}
+.soe-main-font.char-122 {
+  width: 7px;
+  background-position: -32px -156px;
+}
+.soe-main-font.char-124 {
+  width: 2px;
+  background-position: -64px -156px;
+}
+.soe-main-font.char-32 {
+  width: 4px;
+  background-position: -64px -168px;
+}
+.soe-main-font.italian {
+  background-image: url(../images/_soe/soe_gfx_font1_it.png);
+  /* à */
+  /* è */
+  /* é */
+  /* ì */
+  /* ò */
+  /* ù */
+  /* */
+  /* */
+  /* À */
+  /* È */
+  /* É */
+  /* Ì */
+  /* Ò */
+  /* Ù */
+  /* */
+  /* */
+}
+.soe-main-font.italian.char-224 {
+  width: 7px;
+  background-position: 0px 0px;
+}
+.soe-main-font.italian.char-232 {
+  width: 7px;
+  background-position: -16px 0px;
+}
+.soe-main-font.italian.char-233 {
+  width: 7px;
+  background-position: -32px 0px;
+}
+.soe-main-font.italian.char-236 {
+  width: 4px;
+  background-position: -48px 0px;
+}
+.soe-main-font.italian.char-242 {
+  width: 7px;
+  background-position: -64px 0px;
+}
+.soe-main-font.italian.char-249 {
+  width: 7px;
+  background-position: -80px 0px;
+}
+.soe-main-font.italian.char-192 {
+  width: 7px;
+  background-position: 0px -12px;
+}
+.soe-main-font.italian.char-200 {
+  width: 6px;
+  background-position: -16px -12px;
+}
+.soe-main-font.italian.char-201 {
+  width: 6px;
+  background-position: -32px -12px;
+}
+.soe-main-font.italian.char-204 {
+  width: 5px;
+  background-position: -48px -12px;
+}
+.soe-main-font.italian.char-210 {
+  width: 7px;
+  background-position: -64px -12px;
+}
+.soe-main-font.italian.char-217 {
+  width: 7px;
+  background-position: -80px -12px;
+}
+.soe-main-font.portuguese {
+  background-image: url(../images/_soe/soe_gfx_font1_pt.png);
+  /* à */
+  /* ê */
+  /* é */
+  /* í */
+  /* ó */
+  /* ú */
+  /* Á */
+  /* */
+  /* á */
+  /* â */
+  /* É */
+  /* ç */
+  /* ô */
+  /* ã */
+  /* Ó */
+  /* õ */
+}
+.soe-main-font.portuguese.char-224 {
+  width: 7px;
+  background-position: 0px 0px;
+}
+.soe-main-font.portuguese.char-234 {
+  width: 7px;
+  background-position: -16px 0px;
+}
+.soe-main-font.portuguese.char-233 {
+  width: 7px;
+  background-position: -32px 0px;
+}
+.soe-main-font.portuguese.char-237 {
+  width: 3px;
+  background-position: -48px 0px;
+}
+.soe-main-font.portuguese.char-243 {
+  width: 7px;
+  background-position: -64px 0px;
+}
+.soe-main-font.portuguese.char-250 {
+  width: 7px;
+  background-position: -80px 0px;
+}
+.soe-main-font.portuguese.char-193 {
+  width: 7px;
+  background-position: -96px 0px;
+}
+.soe-main-font.portuguese.char-225 {
+  width: 7px;
+  background-position: 0px -12px;
+}
+.soe-main-font.portuguese.char-226 {
+  width: 7px;
+  background-position: -16px -12px;
+}
+.soe-main-font.portuguese.char-201 {
+  width: 6px;
+  background-position: -32px -12px;
+}
+.soe-main-font.portuguese.char-231 {
+  width: 7px;
+  background-position: -48px -12px;
+}
+.soe-main-font.portuguese.char-244 {
+  width: 7px;
+  background-position: -64px -12px;
+}
+.soe-main-font.portuguese.char-227 {
+  width: 7px;
+  background-position: -80px -12px;
+}
+.soe-main-font.portuguese.char-211 {
+  width: 7px;
+  background-position: -96px -12px;
+}
+.soe-main-font.portuguese.char-245 {
+  width: 7px;
+  background-position: -112px -12px;
+}
+
+.som-box .screen {
+  height: 80px !important;
+  background: url(../images/_som/som_dialog_box.png) no-repeat;
+  background-color: black;
+}
+.som-box .screen .text-box {
+  padding-left: 16px;
+  padding-top: 17px;
+}
+.som-box .screen .text-box .text-line {
+  line-height: 16px !important;
+}
+
+.som-main-font {
+  min-height: 12px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  width: 8px;
+  background-image: url(../images/_som/som_font_ita.png);
+  /*   */
+  /* a */
+  /* b */
+  /* c */
+  /* d */
+  /* e */
+  /* f */
+  /* g */
+  /* h */
+  /* i */
+  /* j */
+  /* k */
+  /* l */
+  /* m */
+  /* n */
+  /* o */
+  /* p */
+  /* q */
+  /* r */
+  /* s */
+  /* t */
+  /* u */
+  /* v */
+  /* w */
+  /* x */
+  /* y */
+  /* z */
+  /* A */
+  /* B */
+  /* C */
+  /* D */
+  /* E */
+  /* F */
+  /* G */
+  /* H */
+  /* I */
+  /* J */
+  /* K */
+  /* L */
+  /* M */
+  /* N */
+  /* O */
+  /* P */
+  /* Q */
+  /* R */
+  /* S */
+  /* T */
+  /* U */
+  /* V */
+  /* W */
+  /* X */
+  /* Y */
+  /* Z */
+  /* 0 */
+  /* 1 */
+  /* 2 */
+  /* 3 */
+  /* 4 */
+  /* 5 */
+  /* 6 */
+  /* 7 */
+  /* 8 */
+  /* 9 */
+  /* . */
+  /* , */
+  /* / */
+  /* ' */
+  /* “ */
+  /* ” */
+  /* : */
+  /* - */
+  /* % */
+  /* ! */
+  /* & */
+  /* ? */
+  /* ( */
+  /* ) */
+  /* ✕ */
+  /* ▼ */
+  /* ← */
+  /* → */
+  /* ↑ */
+  /* ↓ */
+}
+.som-main-font.char-32 {
+  background-position: 0px 0px;
+}
+.som-main-font.char-97 {
+  background-position: -8px 0px;
+}
+.som-main-font.char-98 {
+  background-position: -16px 0px;
+}
+.som-main-font.char-99 {
+  background-position: -24px 0px;
+}
+.som-main-font.char-100 {
+  background-position: -32px 0px;
+}
+.som-main-font.char-101 {
+  background-position: -40px 0px;
+}
+.som-main-font.char-102 {
+  background-position: -48px 0px;
+}
+.som-main-font.char-103 {
+  background-position: -56px 0px;
+}
+.som-main-font.char-104 {
+  background-position: -64px 0px;
+}
+.som-main-font.char-105 {
+  background-position: -72px 0px;
+}
+.som-main-font.char-106 {
+  background-position: -80px 0px;
+}
+.som-main-font.char-107 {
+  background-position: -88px 0px;
+}
+.som-main-font.char-108 {
+  background-position: -96px 0px;
+}
+.som-main-font.char-109 {
+  background-position: -104px 0px;
+}
+.som-main-font.char-110 {
+  background-position: -112px 0px;
+}
+.som-main-font.char-111 {
+  background-position: -120px 0px;
+}
+.som-main-font.char-112 {
+  background-position: 0px -12px;
+}
+.som-main-font.char-113 {
+  background-position: -8px -12px;
+}
+.som-main-font.char-114 {
+  background-position: -16px -12px;
+}
+.som-main-font.char-115 {
+  background-position: -24px -12px;
+}
+.som-main-font.char-116 {
+  background-position: -32px -12px;
+}
+.som-main-font.char-117 {
+  background-position: -40px -12px;
+}
+.som-main-font.char-118 {
+  background-position: -48px -12px;
+}
+.som-main-font.char-119 {
+  background-position: -56px -12px;
+}
+.som-main-font.char-120 {
+  background-position: -64px -12px;
+}
+.som-main-font.char-121 {
+  background-position: -72px -12px;
+}
+.som-main-font.char-122 {
+  background-position: -80px -12px;
+}
+.som-main-font.char-65 {
+  background-position: -88px -12px;
+}
+.som-main-font.char-66 {
+  background-position: -96px -12px;
+}
+.som-main-font.char-67 {
+  background-position: -104px -12px;
+}
+.som-main-font.char-68 {
+  background-position: -112px -12px;
+}
+.som-main-font.char-69 {
+  background-position: -120px -12px;
+}
+.som-main-font.char-70 {
+  background-position: 0px -24px;
+}
+.som-main-font.char-71 {
+  background-position: -8px -24px;
+}
+.som-main-font.char-72 {
+  background-position: -16px -24px;
+}
+.som-main-font.char-73 {
+  background-position: -24px -24px;
+}
+.som-main-font.char-74 {
+  background-position: -32px -24px;
+}
+.som-main-font.char-75 {
+  background-position: -40px -24px;
+}
+.som-main-font.char-76 {
+  background-position: -48px -24px;
+}
+.som-main-font.char-77 {
+  background-position: -56px -24px;
+}
+.som-main-font.char-78 {
+  background-position: -64px -24px;
+}
+.som-main-font.char-79 {
+  background-position: -72px -24px;
+}
+.som-main-font.char-80 {
+  background-position: -80px -24px;
+}
+.som-main-font.char-81 {
+  background-position: -88px -24px;
+}
+.som-main-font.char-82 {
+  background-position: -96px -24px;
+}
+.som-main-font.char-83 {
+  background-position: -104px -24px;
+}
+.som-main-font.char-84 {
+  background-position: -112px -24px;
+}
+.som-main-font.char-85 {
+  background-position: -120px -24px;
+}
+.som-main-font.char-86 {
+  background-position: 0px -36px;
+}
+.som-main-font.char-87 {
+  background-position: -8px -36px;
+}
+.som-main-font.char-88 {
+  background-position: -16px -36px;
+}
+.som-main-font.char-89 {
+  background-position: -24px -36px;
+}
+.som-main-font.char-90 {
+  background-position: -32px -36px;
+}
+.som-main-font.char-48 {
+  background-position: -40px -36px;
+}
+.som-main-font.char-49 {
+  background-position: -48px -36px;
+}
+.som-main-font.char-50 {
+  background-position: -56px -36px;
+}
+.som-main-font.char-51 {
+  background-position: -64px -36px;
+}
+.som-main-font.char-52 {
+  background-position: -72px -36px;
+}
+.som-main-font.char-53 {
+  background-position: -80px -36px;
+}
+.som-main-font.char-54 {
+  background-position: -88px -36px;
+}
+.som-main-font.char-55 {
+  background-position: -96px -36px;
+}
+.som-main-font.char-56 {
+  background-position: -104px -36px;
+}
+.som-main-font.char-57 {
+  background-position: -112px -36px;
+}
+.som-main-font.char-46 {
+  background-position: -120px -36px;
+}
+.som-main-font.char-44 {
+  background-position: 0px -48px;
+}
+.som-main-font.char-47 {
+  background-position: -8px -48px;
+}
+.som-main-font.char-39 {
+  background-position: -16px -48px;
+}
+.som-main-font.char-8220 {
+  background-position: -24px -48px;
+}
+.som-main-font.char-8221 {
+  background-position: -32px -48px;
+}
+.som-main-font.char-58 {
+  background-position: -40px -48px;
+}
+.som-main-font.char-45 {
+  background-position: -48px -48px;
+}
+.som-main-font.char-37 {
+  background-position: -56px -48px;
+}
+.som-main-font.char-33 {
+  background-position: -64px -48px;
+}
+.som-main-font.char-38 {
+  background-position: -72px -48px;
+}
+.som-main-font.char-63 {
+  background-position: -80px -48px;
+}
+.som-main-font.char-40 {
+  background-position: -88px -48px;
+}
+.som-main-font.char-41 {
+  background-position: -96px -48px;
+}
+.som-main-font.char-10005 {
+  background-position: -104px -48px;
+}
+.som-main-font.char-9660 {
+  background-position: -112px -48px;
+}
+.som-main-font.char-8592 {
+  background-position: -120px -48px;
+}
+.som-main-font.char-8594 {
+  background-position: 0px -60px;
+}
+.som-main-font.char-8593 {
+  background-position: -8px -60px;
+}
+.som-main-font.char-8595 {
+  background-position: -16px -60px;
+}
+.som-main-font.italian {
+  background-image: url(../images/_som/som_font_ita.png);
+  /* à */
+  /* è */
+  /* é */
+  /* ì */
+  /* ò */
+  /* ù */
+  /* È */
+}
+.som-main-font.italian.char-224 {
+  background-position: -24px -60px;
+}
+.som-main-font.italian.char-232 {
+  background-position: -32px -60px;
+}
+.som-main-font.italian.char-233 {
+  background-position: -40px -60px;
+}
+.som-main-font.italian.char-236 {
+  background-position: -48px -60px;
+}
+.som-main-font.italian.char-242 {
+  background-position: -56px -60px;
+}
+.som-main-font.italian.char-249 {
+  background-position: -64px -60px;
+}
+.som-main-font.italian.char-200 {
+  background-position: -72px -60px;
+}
+
+.spike-box .screen {
+  background: url("../images/_spike/Twisted Tales of Spike McFang, The (I) [!].005.png") no-repeat;
+}
+.spike-box .screen .text-box {
+  padding-left: 113px;
+  padding-top: 135px;
+}
+
+.spike-main-font {
+  min-height: 16px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  width: 8px;
+  background-image: url(../images/_spike/spike_mcfang_font_8x16_ita.png);
+  /*   */
+  /* 0 */
+  /* 1 */
+  /* 2 */
+  /* 3 */
+  /* 4 */
+  /* 5 */
+  /* 6 */
+  /* 7 */
+  /* 8 */
+  /* 9 */
+  /* A */
+  /* B */
+  /* C */
+  /* D */
+  /* E */
+  /* F */
+  /* G */
+  /* H */
+  /* I */
+  /* J */
+  /* K */
+  /* L */
+  /* M */
+  /* N */
+  /* O */
+  /* P */
+  /* Q */
+  /* R */
+  /* S */
+  /* T */
+  /* U */
+  /* V */
+  /* W */
+  /* X */
+  /* Y */
+  /* Z */
+  /* a */
+  /* b */
+  /* c */
+  /* d */
+  /* e */
+  /* f */
+  /* g */
+  /* h */
+  /* i */
+  /* j */
+  /* k */
+  /* l */
+  /* m */
+  /* n */
+  /* o */
+  /* p */
+  /* q */
+  /* r */
+  /* s */
+  /* t */
+  /* u */
+  /* v */
+  /* w */
+  /* x */
+  /* y */
+  /* z */
+  /**/
+  /**/
+  /**/
+  /**/
+  /**/
+  /* à */
+  /* è */
+  /* é */
+  /* ì */
+  /* ò */
+  /* ù */
+  /* È */
+  /* . */
+  /* , */
+  /* ' */
+  /* " */
+  /* - */
+  /**/
+  /* … */
+  /* ! */
+  /* ? */
+  /**/
+  /* : */
+}
+.spike-main-font.char-32 {
+  background-position: 0px 0px;
+}
+.spike-main-font.char-48 {
+  background-position: -8px 0px;
+}
+.spike-main-font.char-49 {
+  background-position: -16px 0px;
+}
+.spike-main-font.char-50 {
+  background-position: -24px 0px;
+}
+.spike-main-font.char-51 {
+  background-position: -32px 0px;
+}
+.spike-main-font.char-52 {
+  background-position: -40px 0px;
+}
+.spike-main-font.char-53 {
+  background-position: -48px 0px;
+}
+.spike-main-font.char-54 {
+  background-position: -56px 0px;
+}
+.spike-main-font.char-55 {
+  background-position: -64px 0px;
+}
+.spike-main-font.char-56 {
+  background-position: -72px 0px;
+}
+.spike-main-font.char-57 {
+  background-position: -80px 0px;
+}
+.spike-main-font.char-65 {
+  background-position: -88px 0px;
+}
+.spike-main-font.char-66 {
+  background-position: -96px 0px;
+}
+.spike-main-font.char-67 {
+  background-position: -104px 0px;
+}
+.spike-main-font.char-68 {
+  background-position: -112px 0px;
+}
+.spike-main-font.char-69 {
+  background-position: -120px 0px;
+}
+.spike-main-font.char-70 {
+  background-position: 0px -16px;
+}
+.spike-main-font.char-71 {
+  background-position: -8px -16px;
+}
+.spike-main-font.char-72 {
+  background-position: -16px -16px;
+}
+.spike-main-font.char-73 {
+  background-position: -24px -16px;
+}
+.spike-main-font.char-74 {
+  background-position: -32px -16px;
+}
+.spike-main-font.char-75 {
+  background-position: -40px -16px;
+}
+.spike-main-font.char-76 {
+  background-position: -48px -16px;
+}
+.spike-main-font.char-77 {
+  background-position: -56px -16px;
+}
+.spike-main-font.char-78 {
+  background-position: -64px -16px;
+}
+.spike-main-font.char-79 {
+  background-position: -72px -16px;
+}
+.spike-main-font.char-80 {
+  background-position: -80px -16px;
+}
+.spike-main-font.char-81 {
+  background-position: -88px -16px;
+}
+.spike-main-font.char-82 {
+  background-position: -96px -16px;
+}
+.spike-main-font.char-83 {
+  background-position: -104px -16px;
+}
+.spike-main-font.char-84 {
+  background-position: -112px -16px;
+}
+.spike-main-font.char-85 {
+  background-position: -120px -16px;
+}
+.spike-main-font.char-86 {
+  background-position: 0px -32px;
+}
+.spike-main-font.char-87 {
+  background-position: -8px -32px;
+}
+.spike-main-font.char-88 {
+  background-position: -16px -32px;
+}
+.spike-main-font.char-89 {
+  background-position: -24px -32px;
+}
+.spike-main-font.char-90 {
+  background-position: -32px -32px;
+}
+.spike-main-font.char-97 {
+  background-position: -40px -32px;
+}
+.spike-main-font.char-98 {
+  background-position: -48px -32px;
+}
+.spike-main-font.char-99 {
+  background-position: -56px -32px;
+}
+.spike-main-font.char-100 {
+  background-position: -64px -32px;
+}
+.spike-main-font.char-101 {
+  background-position: -72px -32px;
+}
+.spike-main-font.char-102 {
+  background-position: -80px -32px;
+}
+.spike-main-font.char-103 {
+  background-position: -88px -32px;
+}
+.spike-main-font.char-104 {
+  background-position: -96px -32px;
+}
+.spike-main-font.char-105 {
+  background-position: -104px -32px;
+}
+.spike-main-font.char-106 {
+  background-position: -112px -32px;
+}
+.spike-main-font.char-107 {
+  background-position: -120px -32px;
+}
+.spike-main-font.char-108 {
+  background-position: 0px -48px;
+}
+.spike-main-font.char-109 {
+  background-position: -8px -48px;
+}
+.spike-main-font.char-110 {
+  background-position: -16px -48px;
+}
+.spike-main-font.char-111 {
+  background-position: -24px -48px;
+}
+.spike-main-font.char-112 {
+  background-position: -32px -48px;
+}
+.spike-main-font.char-113 {
+  background-position: -40px -48px;
+}
+.spike-main-font.char-114 {
+  background-position: -48px -48px;
+}
+.spike-main-font.char-115 {
+  background-position: -56px -48px;
+}
+.spike-main-font.char-116 {
+  background-position: -64px -48px;
+}
+.spike-main-font.char-117 {
+  background-position: -72px -48px;
+}
+.spike-main-font.char-118 {
+  background-position: -80px -48px;
+}
+.spike-main-font.char-119 {
+  background-position: -88px -48px;
+}
+.spike-main-font.char-120 {
+  background-position: -96px -48px;
+}
+.spike-main-font.char-121 {
+  background-position: -104px -48px;
+}
+.spike-main-font.char-122 {
+  background-position: -112px -48px;
+}
+.spike-main-font.char-224 {
+  background-position: -32px -64px;
+}
+.spike-main-font.char-232 {
+  background-position: -40px -64px;
+}
+.spike-main-font.char-233 {
+  background-position: -48px -64px;
+}
+.spike-main-font.char-236 {
+  background-position: -56px -64px;
+}
+.spike-main-font.char-242 {
+  background-position: -64px -64px;
+}
+.spike-main-font.char-249 {
+  background-position: -72px -64px;
+}
+.spike-main-font.char-200 {
+  background-position: -80px -64px;
+}
+.spike-main-font.char-46 {
+  background-position: -104px -160px;
+}
+.spike-main-font.char-44 {
+  background-position: -112px -160px;
+}
+.spike-main-font.char-39 {
+  background-position: -120px -160px;
+}
+.spike-main-font.char-34 {
+  background-position: 0px -176px;
+}
+.spike-main-font.char-45 {
+  background-position: -8px -176px;
+}
+.spike-main-font.char-8230 {
+  background-position: -24px -176px;
+}
+.spike-main-font.char-33 {
+  background-position: -32px -176px;
+}
+.spike-main-font.char-63 {
+  background-position: -40px -176px;
+}
+.spike-main-font.char-58 {
+  background-position: -104px -176px;
+}
+
+.starocean-box .screen {
+  height: 80px !important;
+  background: url(../images/_starocean/starocean_dialog_box.png) no-repeat;
+}
+.starocean-box .screen .text-box {
+  padding-left: 24px;
+  padding-top: 7px;
+}
+
+.starocean-main-font {
+  min-height: 16px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  width: 16px;
+  background-image: url(../images/_starocean/3F0000_font_ita.png);
+  /*  */
+  /* 0 */
+  /* 1 */
+  /* 2 */
+  /* 3 */
+  /* 4 */
+  /* 5 */
+  /* 6 */
+  /* 7 */
+  /* 8 */
+  /* 9 */
+  /* A */
+  /* B */
+  /* C */
+  /* D */
+  /* E */
+  /* F */
+  /* G */
+  /* H */
+  /* I */
+  /* J */
+  /* K */
+  /* L */
+  /* M */
+  /* N */
+  /* O */
+  /* P */
+  /* Q */
+  /* R */
+  /* S */
+  /* T */
+  /* U */
+  /* V */
+  /* W */
+  /* X */
+  /* Y */
+  /* Z */
+  /* À */
+  /* È */
+  /* É */
+  /* Ì */
+  /* Ò */
+  /* Ù */
+  /*  */
+  /* a */
+  /* b */
+  /* c */
+  /* d */
+  /* e */
+  /* f */
+  /* g */
+  /* h */
+  /* i */
+  /* j */
+  /* k */
+  /* l */
+  /* m */
+  /* n */
+  /* o */
+  /* p */
+  /* q */
+  /* r */
+  /* s */
+  /* t */
+  /* u */
+  /* v */
+  /* w */
+  /* x */
+  /* y */
+  /* z */
+  /* à */
+  /* è */
+  /* é */
+  /* ì */
+  /* ò */
+  /* ù */
+  /*   */
+  /* ⨯ */
+  /* ' */
+  /* ! */
+  /* ° */
+  /* ? */
+  /* , */
+  /* . */
+  /* : */
+  /* ; */
+  /* “ */
+  /* ” */
+  /* / */
+  /* * */
+  /* + */
+  /* - */
+  /* = */
+  /* # */
+  /* % */
+  /* & */
+  /* ( */
+  /* ) */
+  /* < */
+  /* > */
+  /* ♥ */
+  /* ♪ */
+  /* ★ */
+  /* ☆ */
+  /* ² */
+  /* ♀ */
+  /* ♂ */
+}
+.starocean-main-font.char-48 {
+  width: 7px;
+  background-position: -16px 0px;
+}
+.starocean-main-font.char-49 {
+  width: 5px;
+  background-position: -32px 0px;
+}
+.starocean-main-font.char-50 {
+  width: 7px;
+  background-position: -48px 0px;
+}
+.starocean-main-font.char-51 {
+  width: 7px;
+  background-position: -64px 0px;
+}
+.starocean-main-font.char-52 {
+  width: 8px;
+  background-position: -80px 0px;
+}
+.starocean-main-font.char-53 {
+  width: 7px;
+  background-position: -96px 0px;
+}
+.starocean-main-font.char-54 {
+  width: 7px;
+  background-position: -112px 0px;
+}
+.starocean-main-font.char-55 {
+  width: 7px;
+  background-position: 0px -16px;
+}
+.starocean-main-font.char-56 {
+  width: 7px;
+  background-position: -16px -16px;
+}
+.starocean-main-font.char-57 {
+  width: 7px;
+  background-position: -32px -16px;
+}
+.starocean-main-font.char-65 {
+  width: 7px;
+  background-position: -48px -16px;
+}
+.starocean-main-font.char-66 {
+  width: 7px;
+  background-position: -64px -16px;
+}
+.starocean-main-font.char-67 {
+  width: 7px;
+  background-position: -80px -16px;
+}
+.starocean-main-font.char-68 {
+  width: 7px;
+  background-position: -96px -16px;
+}
+.starocean-main-font.char-69 {
+  width: 6px;
+  background-position: -112px -16px;
+}
+.starocean-main-font.char-70 {
+  width: 6px;
+  background-position: 0px -32px;
+}
+.starocean-main-font.char-71 {
+  width: 7px;
+  background-position: -16px -32px;
+}
+.starocean-main-font.char-72 {
+  width: 7px;
+  background-position: -32px -32px;
+}
+.starocean-main-font.char-73 {
+  width: 3px;
+  background-position: -48px -32px;
+}
+.starocean-main-font.char-74 {
+  width: 7px;
+  background-position: -64px -32px;
+}
+.starocean-main-font.char-75 {
+  width: 8px;
+  background-position: -80px -32px;
+}
+.starocean-main-font.char-76 {
+  width: 6px;
+  background-position: -96px -32px;
+}
+.starocean-main-font.char-77 {
+  width: 11px;
+  background-position: -112px -32px;
+}
+.starocean-main-font.char-78 {
+  width: 8px;
+  background-position: 0px -48px;
+}
+.starocean-main-font.char-79 {
+  width: 7px;
+  background-position: -16px -48px;
+}
+.starocean-main-font.char-80 {
+  width: 7px;
+  background-position: -32px -48px;
+}
+.starocean-main-font.char-81 {
+  width: 7px;
+  background-position: -48px -48px;
+}
+.starocean-main-font.char-82 {
+  width: 7px;
+  background-position: -64px -48px;
+}
+.starocean-main-font.char-83 {
+  width: 6px;
+  background-position: -80px -48px;
+}
+.starocean-main-font.char-84 {
+  width: 7px;
+  background-position: -96px -48px;
+}
+.starocean-main-font.char-85 {
+  width: 7px;
+  background-position: -112px -48px;
+}
+.starocean-main-font.char-86 {
+  width: 7px;
+  background-position: 0px -64px;
+}
+.starocean-main-font.char-87 {
+  width: 11px;
+  background-position: -15px -64px;
+}
+.starocean-main-font.char-88 {
+  width: 7px;
+  background-position: -32px -64px;
+}
+.starocean-main-font.char-89 {
+  width: 7px;
+  background-position: -48px -64px;
+}
+.starocean-main-font.char-90 {
+  width: 7px;
+  background-position: -64px -64px;
+}
+.starocean-main-font.char-192 {
+  width: 7px;
+  background-position: -80px -64px;
+}
+.starocean-main-font.char-200 {
+  width: 6px;
+  background-position: -96px -64px;
+}
+.starocean-main-font.char-201 {
+  width: 6px;
+  background-position: -112px -64px;
+}
+.starocean-main-font.char-204 {
+  width: 4px;
+  background-position: 0px -80px;
+}
+.starocean-main-font.char-210 {
+  width: 7px;
+  background-position: -16px -80px;
+}
+.starocean-main-font.char-217 {
+  width: 7px;
+  background-position: -32px -80px;
+}
+.starocean-main-font.char-97 {
+  width: 7px;
+  background-position: -64px -80px;
+}
+.starocean-main-font.char-98 {
+  width: 7px;
+  background-position: -80px -80px;
+}
+.starocean-main-font.char-99 {
+  width: 6px;
+  background-position: -96px -80px;
+}
+.starocean-main-font.char-100 {
+  width: 7px;
+  background-position: -112px -80px;
+}
+.starocean-main-font.char-101 {
+  width: 7px;
+  background-position: 0px -96px;
+}
+.starocean-main-font.char-102 {
+  width: 6px;
+  background-position: -16px -96px;
+}
+.starocean-main-font.char-103 {
+  width: 7px;
+  background-position: -32px -96px;
+}
+.starocean-main-font.char-104 {
+  width: 7px;
+  background-position: -48px -96px;
+}
+.starocean-main-font.char-105 {
+  width: 3px;
+  background-position: -64px -96px;
+}
+.starocean-main-font.char-106 {
+  width: 6px;
+  background-position: -80px -96px;
+}
+.starocean-main-font.char-107 {
+  width: 7px;
+  background-position: -96px -96px;
+}
+.starocean-main-font.char-108 {
+  width: 3px;
+  background-position: -112px -96px;
+}
+.starocean-main-font.char-109 {
+  width: 11px;
+  background-position: 0px -112px;
+}
+.starocean-main-font.char-110 {
+  width: 7px;
+  background-position: -16px -112px;
+}
+.starocean-main-font.char-111 {
+  width: 7px;
+  background-position: -32px -112px;
+}
+.starocean-main-font.char-112 {
+  width: 7px;
+  background-position: -48px -112px;
+}
+.starocean-main-font.char-113 {
+  width: 7px;
+  background-position: -64px -112px;
+}
+.starocean-main-font.char-114 {
+  width: 6px;
+  background-position: -80px -112px;
+}
+.starocean-main-font.char-115 {
+  width: 6px;
+  background-position: -96px -112px;
+}
+.starocean-main-font.char-116 {
+  width: 5px;
+  background-position: -112px -112px;
+}
+.starocean-main-font.char-117 {
+  width: 7px;
+  background-position: 0px -128px;
+}
+.starocean-main-font.char-118 {
+  width: 7px;
+  background-position: -16px -128px;
+}
+.starocean-main-font.char-119 {
+  width: 12px;
+  background-position: -32px -128px;
+}
+.starocean-main-font.char-120 {
+  width: 7px;
+  background-position: -48px -128px;
+}
+.starocean-main-font.char-121 {
+  width: 7px;
+  background-position: -64px -128px;
+}
+.starocean-main-font.char-122 {
+  width: 7px;
+  background-position: -80px -128px;
+}
+.starocean-main-font.char-224 {
+  width: 7px;
+  background-position: -96px -128px;
+}
+.starocean-main-font.char-232 {
+  width: 7px;
+  background-position: -112px -128px;
+}
+.starocean-main-font.char-233 {
+  width: 7px;
+  background-position: 0px -144px;
+}
+.starocean-main-font.char-236 {
+  width: 4px;
+  background-position: -16px -144px;
+}
+.starocean-main-font.char-242 {
+  width: 7px;
+  background-position: -32px -144px;
+}
+.starocean-main-font.char-249 {
+  width: 7px;
+  background-position: -48px -144px;
+}
+.starocean-main-font.char-32 {
+  width: 5px;
+  background-position: -64px -144px;
+}
+.starocean-main-font.char-10799 {
+  width: 0px;
+  background-position: -80px -144px;
+}
+.starocean-main-font.char-39 {
+  width: 4px;
+  background-position: -96px -144px;
+}
+.starocean-main-font.char-33 {
+  width: 4px;
+  background-position: -112px -144px;
+}
+.starocean-main-font.char-176 {
+  width: 7px;
+  background-position: 0px -160px;
+}
+.starocean-main-font.char-63 {
+  width: 7px;
+  background-position: -16px -160px;
+}
+.starocean-main-font.char-44 {
+  width: 3px;
+  background-position: -32px -160px;
+}
+.starocean-main-font.char-46 {
+  width: 3px;
+  background-position: -48px -160px;
+}
+.starocean-main-font.char-58 {
+  width: 3px;
+  background-position: -64px -160px;
+}
+.starocean-main-font.char-59 {
+  width: 3px;
+  background-position: -80px -160px;
+}
+.starocean-main-font.char-8220 {
+  width: 6px;
+  background-position: -96px -160px;
+}
+.starocean-main-font.char-8221 {
+  width: 6px;
+  background-position: -112px -160px;
+}
+.starocean-main-font.char-47 {
+  width: 7px;
+  background-position: 0px -176px;
+}
+.starocean-main-font.char-42 {
+  width: 8px;
+  background-position: -16px -176px;
+}
+.starocean-main-font.char-43 {
+  width: 7px;
+  background-position: -32px -176px;
+}
+.starocean-main-font.char-45 {
+  width: 7px;
+  background-position: -48px -176px;
+}
+.starocean-main-font.char-61 {
+  width: 7px;
+  background-position: -64px -176px;
+}
+.starocean-main-font.char-35 {
+  width: 10px;
+  background-position: -80px -176px;
+}
+.starocean-main-font.char-37 {
+  width: 11px;
+  background-position: -96px -176px;
+}
+.starocean-main-font.char-38 {
+  width: 9px;
+  background-position: -112px -176px;
+}
+.starocean-main-font.char-40 {
+  width: 4px;
+  background-position: 0px -192px;
+}
+.starocean-main-font.char-41 {
+  width: 4px;
+  background-position: -16px -192px;
+}
+.starocean-main-font.char-60 {
+  width: 7px;
+  background-position: -32px -192px;
+}
+.starocean-main-font.char-62 {
+  width: 7px;
+  background-position: -48px -192px;
+}
+.starocean-main-font.char-9829 {
+  width: 12px;
+  background-position: -64px -192px;
+}
+.starocean-main-font.char-9834 {
+  width: 10px;
+  background-position: -80px -192px;
+}
+.starocean-main-font.char-9733 {
+  width: 11px;
+  background-position: -96px -192px;
+}
+.starocean-main-font.char-9734 {
+  width: 11px;
+  background-position: -112px -192px;
+}
+.starocean-main-font.char-178 {
+  width: 5px;
+  background-position: 0px -208px;
+}
+.starocean-main-font.char-2640 {
+  width: 0px;
+  background-position: -16px -208px;
+}
+.starocean-main-font.char-2642 {
+  width: 0px;
+  background-position: -32px -208px;
+}
+.starocean-main-font.spanish { /* ¿ */ }
+.starocean-main-font.spanish.char-191 {
+  width: 7px;
+  background-position: 0px -160px;
+}
+
+.valkyrie-box .screen {
+  background: url(../images/_valkyrie/image.png) no-repeat;
+}
+.valkyrie-box .screen .text-box {
+  background-color: transparent;
+  outline: 1px solid white;
+  position: absolute;
+  top: 48px;
+  left: 120px;
+}
+
+.valkyrie-main-font {
+  min-height: 14px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  width: 16px;
+  background-image: url(../images/_valkyrie/font_vp_eng.png);
+  /*   */
+  /* ! */
+  /* " */
+  /* # */
+  /* $ */
+  /* % */
+  /* & */
+  /* ' */
+  /* ( */
+  /* ) */
+  /* * */
+  /* + */
+  /* , */
+  /* - */
+  /* . */
+  /* / */
+  /* 0 */
+  /* 1 */
+  /* 2 */
+  /* 3 */
+  /* 4 */
+  /* 5 */
+  /* 6 */
+  /* 7 */
+  /* 8 */
+  /* 9 */
+  /* : */
+  /* ; */
+  /* < */
+  /* = */
+  /* > */
+  /* ? */
+  /* @ */
+  /* A */
+  /* B */
+  /* C */
+  /* D */
+  /* E */
+  /* F */
+  /* G */
+  /* H */
+  /* I */
+  /* J */
+  /* K */
+  /* L */
+  /* M */
+  /* N */
+  /* O */
+  /* P */
+  /* Q */
+  /* R */
+  /* S */
+  /* T */
+  /* U */
+  /* V */
+  /* W */
+  /* X */
+  /* Y */
+  /* Z */
+  /* [ */
+  /* ] */
+  /* ^ */
+  /* _ */
+  /* ` */
+  /* a */
+  /* b */
+  /* c */
+  /* d */
+  /* e */
+  /* f */
+  /* g */
+  /* h */
+  /* i */
+  /* j */
+  /* k */
+  /* l */
+  /* m */
+  /* n */
+  /* o */
+  /* p */
+  /* q */
+  /* r */
+  /* s */
+  /* t */
+  /* u */
+  /* v */
+  /* w */
+  /* x */
+  /* y */
+  /* z */
+  /* { */
+  /* | */
+  /* } */
+  /* ~ */
+  /* ¥ */
+  /* ° */
+}
+.valkyrie-main-font.char-32 {
+  width: 4px;
+  background-position: 0px 0px;
+}
+.valkyrie-main-font.char-33 {
+  width: 3px;
+  background-position: -16px 0px;
+}
+.valkyrie-main-font.char-34 {
+  width: 6px;
+  background-position: -32px 0px;
+}
+.valkyrie-main-font.char-35 {
+  width: 6px;
+  background-position: -48px 0px;
+}
+.valkyrie-main-font.char-36 {
+  width: 6px;
+  background-position: -64px 0px;
+}
+.valkyrie-main-font.char-37 {
+  width: 6px;
+  background-position: -80px 0px;
+}
+.valkyrie-main-font.char-38 {
+  width: 7px;
+  background-position: -96px 0px;
+}
+.valkyrie-main-font.char-39 {
+  width: 2px;
+  background-position: -112px 0px;
+}
+.valkyrie-main-font.char-40 {
+  width: 4px;
+  background-position: -128px 0px;
+}
+.valkyrie-main-font.char-41 {
+  width: 4px;
+  background-position: -144px 0px;
+}
+.valkyrie-main-font.char-42 {
+  width: 6px;
+  background-position: -160px 0px;
+}
+.valkyrie-main-font.char-43 {
+  width: 6px;
+  background-position: -176px 0px;
+}
+.valkyrie-main-font.char-44 {
+  width: 2px;
+  background-position: -192px 0px;
+}
+.valkyrie-main-font.char-45 {
+  width: 6px;
+  background-position: -208px 0px;
+}
+.valkyrie-main-font.char-46 {
+  width: 2px;
+  background-position: -224px 0px;
+}
+.valkyrie-main-font.char-47 {
+  width: 6px;
+  background-position: -240px 0px;
+}
+.valkyrie-main-font.char-48 {
+  width: 6px;
+  background-position: 0px -16px;
+}
+.valkyrie-main-font.char-49 {
+  width: 6px;
+  background-position: -16px -16px;
+}
+.valkyrie-main-font.char-50 {
+  width: 6px;
+  background-position: -32px -16px;
+}
+.valkyrie-main-font.char-51 {
+  width: 6px;
+  background-position: -48px -16px;
+}
+.valkyrie-main-font.char-52 {
+  width: 6px;
+  background-position: -64px -16px;
+}
+.valkyrie-main-font.char-53 {
+  width: 6px;
+  background-position: -80px -16px;
+}
+.valkyrie-main-font.char-54 {
+  width: 6px;
+  background-position: -96px -16px;
+}
+.valkyrie-main-font.char-55 {
+  width: 6px;
+  background-position: -112px -16px;
+}
+.valkyrie-main-font.char-56 {
+  width: 6px;
+  background-position: -128px -16px;
+}
+.valkyrie-main-font.char-57 {
+  width: 6px;
+  background-position: -144px -16px;
+}
+.valkyrie-main-font.char-58 {
+  width: 2px;
+  background-position: -160px -16px;
+}
+.valkyrie-main-font.char-59 {
+  width: 2px;
+  background-position: -176px -16px;
+}
+.valkyrie-main-font.char-60 {
+  width: 6px;
+  background-position: -192px -16px;
+}
+.valkyrie-main-font.char-61 {
+  width: 6px;
+  background-position: -208px -16px;
+}
+.valkyrie-main-font.char-62 {
+  width: 6px;
+  background-position: -224px -16px;
+}
+.valkyrie-main-font.char-63 {
+  width: 7px;
+  background-position: -240px -16px;
+}
+.valkyrie-main-font.char-64 {
+  width: 8px;
+  background-position: 0px -32px;
+}
+.valkyrie-main-font.char-65 {
+  width: 8px;
+  background-position: -16px -32px;
+}
+.valkyrie-main-font.char-66 {
+  width: 8px;
+  background-position: -32px -32px;
+}
+.valkyrie-main-font.char-67 {
+  width: 8px;
+  background-position: -48px -32px;
+}
+.valkyrie-main-font.char-68 {
+  width: 8px;
+  background-position: -64px -32px;
+}
+.valkyrie-main-font.char-69 {
+  width: 7px;
+  background-position: -80px -32px;
+}
+.valkyrie-main-font.char-70 {
+  width: 7px;
+  background-position: -96px -32px;
+}
+.valkyrie-main-font.char-71 {
+  width: 8px;
+  background-position: -112px -32px;
+}
+.valkyrie-main-font.char-72 {
+  width: 8px;
+  background-position: -128px -32px;
+}
+.valkyrie-main-font.char-73 {
+  width: 3px;
+  background-position: -144px -32px;
+}
+.valkyrie-main-font.char-74 {
+  width: 7px;
+  background-position: -160px -32px;
+}
+.valkyrie-main-font.char-75 {
+  width: 7px;
+  background-position: -176px -32px;
+}
+.valkyrie-main-font.char-76 {
+  width: 6px;
+  background-position: -192px -32px;
+}
+.valkyrie-main-font.char-77 {
+  width: 9px;
+  background-position: -208px -32px;
+}
+.valkyrie-main-font.char-78 {
+  width: 8px;
+  background-position: -224px -32px;
+}
+.valkyrie-main-font.char-79 {
+  width: 8px;
+  background-position: -240px -32px;
+}
+.valkyrie-main-font.char-80 {
+  width: 7px;
+  background-position: 0px -48px;
+}
+.valkyrie-main-font.char-81 {
+  width: 8px;
+  background-position: -16px -48px;
+}
+.valkyrie-main-font.char-82 {
+  width: 8px;
+  background-position: -32px -48px;
+}
+.valkyrie-main-font.char-83 {
+  width: 7px;
+  background-position: -48px -48px;
+}
+.valkyrie-main-font.char-84 {
+  width: 7px;
+  background-position: -64px -48px;
+}
+.valkyrie-main-font.char-85 {
+  width: 8px;
+  background-position: -80px -48px;
+}
+.valkyrie-main-font.char-86 {
+  width: 8px;
+  background-position: -96px -48px;
+}
+.valkyrie-main-font.char-87 {
+  width: 9px;
+  background-position: -112px -48px;
+}
+.valkyrie-main-font.char-88 {
+  width: 7px;
+  background-position: -128px -48px;
+}
+.valkyrie-main-font.char-89 {
+  width: 7px;
+  background-position: -144px -48px;
+}
+.valkyrie-main-font.char-90 {
+  width: 7px;
+  background-position: -160px -48px;
+}
+.valkyrie-main-font.char-91 {
+  width: 4px;
+  background-position: -176px -48px;
+}
+.valkyrie-main-font.char-93 {
+  width: 4px;
+  background-position: -192px -48px;
+}
+.valkyrie-main-font.char-8743 {
+  width: 5px;
+  background-position: -208px -48px;
+}
+.valkyrie-main-font.char-95 {
+  width: 4px;
+  background-position: -224px -48px;
+}
+.valkyrie-main-font.char-96 {
+  width: 5px;
+  background-position: -240px -48px;
+}
+.valkyrie-main-font.char-97 {
+  width: 6px;
+  background-position: 0px -64px;
+}
+.valkyrie-main-font.char-98 {
+  width: 6px;
+  background-position: -16px -64px;
+}
+.valkyrie-main-font.char-99 {
+  width: 6px;
+  background-position: -32px -64px;
+}
+.valkyrie-main-font.char-100 {
+  width: 6px;
+  background-position: -48px -64px;
+}
+.valkyrie-main-font.char-101 {
+  width: 6px;
+  background-position: -64px -64px;
+}
+.valkyrie-main-font.char-102 {
+  width: 4px;
+  background-position: -80px -64px;
+}
+.valkyrie-main-font.char-103 {
+  width: 6px;
+  background-position: -96px -64px;
+}
+.valkyrie-main-font.char-104 {
+  width: 6px;
+  background-position: -112px -64px;
+}
+.valkyrie-main-font.char-105 {
+  width: 3px;
+  background-position: -128px -64px;
+}
+.valkyrie-main-font.char-106 {
+  width: 3px;
+  background-position: -144px -64px;
+}
+.valkyrie-main-font.char-107 {
+  width: 6px;
+  background-position: -160px -64px;
+}
+.valkyrie-main-font.char-108 {
+  width: 3px;
+  background-position: -176px -64px;
+}
+.valkyrie-main-font.char-109 {
+  width: 9px;
+  background-position: -192px -64px;
+}
+.valkyrie-main-font.char-110 {
+  width: 6px;
+  background-position: -208px -64px;
+}
+.valkyrie-main-font.char-111 {
+  width: 6px;
+  background-position: -224px -64px;
+}
+.valkyrie-main-font.char-112 {
+  width: 6px;
+  background-position: -240px -64px;
+}
+.valkyrie-main-font.char-113 {
+  width: 6px;
+  background-position: 0px -80px;
+}
+.valkyrie-main-font.char-114 {
+  width: 4px;
+  background-position: -16px -80px;
+}
+.valkyrie-main-font.char-115 {
+  width: 6px;
+  background-position: -32px -80px;
+}
+.valkyrie-main-font.char-116 {
+  width: 4px;
+  background-position: -48px -80px;
+}
+.valkyrie-main-font.char-117 {
+  width: 6px;
+  background-position: -64px -80px;
+}
+.valkyrie-main-font.char-118 {
+  width: 6px;
+  background-position: -80px -80px;
+}
+.valkyrie-main-font.char-119 {
+  width: 8px;
+  background-position: -96px -80px;
+}
+.valkyrie-main-font.char-120 {
+  width: 6px;
+  background-position: -112px -80px;
+}
+.valkyrie-main-font.char-121 {
+  width: 6px;
+  background-position: -128px -80px;
+}
+.valkyrie-main-font.char-122 {
+  width: 5px;
+  background-position: -144px -80px;
+}
+.valkyrie-main-font.char-123 {
+  width: 3px;
+  background-position: -160px -80px;
+}
+.valkyrie-main-font.char-124 {
+  width: 3px;
+  background-position: -176px -80px;
+}
+.valkyrie-main-font.char-125 {
+  width: 3px;
+  background-position: -192px -80px;
+}
+.valkyrie-main-font.char-126 {
+  width: 5px;
+  background-position: -208px -80px;
+}
+.valkyrie-main-font.char-165 {
+  width: 6px;
+  background-position: -224px -80px;
+}
+.valkyrie-main-font.char-176 {
+  width: 12px;
+  background-position: -240px -80px;
+}
+
+.ys3-box .screen {
+  background: url(../images/_ys3/ys3-preview.png) no-repeat;
+}
+.ys3-box .screen .text-box {
+  background-color: black;
+  outline: 1px solid white;
+  position: absolute;
+}
+
+.ys3-main-font {
+  min-height: 12px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  width: 8px;
+  background-image: url(../images/_ys3/17000_font_it.png);
+  /*   */
+  /* A */
+  /* B */
+  /* C */
+  /* D */
+  /* E */
+  /* F */
+  /* G */
+  /* H */
+  /* I */
+  /* J */
+  /* K */
+  /* L */
+  /* M */
+  /* N */
+  /* O */
+  /* P */
+  /* Q */
+  /* R */
+  /* S */
+  /* T */
+  /* U */
+  /* V */
+  /* W */
+  /* X */
+  /* Y */
+  /* Z */
+  /* a */
+  /* b */
+  /* c */
+  /* d */
+  /* e */
+  /* f */
+  /* g */
+  /* h */
+  /* i */
+  /* j */
+  /* k */
+  /* l */
+  /* m */
+  /* n */
+  /* o */
+  /* p */
+  /* q */
+  /* r */
+  /* s */
+  /* t */
+  /* u */
+  /* v */
+  /* w */
+  /* x */
+  /* y */
+  /* z */
+  /* 1 */
+  /* 2 */
+  /* 3 */
+  /* 4 */
+  /* 5 */
+  /* 6 */
+  /* 7 */
+  /* 8 */
+  /* 9 */
+  /* 0 */
+  /* ! */
+  /* ? */
+  /* . */
+  /* , */
+  /* ' */
+  /* : */
+  /* - */
+  /* = */
+  /* · */
+  /* " */
+  /* à */
+  /* è */
+  /* é */
+  /* ì */
+  /* ò */
+  /* ù */
+  /* È */
+}
+.ys3-main-font.char-32 {
+  background-position: 0px 0px;
+}
+.ys3-main-font.char-65 {
+  background-position: -8px 0px;
+}
+.ys3-main-font.char-66 {
+  background-position: -16px 0px;
+}
+.ys3-main-font.char-67 {
+  background-position: -24px 0px;
+}
+.ys3-main-font.char-68 {
+  background-position: -32px 0px;
+}
+.ys3-main-font.char-69 {
+  background-position: -40px 0px;
+}
+.ys3-main-font.char-70 {
+  background-position: -48px 0px;
+}
+.ys3-main-font.char-71 {
+  background-position: -56px 0px;
+}
+.ys3-main-font.char-72 {
+  background-position: -64px 0px;
+}
+.ys3-main-font.char-73 {
+  background-position: -72px 0px;
+}
+.ys3-main-font.char-74 {
+  background-position: -80px 0px;
+}
+.ys3-main-font.char-75 {
+  background-position: -88px 0px;
+}
+.ys3-main-font.char-76 {
+  background-position: -96px 0px;
+}
+.ys3-main-font.char-77 {
+  background-position: -104px 0px;
+}
+.ys3-main-font.char-78 {
+  background-position: -112px 0px;
+}
+.ys3-main-font.char-79 {
+  background-position: -120px 0px;
+}
+.ys3-main-font.char-80 {
+  background-position: 0px -16px;
+}
+.ys3-main-font.char-81 {
+  background-position: -8px -16px;
+}
+.ys3-main-font.char-82 {
+  background-position: -16px -16px;
+}
+.ys3-main-font.char-83 {
+  background-position: -24px -16px;
+}
+.ys3-main-font.char-84 {
+  background-position: -32px -16px;
+}
+.ys3-main-font.char-85 {
+  background-position: -40px -16px;
+}
+.ys3-main-font.char-86 {
+  background-position: -48px -16px;
+}
+.ys3-main-font.char-87 {
+  background-position: -56px -16px;
+}
+.ys3-main-font.char-88 {
+  background-position: -64px -16px;
+}
+.ys3-main-font.char-89 {
+  background-position: -72px -16px;
+}
+.ys3-main-font.char-90 {
+  background-position: -80px -16px;
+}
+.ys3-main-font.char-97 {
+  background-position: -88px -16px;
+}
+.ys3-main-font.char-98 {
+  background-position: -96px -16px;
+}
+.ys3-main-font.char-99 {
+  background-position: -104px -16px;
+}
+.ys3-main-font.char-100 {
+  background-position: -112px -16px;
+}
+.ys3-main-font.char-101 {
+  background-position: -120px -16px;
+}
+.ys3-main-font.char-102 {
+  background-position: 0px -32px;
+}
+.ys3-main-font.char-103 {
+  background-position: -8px -32px;
+}
+.ys3-main-font.char-104 {
+  background-position: -16px -32px;
+}
+.ys3-main-font.char-105 {
+  background-position: -24px -32px;
+}
+.ys3-main-font.char-106 {
+  background-position: -32px -32px;
+}
+.ys3-main-font.char-107 {
+  background-position: -40px -32px;
+}
+.ys3-main-font.char-108 {
+  background-position: -48px -32px;
+}
+.ys3-main-font.char-109 {
+  background-position: -56px -32px;
+}
+.ys3-main-font.char-110 {
+  background-position: -64px -32px;
+}
+.ys3-main-font.char-111 {
+  background-position: -72px -32px;
+}
+.ys3-main-font.char-112 {
+  background-position: -80px -32px;
+}
+.ys3-main-font.char-113 {
+  background-position: -88px -32px;
+}
+.ys3-main-font.char-114 {
+  background-position: -96px -32px;
+}
+.ys3-main-font.char-115 {
+  background-position: -104px -32px;
+}
+.ys3-main-font.char-116 {
+  background-position: -112px -32px;
+}
+.ys3-main-font.char-117 {
+  background-position: -120px -32px;
+}
+.ys3-main-font.char-118 {
+  background-position: 0px -48px;
+}
+.ys3-main-font.char-119 {
+  background-position: -8px -48px;
+}
+.ys3-main-font.char-120 {
+  background-position: -16px -48px;
+}
+.ys3-main-font.char-121 {
+  background-position: -24px -48px;
+}
+.ys3-main-font.char-122 {
+  background-position: -32px -48px;
+}
+.ys3-main-font.char-49 {
+  background-position: -40px -48px;
+}
+.ys3-main-font.char-50 {
+  background-position: -48px -48px;
+}
+.ys3-main-font.char-51 {
+  background-position: -56px -48px;
+}
+.ys3-main-font.char-52 {
+  background-position: -64px -48px;
+}
+.ys3-main-font.char-53 {
+  background-position: -72px -48px;
+}
+.ys3-main-font.char-54 {
+  background-position: -80px -48px;
+}
+.ys3-main-font.char-55 {
+  background-position: -88px -48px;
+}
+.ys3-main-font.char-56 {
+  background-position: -96px -48px;
+}
+.ys3-main-font.char-57 {
+  background-position: -104px -48px;
+}
+.ys3-main-font.char-48 {
+  background-position: -112px -48px;
+}
+.ys3-main-font.char-33 {
+  background-position: -120px -48px;
+}
+.ys3-main-font.char-63 {
+  background-position: 0px -64px;
+}
+.ys3-main-font.char-46 {
+  background-position: -8px -64px;
+}
+.ys3-main-font.char-44 {
+  background-position: -16px -64px;
+}
+.ys3-main-font.char-39 {
+  background-position: -24px -64px;
+}
+.ys3-main-font.char-58 {
+  background-position: -32px -64px;
+}
+.ys3-main-font.char-45 {
+  background-position: -40px -64px;
+}
+.ys3-main-font.char-61 {
+  background-position: -48px -64px;
+}
+.ys3-main-font.char-183 {
+  background-position: -56px -64px;
+}
+.ys3-main-font.char-34 {
+  background-position: -64px -64px;
+}
+.ys3-main-font.char-224 {
+  background-position: -72px -64px;
+}
+.ys3-main-font.char-232 {
+  background-position: -80px -64px;
+}
+.ys3-main-font.char-233 {
+  background-position: -88px -64px;
+}
+.ys3-main-font.char-236 {
+  background-position: -96px -64px;
+}
+.ys3-main-font.char-242 {
+  background-position: -104px -64px;
+}
+.ys3-main-font.char-249 {
+  background-position: -112px -64px;
+}
+.ys3-main-font.char-200 {
+  background-position: -120px -64px;
+}
+
+.preview-box.snes-256x224 .screen {
+  width: 256px;
+  height: 224px;
+}
+.preview-box.snes-256x224 .info-box, .preview-box.snes-256x224 .warning-box {
+  width: 256px;
+}
+.preview-box.psx-ntsc-320x240 .screen {
+  width: 320px;
+  height: 240px;
+}
+.preview-box.psx-ntsc-320x240 .info-box, .preview-box.psx-ntsc-320x240 .warning-box {
+  width: 320px;
+}
+.preview-box.psx-ntsc-320x224 .screen {
+  width: 320px;
+  height: 224px;
+}
+.preview-box.psx-ntsc-320x224 .info-box, .preview-box.psx-ntsc-320x224 .warning-box {
+  width: 320px;
+}
+.preview-box .screen {
+  cursor: pointer;
+  position: relative;
+  image-rendering: pixelated;
+  transition: opacity 0.3s ease-in-out;
+}
+.preview-box .screen:hover {
+  opacity: 0.7;
+}
+.preview-box .screen .text-box .text-line {
+  line-height: 0px;
+}
+.preview-box .screen .text-box .text-line .char {
+  display: inline-block;
+  image-rendering: pixelated;
+}
+.preview-box .screen .text-box .text-line .pad {
+  display: inline-block;
+  width: 1px;
+}
+.preview-box .info-box, .preview-box .warning-box {
+  font-size: 0.8rem;
+  margin: 1rem 0;
+}
+.preview-box .info-box table, .preview-box .warning-box table {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+}
+.preview-box .info-box table th, .preview-box .info-box table td, .preview-box .warning-box table th, .preview-box .warning-box table td {
+  border: 1px solid black;
+  padding: 4px;
+}
+.preview-box .info-box .text-danger, .preview-box .warning-box .text-danger {
+  color: #fa4444;
+}
+.preview-box .warning-box {
+  border: 1px solid black;
+}
+.preview-box .warning-box div {
+  padding: 4px;
+}/*# sourceMappingURL=index.css.map */
