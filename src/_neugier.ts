@@ -4,11 +4,11 @@ import { replaceAll } from "./utils";
 const NEUGIER_CHAR_PAIRS: [string, number][] = [
   [":", 2],
   [".'", 3],
-  [",!)Iilì(", 4],
+  [",!)Iil(", 4],
   ["j", 5],
   ["…” J‘ft-“1", 6],
-  ["?Lacegorsàèéàò", 7],
-  ["ABCDEFGHKMNOPQRSTUVWYZbdhkmnpquvwxyzùÈ023456789~+;", 8],
+  ["?Lacegorsō", 7],
+  ["ABCDEFGHKMNOPQRSTUVWYZbdhkmnpquvwxyz023456789~+;", 8],
 ];
 
 const NEUGIER_REGEXES: [string | RegExp, string][] = [[/\{..\}/g, ""]];
@@ -32,4 +32,7 @@ export const neugierConfig: Config = makeConfig({
   fontClass: "neugier-main-font",
   charWidthPairs: NEUGIER_CHAR_PAIRS,
   replacer: NEUGIER_TEXT_REPLACER,
+    languages: {
+    it: { charWidthPairs: [["ì", 4], ["àèéò", 7], ["ùÈ", 8]] }
+  }
 });

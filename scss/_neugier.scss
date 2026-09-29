@@ -1,10 +1,10 @@
 .neugier-box {
   .screen {
-    background: url(../images/_neugier/neugier-preview.png) no-repeat;
+    background: url(../images/_neugier/neugier_dialog_box.png) no-repeat;
 
     .text-box {
-      padding-left: 40px;
-      padding-top: 127px;
+      padding-left: 17px;
+      padding-top: 17px;
     }
   }
 }
@@ -82,20 +82,11 @@
   &.char-122  { background-position: -96px  -64px; } /* z */
   &.char-58   { background-position: -104px -64px; } /* : */
   &.char-45   { background-position: -112px -64px; } /* - */
-  /**/
-
-  &.char-224  { background-position: -64px  -80px; } /* à */
-  &.char-232  { background-position: -72px  -80px; } /* è */
-  &.char-233  { background-position: -80px  -80px; } /* é */
-  &.char-236  { background-position: -88px  -80px; } /* ì */
-  &.char-242  { background-position: -96px  -80px; } /* ò */
-  &.char-249  { background-position: -104px -80px; } /* ù */
-  &.char-200  { background-position: -112px -80px; } /* È */
-  /**/
+  &.char-333  { background-position: -120px -64px; } /* ō */
 
   /**/
 
-  &.char-8220 { background-position: -56px  -112px; } /* 0 */
+  &.char-8220 { background-position: -56px  -112px; } /* “ */
 
   &.char-48   { background-position: -64px  -128px; } /* 0 */
   &.char-49   { background-position: -72px  -128px; } /* 1 */
@@ -114,4 +105,17 @@
   &.char-43   { background-position: -40px  -144px; } /* + */
   /**/
   &.char-59   { background-position: -56px  -144px; } /* ; */
+
+  &.it {
+    background-image: url(../images/_neugier/neugier_font_ita.png);
+
+    &.char-224  { background-position: -64px  -80px; } /* à */
+    &.char-232  { background-position: -72px  -80px; } /* è */
+    &.char-233  { background-position: -80px  -80px; } /* é */
+    &.char-236  { background-position: -88px  -80px; } /* ì */
+    &.char-242  { background-position: -96px  -80px; } /* ò */
+    &.char-249  { background-position: -104px -80px; } /* ù */
+    &.char-200  { background-position: -112px -80px; } /* È */
+  }
+
 }
