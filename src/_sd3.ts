@@ -7,7 +7,7 @@ const SD3_CHAR_PAIRS: [string, number][] = [
   ["I!()", 5],
   [" ", 6],
   ["+fj1", 7],
-  ['/"#$%&ABCDEFGHJKLNPRSUVabcdeghknopqrstuvyz23456789àèéìòùÈ-?', 8],
+  ['/"#$%&ABCDEFGHJKLNPRSUVabcdeghknopqrstuvyz23456789-?', 8],
   ["*MOQTWXYZmwx0", 9],
 ];
 
@@ -81,17 +81,21 @@ export const sd3ConfigLine: Config = makeConfig({
   },
 });
 
+const SD3_TEXT_REPLACER = (text: string): string => {
+  text = text.replaceAll(/<PAGE>\n/g, "\r");
+  text = text.replaceAll(/<END>\n/g, "\r");
+  text = replaceAll(text, SD3_REGEXES);
+  return text;
+};
+
 export const sd3Config: Config = makeConfig({
   charLimit: 239,
   lineLimit: 3,
   boxClasses: ["sd3-box", "window"],
   fontClass: "sd3-main-font",
   charWidthPairs: SD3_CHAR_PAIRS,
-  replacer: (text: string) => {
-    text = text.replace(/<PAGE>\n/g, "<PAGE>");
-    text = text.replace(/<END>\n/g, "<END>");
-    text = text.replaceAll("<END>", "\r");
-    text = replaceAll(text, SD3_REGEXES);
-    return text;
-  },
+  replacer: SD3_TEXT_REPLACER,
+  languages: {
+    it: { charWidthPairs: [["àèéìòùÈ", 8]] }
+  }
 });
