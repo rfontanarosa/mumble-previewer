@@ -66,6 +66,9 @@ export const sd3ConfigAlt: Config = makeConfig({
     text = replaceAll(text, SD3_REGEXES);
     return text;
   },
+  languages: {
+    it: { charWidthPairs: [["Ì", 5], ["ÀàèéìòùÈÉÙ", 8], ["Ò", 9]] }
+  }
 });
 
 export const sd3ConfigLine: Config = makeConfig({
@@ -79,6 +82,9 @@ export const sd3ConfigLine: Config = makeConfig({
     text = replaceAll(text, SD3_REGEXES);
     return text;
   },
+  languages: {
+    it: { charWidthPairs: [["Ì", 5], ["ÀàèéìòùÈÉÙ", 8], ["Ò", 9]] }
+  }
 });
 
 export const sd3Config: Config = makeConfig({
@@ -94,6 +100,6 @@ export const sd3Config: Config = makeConfig({
     return text;
   },
   languages: {
-    it: { charWidthPairs: [["àèéìòùÈ", 8]] }
+    it: { charWidthPairs: [["Ì", 5], ["ÀàèéìòùÈÉÙ", 8], ["Ò", 9]] }
   }
 });
