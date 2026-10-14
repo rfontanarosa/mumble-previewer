@@ -56,7 +56,7 @@ const SD3_REGEXES: [string | RegExp, string][] = [
 export const sd3ConfigAlt: Config = makeConfig({
   charLimit: 239,
   lineLimit: 3,
-  boxClasses: ["sd3-box", "window"],
+  boxClasses: ["snes-256x224", "sd3-box", "window"],
   fontClass: "sd3-main-font",
   charWidthPairs: SD3_CHAR_PAIRS,
   replacer: (text: string) => {
@@ -71,7 +71,7 @@ export const sd3ConfigAlt: Config = makeConfig({
 export const sd3ConfigLine: Config = makeConfig({
   charLimit: 239,
   lineLimit: 1,
-  boxClasses: ["sd3-box", "line"],
+  boxClasses: ["snes-256x224", "sd3-box", "line"],
   fontClass: "sd3-main-font",
   charWidthPairs: SD3_CHAR_PAIRS,
   replacer: (text: string) => {
@@ -81,20 +81,18 @@ export const sd3ConfigLine: Config = makeConfig({
   },
 });
 
-const SD3_TEXT_REPLACER = (text: string): string => {
-  text = text.replaceAll(/<PAGE>\n/g, "\r");
-  text = text.replaceAll(/<END>\n/g, "\r");
-  text = replaceAll(text, SD3_REGEXES);
-  return text;
-};
-
 export const sd3Config: Config = makeConfig({
   charLimit: 239,
   lineLimit: 3,
-  boxClasses: ["sd3-box", "window"],
+  boxClasses: ["snes-256x224", "sd3-box", "window"],
   fontClass: "sd3-main-font",
   charWidthPairs: SD3_CHAR_PAIRS,
-  replacer: SD3_TEXT_REPLACER,
+  replacer: (text: string): string => {
+    text = text.replaceAll(/<PAGE>\n/g, "\r");
+    text = text.replaceAll(/<END>\n/g, "\r");
+    text = replaceAll(text, SD3_REGEXES);
+    return text;
+  },
   languages: {
     it: { charWidthPairs: [["àèéìòùÈ", 8]] }
   }
