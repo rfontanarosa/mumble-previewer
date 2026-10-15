@@ -29,28 +29,18 @@ const SD3_REGEXES: [string | RegExp, string][] = [
   [/<MONO NARROW WHITE>/g, ""],
   [/<ITEM ...>/g, "ITEMXX"],
   [/<PAD [0-9][0-9]?>/g, ""],
-  [/<BOX><WAIT><00>/g, ""],
-  [/<BOX><WAIT><00> /g, ""],
-  [/<BOX><OPEN>/g, ""],
   [/<BOX>\n/g, ""],
   [/<BOX><PAGE>\n/g, ""],
   [/<BOX>/g, ""],
   [/<WAIT><00>/g, ""],
   [/<WAIT><F.><..>/g, ""],
-  [/<LINE><OPEN>/g, ""],
-  [/<END>/g, ""],
   [/<0[0,5,6,7,8,9]>/g, ""],
-  [/<F2>/g, ""],
-  [/<F3>/g, ""],
-  [/<F4>/g, ""],
-  //[/<WAIT>/g, ""],
   [/<MULTI>/g, ""],
   [/<CHOICE>/g, ""],
+  [/<CHOICE><..><..><..><..>/g, ""],
   [/<OR>/g, ""],
-  //[/<PAGE>/g, ""),
   [/<OPEN>/g, ""],
   [/<CLOSE>/g, ""],
-  [/<LINE>/g, ""],
 ];
 
 export const sd3ConfigAlt: Config = makeConfig({
@@ -60,9 +50,10 @@ export const sd3ConfigAlt: Config = makeConfig({
   fontClass: "sd3-main-font",
   charWidthPairs: SD3_CHAR_PAIRS,
   replacer: (text: string) => {
-    text = text.replace(/<ALT><..>/g, "");
-    text = text.replace(/<END>\n/g, "<END>");
-    text = text.replaceAll("<END>", "\r");
+    text = text.replaceAll(/<ALT><..>/g, "");
+    text = text.replaceAll(/<PAGE>\n/g, "\r");
+    text = text.replaceAll(/<END>\n/g, "\r");
+    text = text.replaceAll("<END>", "");
     text = replaceAll(text, SD3_REGEXES);
     return text;
   },
@@ -78,7 +69,9 @@ export const sd3ConfigLine: Config = makeConfig({
   fontClass: "sd3-main-font",
   charWidthPairs: SD3_CHAR_PAIRS,
   replacer: (text: string) => {
-    text = text.replace(/<END>\n/g, "<END>");
+    text = text.replaceAll(/<LINE>/g, "");
+    text = text.replaceAll(/<PAGE>\n/g, "\r");
+    text = text.replaceAll(/<END>/g, "");
     text = replaceAll(text, SD3_REGEXES);
     return text;
   },
@@ -95,7 +88,7 @@ export const sd3Config: Config = makeConfig({
   charWidthPairs: SD3_CHAR_PAIRS,
   replacer: (text: string): string => {
     text = text.replaceAll(/<PAGE>\n/g, "\r");
-    text = text.replaceAll(/<END>\n/g, "\r");
+    text = text.replaceAll(/<END</g, "");
     text = replaceAll(text, SD3_REGEXES);
     return text;
   },
