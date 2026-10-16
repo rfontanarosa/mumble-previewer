@@ -6,9 +6,9 @@ const SD3_CHAR_PAIRS: [string, number][] = [
   [",';", 4],
   ["I!()", 5],
   [" ", 6],
-  ["+fj1", 7],
+  ["+fj1<=>", 7],
   ['/"#$%&ABCDEFGHJKLNPRSUVabcdeghknopqrstuvyz23456789-?', 8],
-  ["*MOQTWXYZmwx0", 9],
+  ["*@MOQTWXYZmwx0", 9],
 ];
 
 const SD3_REGEXES: [string | RegExp, string][] = [
@@ -88,7 +88,7 @@ export const sd3Config: Config = makeConfig({
   charWidthPairs: SD3_CHAR_PAIRS,
   replacer: (text: string): string => {
     text = text.replaceAll(/<PAGE>\n/g, "\r");
-    text = text.replaceAll(/<END</g, "");
+    text = text.replaceAll(/<END>/g, "");
     text = replaceAll(text, SD3_REGEXES);
     return text;
   },
