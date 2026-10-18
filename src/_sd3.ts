@@ -2,13 +2,13 @@ import { Config, makeConfig } from "./types";
 import { replaceAll } from "./utils";
 
 const SD3_CHAR_PAIRS: [string, number][] = [
-  ["il.:", 3],
+  ["il.:|", 3],
   [",';", 4],
-  ["I!()", 5],
+  ["I!()[\]{}", 5],
   [" ", 6],
   ["+fj1<=>", 7],
-  ['/"#$%&ABCDEFGHJKLNPRSUVabcdeghknopqrstuvyz23456789-?', 8],
-  ["*@MOQTWXYZmwx0", 9],
+  ['/"#$%&ABCDEFGHJKLNPRSUVabcdeghknopqrstuvyz23456789-?~', 8],
+  ["*@MOQTWXYZmwx0…", 9],
 ];
 
 const SD3_REGEXES: [string | RegExp, string][] = [
