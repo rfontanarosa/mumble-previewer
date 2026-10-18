@@ -50,7 +50,7 @@ const STAROCEAN_TEXT_REPLACER = (text: string): string => {
 };
 
 export const staroceanConfig: Config = makeConfig({
-  charLimit: 208,
+  charLimit: 207,
   lineLimit: 4,
   boxClasses: ["snes-256x224", "starocean-box"],
   fontClass: "starocean-main-font",
