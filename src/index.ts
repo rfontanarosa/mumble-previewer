@@ -70,6 +70,10 @@ function processText(
   return processedText;
 }
 
+function isCentered(diff: number, padStep: number): boolean {
+  return diff >= -(padStep - 1) && diff <= padStep;
+}
+
 function renderHtml(
   containerSelector: string,
   text: string,
@@ -82,6 +86,7 @@ function renderHtml(
     boxClasses,
     fontClass,
     relativePositionWindow,
+    padStep = 1,
   } = options;
   const previewContainer = document.getElementById(containerSelector);
   if (!previewContainer) return;
@@ -125,12 +130,14 @@ function renderHtml(
     const charCounters: number[] = new Array(lineLimit).fill(0);
     const padCounters: number[] = new Array(lineLimit).fill(0);
     const penPositions: number[] = new Array(lineLimit).fill(0);
+    const leftEdges: number[] = new Array(lineLimit).fill(Infinity);
     const unsupportedChars = new Set<string>();
 
     for (const utf16char of dialog) {
       const utf16int = utf16char.codePointAt(0)!;
       if (utf16char in charWidthMap) {
         const charWidth = charWidthMap[utf16char];
+        leftEdges[lineIndex] = Math.min(leftEdges[lineIndex], penPositions[lineIndex]);
         charCounters[lineIndex] = Math.max(charCounters[lineIndex], penPositions[lineIndex] + charWidth);
         penPositions[lineIndex] += charWidth;
         lineBuffers[lineIndex] +=
@@ -139,12 +146,10 @@ function renderHtml(
         const target = decodeAbsolutePad(utf16char)!;
         const shift = target - penPositions[lineIndex];
         penPositions[lineIndex] = target;
-        padCounters[lineIndex] += Math.max(0, shift);
         lineBuffers[lineIndex] += `<div class="pad" style="width:0;margin-left:${shift}px"></div>`;
       } else if (utf16char === "\t") {
         charCounters[lineIndex] += 1;
         penPositions[lineIndex] += 1;
-        padCounters[lineIndex] += 1;
         lineBuffers[lineIndex] += '<div class="pad"></div>';
       } else if (utf16char === "\n") {
         lineIndex++;
@@ -152,6 +157,10 @@ function renderHtml(
         unsupportedChars.add(utf16char);
       }
     }
+
+    leftEdges.forEach((edge, i) => {
+      padCounters[i] = Number.isFinite(edge) ? edge : 0;
+    });
 
     lineBuffers.forEach((lineBuffer) => {
       const lineElement = document.createElement("div");
@@ -185,7 +194,7 @@ function renderHtml(
           <td>${count}px</td>
           <td class="${textExceedsCharacterLimit ? "text-danger" : ""}">${charLimit - count}px</td>
           <td>${padCounters[i]}px</td>
-          <td>${[0, 1].includes(padCounters[i] - (charLimit - count)) ? "Y" : "N"}</td>
+          <td>${isCentered(padCounters[i] - (charLimit - count), padStep) ? "Y" : "N"}</td>
         </tr>
       `);
 
