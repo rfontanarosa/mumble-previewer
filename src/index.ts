@@ -74,6 +74,11 @@ function isCentered(diff: number, padStep: number): boolean {
   return diff >= -(padStep - 1) && diff <= padStep;
 }
 
+function suggestedPadding(left: number, right: number, charLimit: number, step: number): number {
+  const ideal = (charLimit - (right - left)) / 2;
+  return Math.max(0, Math.ceil((ideal - (step - 1) / 2) / step) * step);
+}
+
 function renderHtml(
   containerSelector: string,
   text: string,
@@ -131,25 +136,32 @@ function renderHtml(
     const padCounters: number[] = new Array(lineLimit).fill(0);
     const penPositions: number[] = new Array(lineLimit).fill(0);
     const leftEdges: number[] = new Array(lineLimit).fill(Infinity);
+    const rightEdges: number[] = new Array(lineLimit).fill(0);
+    const usesPad: boolean[] = new Array(lineLimit).fill(false);
     const unsupportedChars = new Set<string>();
 
     for (const utf16char of dialog) {
       const utf16int = utf16char.codePointAt(0)!;
       if (utf16char in charWidthMap) {
         const charWidth = charWidthMap[utf16char];
-        leftEdges[lineIndex] = Math.min(leftEdges[lineIndex], penPositions[lineIndex]);
+        if (utf16char !== " ") {
+          leftEdges[lineIndex] = Math.min(leftEdges[lineIndex], penPositions[lineIndex]);
+          rightEdges[lineIndex] = Math.max(rightEdges[lineIndex], penPositions[lineIndex] + charWidth);
+        }
         charCounters[lineIndex] = Math.max(charCounters[lineIndex], penPositions[lineIndex] + charWidth);
         penPositions[lineIndex] += charWidth;
         lineBuffers[lineIndex] +=
           `<div class="${fontClass} char char-${utf16int}" style="width:${charWidth}px"></div>`;
       } else if (decodeAbsolutePad(utf16char) !== null) {
         const target = decodeAbsolutePad(utf16char)!;
+        usesPad[lineIndex] = true;
         const shift = target - penPositions[lineIndex];
         penPositions[lineIndex] = target;
         lineBuffers[lineIndex] += `<div class="pad" style="width:0;margin-left:${shift}px"></div>`;
       } else if (utf16char === "\t") {
         charCounters[lineIndex] += 1;
         penPositions[lineIndex] += 1;
+        usesPad[lineIndex] = true;
         lineBuffers[lineIndex] += '<div class="pad"></div>';
       } else if (utf16char === "\n") {
         lineIndex++;
@@ -173,11 +185,9 @@ function renderHtml(
     table.innerHTML = `
       <thead>
         <tr>
-          <th style="width: 12%;">#</th>
-          <th style="width: 22%;">Used</th>
-          <th style="width: 22%;">Available</th>
-          <th style="width: 22%;">Padding</th>
-          <th style="width: 22%;">Centered</th>
+          <th style="width: 20%;">#</th>
+          <th style="width: 40%;">Width</th>
+          <th style="width: 40%;">Padding</th>
         </tr>
       </thead>
     `;
@@ -188,13 +198,22 @@ function renderHtml(
 
     charCounters.forEach((count, i) => {
       const textExceedsCharacterLimit = count > charLimit;
+      const hasText = Number.isFinite(leftEdges[i]);
+      // the smallest move available: a pad step, or a space when the line is padded with spaces
+      const step = usesPad[i] ? padStep : Math.max(1, charWidthMap[" "] || 1);
+      const left = padCounters[i];
+      const right = rightEdges[i];
+      const centered = hasText && isCentered(left - (charLimit - right), step);
+      // when the line is already centred, show the current padding so the two values match
+      const suggested = centered ? left : suggestedPadding(left, right, charLimit, step);
+
+      const rowClass = !hasText ? "empty" : textExceedsCharacterLimit ? "overflow" : centered ? "centered" : "";
+      const paddingCell = hasText ? `${left} / ${suggested}` : "-";
       tableRows.push(`
-        <tr>
+        <tr class="${rowClass}">
           <td>${i + 1}</td>
-          <td>${count}px</td>
-          <td class="${textExceedsCharacterLimit ? "text-danger" : ""}">${charLimit - count}px</td>
-          <td>${padCounters[i]}px</td>
-          <td>${isCentered(padCounters[i] - (charLimit - count), padStep) ? "Y" : "N"}</td>
+          <td>${count} / ${charLimit}</td>
+          <td>${paddingCell}</td>
         </tr>
       `);
 
