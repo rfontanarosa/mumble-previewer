@@ -29,3 +29,16 @@ export function generateCharWidthMap(charWidthPairs: [string, number][]): {
   }
   return charWidthMap;
 }
+
+// Private-use code points encode an "absolute pad" (pixels from the left
+// border of the line, valid until the next pad or the end of the line).
+const ABSOLUTE_PAD_BASE = 0xe000;
+
+export function encodeAbsolutePad(pixels: number): string {
+  return String.fromCharCode(ABSOLUTE_PAD_BASE + pixels);
+}
+
+export function decodeAbsolutePad(char: string): number | null {
+  const code = char.charCodeAt(0) - ABSOLUTE_PAD_BASE;
+  return char.length === 1 && code >= 0 && code <= 0xff * 8 ? code : null;
+}

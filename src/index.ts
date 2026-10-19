@@ -1,5 +1,5 @@
 import { Config, ConfigRef, LanguageInfo, VariantInfo, getAvailableLanguages, getAvailableVariants, getConfig } from "./config";
-import { replaceAt } from "./utils";
+import { decodeAbsolutePad, replaceAt } from "./utils";
 
 export type { ConfigRef, LanguageInfo, VariantInfo };
 export { getAvailableLanguages, getAvailableVariants };
@@ -124,17 +124,26 @@ function renderHtml(
     const lineBuffers: string[] = new Array(lineLimit).fill("");
     const charCounters: number[] = new Array(lineLimit).fill(0);
     const padCounters: number[] = new Array(lineLimit).fill(0);
+    const penPositions: number[] = new Array(lineLimit).fill(0);
     const unsupportedChars = new Set<string>();
 
     for (const utf16char of dialog) {
       const utf16int = utf16char.codePointAt(0)!;
       if (utf16char in charWidthMap) {
         const charWidth = charWidthMap[utf16char];
-        charCounters[lineIndex] += charWidth;
+        charCounters[lineIndex] = Math.max(charCounters[lineIndex], penPositions[lineIndex] + charWidth);
+        penPositions[lineIndex] += charWidth;
         lineBuffers[lineIndex] +=
           `<div class="${fontClass} char char-${utf16int}" style="width:${charWidth}px"></div>`;
+      } else if (decodeAbsolutePad(utf16char) !== null) {
+        const target = decodeAbsolutePad(utf16char)!;
+        const shift = target - penPositions[lineIndex];
+        penPositions[lineIndex] = target;
+        padCounters[lineIndex] += Math.max(0, shift);
+        lineBuffers[lineIndex] += `<div class="pad" style="width:0;margin-left:${shift}px"></div>`;
       } else if (utf16char === "\t") {
         charCounters[lineIndex] += 1;
+        penPositions[lineIndex] += 1;
         padCounters[lineIndex] += 1;
         lineBuffers[lineIndex] += '<div class="pad"></div>';
       } else if (utf16char === "\n") {

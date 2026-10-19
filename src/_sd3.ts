@@ -1,5 +1,5 @@
 import { Config, makeConfig } from "./types";
-import { replaceAll } from "./utils";
+import { encodeAbsolutePad, replaceAll } from "./utils";
 
 const SD3_CHAR_PAIRS: [string, number][] = [
   ["il.:|", 3],
@@ -8,8 +8,11 @@ const SD3_CHAR_PAIRS: [string, number][] = [
   [" ", 6],
   ["+fj1<=>", 7],
   ['/"#$%&ABCDEFGHJKLNPRSUVabcdeghknopqrstuvyz23456789-?~', 8],
-  ["*@MOQTWXYZmwx0…", 9],
+  ["*@MOQTWXYZmwx0…↑↓←→♥", 9],
 ];
+
+const replacePads = (text: string): string =>
+  text.replace(/<PAD ([0-9][0-9]?)>/g, (_, n) => encodeAbsolutePad(parseInt(n, 10) * 8));
 
 const SD3_REGEXES: [string | RegExp, string][] = [
   [/<CHAR 0>/g, "CHAR00"],
@@ -28,7 +31,6 @@ const SD3_REGEXES: [string | RegExp, string][] = [
   [/<MONO YELLOW>/g, ""],
   [/<MONO NARROW WHITE>/g, ""],
   [/<ITEM ...>/g, "ITEMXX"],
-  [/<PAD [0-9][0-9]?>/g, ""],
   [/<BOX>\n/g, ""],
   [/<BOX><PAGE>\n/g, ""],
   [/<BOX>/g, ""],
@@ -54,7 +56,7 @@ export const sd3ConfigAlt: Config = makeConfig({
     text = text.replaceAll(/<PAGE>\n/g, "\r");
     text = text.replaceAll(/<END>\n/g, "\r");
     text = text.replaceAll("<END>", "");
-    text = replaceAll(text, SD3_REGEXES);
+    text = replaceAll(replacePads(text), SD3_REGEXES);
     return text;
   },
   languages: {
@@ -72,7 +74,7 @@ export const sd3ConfigLine: Config = makeConfig({
     text = text.replaceAll(/<LINE>/g, "");
     text = text.replaceAll(/<PAGE>\n/g, "\r");
     text = text.replaceAll(/<END>/g, "");
-    text = replaceAll(text, SD3_REGEXES);
+    text = replaceAll(replacePads(text), SD3_REGEXES);
     return text;
   },
   languages: {
@@ -89,7 +91,7 @@ export const sd3Config: Config = makeConfig({
   replacer: (text: string): string => {
     text = text.replaceAll(/<PAGE>\n/g, "\r");
     text = text.replaceAll(/<END>/g, "");
-    text = replaceAll(text, SD3_REGEXES);
+    text = replaceAll(replacePads(text), SD3_REGEXES);
     return text;
   },
   languages: {
