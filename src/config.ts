@@ -11,6 +11,7 @@ import { lomConfig } from "./_lom";
 import { lufiaConfig } from "./_lufia";
 import { MMLEGENDS } from "./_mmlegends";
 import { neugierConfig } from "./_neugier";
+import { rsagaConfig, rsagaConfig04, rsagaConfig0B, rsagaConfig0C, rsagaConfig0D, rsagaPaginate } from "./_rsaga";
 import { spikeConfig } from "./_spike";
 import { soeConfig } from "./_soe";
 import { somConfig } from "./_som";
@@ -88,6 +89,16 @@ const BASE_CONFIGS: Record<string, GameDescriptor> = {
   "lufia":     { default: lufiaConfig },
   "mmlegends": { default: (text) => ({ ...MMLEGENDS.config, ...MMLEGENDS.getConfigByText(text) }) },
   "neugier":   { default: neugierConfig },
+  "rsaga":     {
+    default: rsagaConfig,
+    variants: {
+      "04": { label: "Window 04 (menu prompt)", config: rsagaConfig04 },
+      "0B": { label: "Window 0B (large)", config: rsagaConfig0B },
+      "0C": { label: "Window 0C (bubble)", config: rsagaConfig0C },
+      "0D": { label: "Window 0D (small bubble)", config: rsagaConfig0D },
+    },
+    paginate: rsagaPaginate,
+  },
   "sd3":       {
     default: sd3Config,
     variants: {
