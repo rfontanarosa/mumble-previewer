@@ -1,4 +1,4 @@
-import { Config, ConfigRef, LanguageInfo, VariantInfo, getAvailableLanguages, getAvailableVariants, getConfig } from "./config";
+import { Config, ConfigRef, LanguageInfo, VariantInfo, getAvailableLanguages, getAvailableVariants, getConfig, getPages } from "./config";
 import { decodeAbsolutePad, replaceAt } from "./utils";
 
 export type { ConfigRef, LanguageInfo, VariantInfo };
@@ -79,28 +79,31 @@ function suggestedPadding(left: number, right: number, charLimit: number, step: 
   return Math.max(0, Math.ceil((ideal - (step - 1) / 2) / step) * step);
 }
 
-function renderHtml(
-  containerSelector: string,
-  text: string,
-  charWidthMap: { [key: string]: number },
-  options: Config
-) {
-  const {
-    charLimit,
-    lineLimit,
-    boxClasses,
-    fontClass,
-    relativePositionWindow,
-    padStep = 1,
-  } = options;
+interface ProcessedPage {
+  text: string;
+  options: Config;
+}
+
+function renderHtml(containerSelector: string, pages: ProcessedPage[]) {
   const previewContainer = document.getElementById(containerSelector);
   if (!previewContainer) return;
 
   const fragment = document.createDocumentFragment();
 
-  const dialogs = text.split("\r").filter((element) => element !== "");
+  const dialogs = pages.flatMap(({ text, options }) =>
+    text.split("\r").filter((element) => element !== "").map((dialog) => ({ dialog, options }))
+  );
 
-  dialogs.forEach((dialog, index) => {
+  dialogs.forEach(({ dialog, options }, index) => {
+    const {
+      charLimit,
+      lineLimit,
+      boxClasses,
+      fontClass,
+      relativePositionWindow,
+      padStep = 1,
+      charWidthMap,
+    } = options;
     const boxElementId = `box-${index}`;
 
     const boxElement = document.createElement("div");
@@ -257,17 +260,21 @@ export function renderPreview(
 ): void {
   const container = document.getElementById(containerId);
   if (container) {
-    let options: Config;
+    let pages: { text: string; config: Config }[];
     if (typeof config === "string") {
-      options = getConfig({ id: config }, text);
+      pages = getPages({ id: config }, text);
     } else if ("id" in config) {
-      options = getConfig(config, text);
+      pages = getPages(config, text);
     } else {
-      options = config;
+      pages = [{ text, config }];
     }
-    const charWidthMap = options.charWidthMap;
-    const processedText = processText(text, charWidthMap, options);
-    renderHtml(containerId, processedText, charWidthMap, options);
+    renderHtml(
+      containerId,
+      pages.map((page) => ({
+        text: processText(page.text, page.config.charWidthMap, page.config),
+        options: page.config,
+      }))
+    );
   } else {
     console.error(`Missing container ${containerId}`);
   }

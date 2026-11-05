@@ -2,36 +2,38 @@ import { Config, makeConfig } from "./types";
 import { replaceAll } from "./utils";
 
 const RSAGA_CHAR_PAIRS: [string, number][] = [
-  ["Iil,.:;", 3],
-  ["'!()", 4],
-  ["1t² ", 5],
-  ["EFLScfjrs“”", 6],
-  ["02356789ABCDGHJOPQRTUVXYZabdeghknopquvxyz¿?/+-=<>", 7],
-  ["4KN*", 8],
-  ["&", 9],
-  ["#♪♀", 10],
-  ["MWm%★☆", 11],
-  ["w♥♂", 12],
+  ["il.!': ", 2],
+  ["j()", 3],
+  ["IJft1,\"-", 4],
+  ["BCDEFGHKLPQRUVXabcdeghknopqrsuvyz023456789", 5],
+  ["AMNOSTWYZmwx?", 6],
+  ["/", 7],
+  ["♂♀", 7],
 ];
 
 const RSAGA_REGEXES: [string | RegExp, string][] = [
-  [/<40,.*?>/g, ""],
-  [/<4a,.*?>/g, ""],
-  [/\[MOVEMENT ..\]>/g, ""],
-  [/\[NEWLINE_WINDOW1\]>/g, "\n"],
-  [/\[NEWLINE_WINDOW2\]>/g, "\n"],
-  [/\[PAUSE\]>/g, ""],
-  [/\[SELECTION\]>/g, ""],
-  [/\[SELECTION2\]>/g, ""],
-  [/\[END_SELECTION2\]>/g, ""],
-  [/\[JUMP_RETURN .. ..\]>/g, ""],
-  [/\[TEXT_POSITION .. ..\]>/g, ""],
-  [/\[SETFLAG .. ..\]>/g, ""],
-  [/\[SETRAM .. .. ..\]>/g, ""],
-  [/\[NAME ..\]>/g, "XXXXXX"],
-  [/\[ITEM ..\]>/g, "YYYYYY"],
-  [/\[NEWLINE_HALF\]>/g, "\n"],
-  [/\[WAIT ..\]>/g, ""],
+  [/\[WINDOW_POSITION ..\]\n?/g, ""],
+  [/\[WINDOW ..\]\n?/g, ""],
+  [/\[CLOSE\]\n?/g, ""],
+  [/<[0-9A-Fa-f]{2},[0-9A-Fa-f]*>/g, ""], // <40,xxxx> / <4A,xxxx> opcodes
+  [/\[MOVEMENT ..\]/g, ""],
+  [/\[NEWLINE_WINDOW1\]\n?/g, "\n"],
+  [/\[NEWLINE_WINDOW2\]\n?/g, "\n"],
+  [/\[PAUSE\]/g, ""],
+  [/\[SELECTION\]/g, ""],
+  [/\[SELECTION2\]/g, ""],
+  [/\[END_SELECTION2\]/g, ""],
+  [/\[JUMPRETURN .. ..\]/g, ""],
+  [/\[CHECKFLAG .. ..\]/g, ""],
+  [/\[TEXT_POSITION .. ..\]/g, ""],
+  [/\[SETFLAG .. ..\]/g, ""],
+  [/\[SETRAM .. .. ..\]/g, ""],
+  [/\[NAME ..\]/g, "XXXXXX"],
+  [/\[ITEM ..\]/g, "YYYYYY"],
+  [/\[NEWLINE_HALF\]/g, "\n"],
+  [/\[WAIT ..\]/g, ""],
+  [/\[NUMBER .. ..\]/g, "00"],
+  [/\[[0-9A-F]{2}( [0-9A-F]{2})*\]/g, ""], // raw control bytes, e.g. [2B A0] [FF]
 ];
 
 const RSAGA_TEXT_REPLACER = (text: string): string => {
@@ -45,16 +47,38 @@ const RSAGA_TEXT_REPLACER = (text: string): string => {
   return text;
 };
 
-export const rsagaConfig: Config = makeConfig({
-  charLimit: 208,
-  lineLimit: 4,
-  boxClasses: ["snes-256x224", "rsaga-box"],
-  fontClass: "rsaga-main-font",
-  charWidthPairs: RSAGA_CHAR_PAIRS,
-  replacer: RSAGA_TEXT_REPLACER,
-  autoLineBreak: true,
-  autoBoxOverflow: true,
-  languages: {
-    it: { charWidthPairs: [["Ìì", 4], ["ÈÉ", 6], ["ÀÒÙ°àèéòù", 7]] }
-  }
-});
+// Window types (the byte of `[WINDOW xx]`) and their text area. Widths come from the
+// original RS1 editor (RS1Editor.previewText); a page without `[WINDOW]` uses the default
+// window, and `[CLOSE]` resets to it.
+// TODO line limits marked "?" are guesses: check them against the game.
+const makeRsagaConfig = (windowId: string, charLimit: number, lineLimit: number): Config =>
+  makeConfig({
+    charLimit,
+    lineLimit,
+    boxClasses: ["snes-256x224", "rsaga-box", `window_${windowId}`],
+    fontClass: "rsaga-main-font",
+    charWidthPairs: RSAGA_CHAR_PAIRS,
+    replacer: RSAGA_TEXT_REPLACER,
+    autoLineBreak: true,
+    autoBoxOverflow: true,
+    languages: {
+      it: { charWidthPairs: [["ì", 3], ["àèéòù", 5]] }
+    }
+  });
+
+export const rsagaConfig = makeRsagaConfig("default", 191, 4);
+export const rsagaConfig04 = makeRsagaConfig("04", 119, 2);
+export const rsagaConfig0B = makeRsagaConfig("0B", 183, 4);
+export const rsagaConfig0C = makeRsagaConfig("0C", 119, 3);
+export const rsagaConfig0D = makeRsagaConfig("0D", 71, 2);
+
+/** Splits a text into boxes at every `[CLOSE]`, tagging each with its window id (if any). */
+export function rsagaPaginate(text: string): { text: string; variant?: string }[] {
+  return text
+    .split("[CLOSE]")
+    .map((page) => ({
+      text: page.replace(/^(\s*\[NEWLINE_WINDOW[12]\]\s*)+/, ""),
+      variant: page.match(/\[WINDOW ([0-9A-Fa-f]{2})\]/)?.[1].toUpperCase(),
+    }))
+    .filter((page) => page.text.trim() !== "");
+}

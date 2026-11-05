@@ -43,6 +43,12 @@ interface GameDescriptor {
   default: ConfigFactory;
   variants?: Record<string, Variant>;
   detect?: (text: string) => string | undefined;
+  paginate?: (text: string) => { text: string; variant?: string }[];
+}
+
+export interface Page {
+  text: string;
+  config: Config;
 }
 
 export interface VariantInfo {
@@ -167,4 +173,17 @@ export function getConfig(ref: ConfigRef, text: string): Config {
     console.warn(`mumble-previewer: unknown language "${language}" for "${id}", using default`);
   }
   return base;
+}
+
+/**
+ * Like getConfig, but for games whose boxes can differ within one text: returns one
+ * entry per box. An explicit `variant` forces the same variant on every box.
+ */
+export function getPages(ref: ConfigRef, text: string): Page[] {
+  const descriptor = BASE_CONFIGS[ref.id];
+  if (!descriptor?.paginate) return [{ text, config: getConfig(ref, text) }];
+  return descriptor.paginate(text).map((page) => ({
+    text: page.text,
+    config: getConfig({ ...ref, variant: ref.variant ?? page.variant }, page.text),
+  }));
 }
