@@ -51,6 +51,7 @@ export const sd3ConfigAlt: Config = makeConfig({
   boxClasses: ["snes-256x224", "sd3-box", "window"],
   fontClass: "sd3-main-font",
   charWidthPairs: SD3_CHAR_PAIRS,
+  padStep: 8,
   replacer: (text: string) => {
     text = text.replaceAll(/<ALT><..>/g, "");
     text = text.replaceAll(/<PAGE>\n/g, "\r");
@@ -70,6 +71,7 @@ export const sd3ConfigLine: Config = makeConfig({
   boxClasses: ["snes-256x224", "sd3-box", "line"],
   fontClass: "sd3-main-font",
   charWidthPairs: SD3_CHAR_PAIRS,
+  padStep: 8,
   replacer: (text: string) => {
     text = text.replaceAll(/<LINE>/g, "");
     text = text.replaceAll(/<PAGE>\n/g, "\r");
@@ -88,6 +90,7 @@ export const sd3Config: Config = makeConfig({
   boxClasses: ["snes-256x224", "sd3-box", "window"],
   fontClass: "sd3-main-font",
   charWidthPairs: SD3_CHAR_PAIRS,
+  padStep: 8,
   replacer: (text: string): string => {
     text = text.replaceAll(/<PAGE>\n/g, "\r");
     text = text.replaceAll(/<END>/g, "");

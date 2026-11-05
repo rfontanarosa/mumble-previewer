@@ -97,9 +97,24 @@
       text-align: center;
       border-collapse: collapse;
 
+      font-variant-numeric: tabular-nums;
+
       th, td {
         border: 1px solid black;
         padding: 4px;
+      }
+
+      tr.centered {
+        background: rgba(70, 180, 90, 0.25);
+      }
+
+      tr.overflow {
+        background: rgba(250, 68, 68, 0.2);
+        color: #fa4444;
+      }
+
+      tr.empty {
+        opacity: 0.5;
       }
     }
 

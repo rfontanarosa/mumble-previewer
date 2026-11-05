@@ -21,6 +21,7 @@ export interface Config {
     height: number;
     padding?: number;
   };
+  padStep?: number;
   autoLineBreak?: boolean;
   autoBoxOverflow?: boolean;
   languages?: Record<string, LanguageExtension>;
