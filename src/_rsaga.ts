@@ -72,13 +72,21 @@ export const rsagaConfig0B = makeRsagaConfig("0B", 183, 4);
 export const rsagaConfig0C = makeRsagaConfig("0C", 119, 3);
 export const rsagaConfig0D = makeRsagaConfig("0D", 71, 2);
 
-/** Splits a text into boxes at every `[CLOSE]`, tagging each with its window id (if any). */
+// Everything before the first visible character of a page: whitespace, newlines and codes that
+// print nothing. Left in, the line breaks they carry become blank lines that push the text
+// into an empty box (and, with autoBoxOverflow, into the next one).
+const RSAGA_LEADING_CODES =
+  /^(?:\s+|\[NEWLINE_WINDOW[12]\]|\[(?:WINDOW_POSITION|WINDOW|MOVEMENT|SETRAM|SETFLAG|CHECKFLAG|JUMPRETURN|TEXT_POSITION|WAIT|PAUSE)(?: [0-9A-Fa-f]{2})+\]|\[PAUSE\]|<[0-9A-Fa-f]{2},[0-9A-Fa-f]*>|\[[0-9A-F]{2}(?: [0-9A-F]{2})*\])+/;
+
+/** Splits a text into boxes at every `[CLOSE]`, tagging each with its window id (if any). Pages without visible text are dropped. */
 export function rsagaPaginate(text: string): { text: string; variant?: string }[] {
   return text
     .split("[CLOSE]")
     .map((page) => ({
-      text: page.replace(/^(\s*\[NEWLINE_WINDOW[12]\]\s*)+/, ""),
+      text: page.replace(RSAGA_LEADING_CODES, ""),
       variant: page.match(/\[WINDOW ([0-9A-Fa-f]{2})\]/)?.[1].toUpperCase(),
     }))
-    .filter((page) => page.text.trim() !== "");
+    // drop pages with nothing visible left once control codes are stripped (script-only pages
+    // made of [SETRAM]/<4A,..>/[MOVEMENT]/[NEWLINE_WINDOW] would otherwise render empty boxes)
+    .filter((page) => RSAGA_TEXT_REPLACER(page.text).trim() !== "");
 }

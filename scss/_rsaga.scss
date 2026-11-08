@@ -1,39 +1,28 @@
+// Backgrounds are cropped from the in-game window (text-less), so each screen is sized to its image.
+// text-box padding = position of the first glyph (8x8 cell) inside the image; line pitch is 16px.
+@mixin rsaga-window($image, $width, $height, $top, $left) {
+  .screen {
+    width: #{$width}px !important;
+    height: #{$height}px !important;
+    background: url(../images/_rsaga/#{$image}) no-repeat;
+
+    .text-box {
+      padding-top: #{$top}px;
+      padding-left: #{$left}px;
+
+      .text-line {
+        margin-bottom: 8px;
+      }
+    }
+  }
+}
+
 .rsaga-box {
-  &.window_default {
-    .screen {
-      height: 76px !important;
-      background: url(../images/_rsaga/window_default_with_text.png) no-repeat;
-    }
-
-    .text-box {
-      padding-top: 11px;
-      padding-left: 15px;
-    }
-  }
-
-  &.window_0c {
-    .screen {
-      height: 54px !important;
-      background: url(../images/_rsaga/rsaga_window_0C.png) no-repeat;
-    }
-
-    .text-box {
-      padding-top: 5px;
-      padding-left: 10px;
-    }
-  }
-
-  &.window_0b {
-    .screen {
-      height: 54px !important;
-      background: url(../images/_rsaga/rsaga_window_0B.png) no-repeat;
-    }
-
-    .text-box {
-      padding-left: 9px;
-      padding-top: 4px;
-    }
-  }
+  &.window_default { @include rsaga-window("window_default.png", 230, 88, 11, 15); }
+  &.window_04      { @include rsaga-window("window_04.png",       65, 64,  7,  8); }
+  &.window_0B      { @include rsaga-window("window_0B.png",      201, 72, 11,  4); }
+  &.window_0C      { @include rsaga-window("window_0C.png",      145, 76, 15,  8); }
+  &.window_0D      { @include rsaga-window("window_0D.png",       97, 44, 15,  8); }
 }
 
 .rsaga-main-font {
