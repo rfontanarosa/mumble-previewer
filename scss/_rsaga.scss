@@ -134,16 +134,15 @@
   /* */
   /* */
 
-
-
   &.it {
     background-image: url(../images/_rsaga/rsaga_font_ita.png);
 
     &.char-224  { background-position: -48px -112px; } /* à */
-    &.char-232  { background-position: -64px -112px; } /* è */
+    &.char-232  { background-position: -56px -112px; } /* è */
     &.char-233  { background-position: -64px -112px; } /* é */
-    &.char-236  { background-position: -64px -112px; } /* ì */
-    &.char-242  { background-position: -64px -112px; } /* ò */
-    &.char-249  { background-position: -64px -112px; } /* ù */
+    &.char-236  { background-position: -72px -112px; } /* ì */
+    &.char-242  { background-position: -80px -112px; } /* ò */
+    &.char-249  { background-position: -88px -112px; } /* ù */
+    &.char-200  { background-position: -96px -112px; } /* È */
   }
 }

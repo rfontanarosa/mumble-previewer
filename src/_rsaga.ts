@@ -78,10 +78,10 @@ export const rsagaConfig0D = makeRsagaConfig("0D", 71, 2);
 const RSAGA_LEADING_CODES =
   /^(?:\s+|\[NEWLINE_WINDOW[12]\]|\[(?:WINDOW_POSITION|WINDOW|MOVEMENT|SETRAM|SETFLAG|CHECKFLAG|JUMPRETURN|TEXT_POSITION|WAIT|PAUSE)(?: [0-9A-Fa-f]{2})+\]|\[PAUSE\]|<[0-9A-Fa-f]{2},[0-9A-Fa-f]*>|\[[0-9A-F]{2}(?: [0-9A-F]{2})*\])+/;
 
-/** Splits a text into boxes at every `[CLOSE]`, tagging each with its window id (if any). Pages without visible text are dropped. */
+/** Splits a text into boxes at every `[CLOSE]` and `[NEWLINE_WINDOW2]` (which opens a new window), tagging each with its window id (if any). Pages without visible text are dropped. */
 export function rsagaPaginate(text: string): { text: string; variant?: string }[] {
   return text
-    .split("[CLOSE]")
+    .split(/\[CLOSE\]|\[NEWLINE_WINDOW2\]/)
     .map((page) => ({
       text: page.replace(RSAGA_LEADING_CODES, ""),
       variant: page.match(/\[WINDOW ([0-9A-Fa-f]{2})\]/)?.[1].toUpperCase(),
