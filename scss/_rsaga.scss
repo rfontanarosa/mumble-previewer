@@ -20,6 +20,7 @@
 .rsaga-box {
   &.window_default { @include rsaga-window("window_default.png", 88, 11, 15); }
   &.window_04      { @include rsaga-window("window_04.png", 64,       7,  8); }
+  &.window_09      { @include rsaga-window("window_09.png", 24,      11,  4); }
   &.window_0B      { @include rsaga-window("window_0B.png", 72,      11,  4); }
   &.window_0C      { @include rsaga-window("window_0C.png", 76,      15,  8); }
   &.window_0D      { @include rsaga-window("window_0D.png", 44,      15,  8); }

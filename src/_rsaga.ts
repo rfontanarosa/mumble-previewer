@@ -5,7 +5,7 @@ const RSAGA_CHAR_PAIRS: [string, number][] = [
   ["il.!': ", 2],
   ["j()", 3],
   ["IJft1,\"-", 4],
-  ["BCDEFGHKLPQRUVXabcdeghknopqrsuvyz023456789", 5],
+  ["BCDEFGHKLPQRUVXabcdeghknopqrsuvyz023456789È", 5],
   ["AMNOSTWYZmwx?", 6],
   ["/", 7],
   ["♂♀", 7],
@@ -68,7 +68,8 @@ const makeRsagaConfig = (windowId: string, charLimit: number, lineLimit: number)
 
 export const rsagaConfig = makeRsagaConfig("default", 191, 4);
 export const rsagaConfig04 = makeRsagaConfig("04", 119, 2);
-export const rsagaConfig0B = makeRsagaConfig("0B", 183, 4);
+export const rsagaConfig09 = makeRsagaConfig("09", 77, 1);
+export const rsagaConfig0B =makeRsagaConfig("0B", 183, 4);
 export const rsagaConfig0C = makeRsagaConfig("0C", 119, 3);
 export const rsagaConfig0D = makeRsagaConfig("0D", 71, 2);
 
